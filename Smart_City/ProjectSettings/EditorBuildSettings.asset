@@ -9,24 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/SampleScene 1.unity
+    path: Assets/Scenes/apartamentos/SampleScene 1.unity
     guid: 36290746ed9e96f42a4f3566b5126284
   - enabled: 1
-    path: Assets/Scenes/SampleScene 2.unity
+    path: Assets/Scenes/industrial/SampleScene 2.unity
     guid: 1574824b496d5594b8e29d31c622a690
   - enabled: 1
-    path: Assets/Scenes/SampleScene 3.unity
+    path: Assets/Scenes/escolar/SampleScene 3.unity
     guid: 986a7811a28841e46ab40c5954751e1d
   - enabled: 1
-    path: Assets/Scenes/SampleScene 4.unity
+    path: Assets/Scenes/casas/SampleScene 4.unity
     guid: a624b945c241a8a4ab8b6a9346707371
   - enabled: 1
-    path: Assets/Scenes/SampleScene 5.unity
+    path: Assets/Scenes/industrial/SampleScene 5.unity
     guid: a53b6ae51511a2e42b9252c54786a6d5
   - enabled: 1
-    path: Assets/Scenes/SampleScene 6.unity
+    path: Assets/Scenes/mixto/SampleScene 6.unity
     guid: df038b26f7dc3634f96244c9eeed9ecd
   - enabled: 1
-    path: Assets/Scenes/SampleScene 7.unity
+    path: Assets/Scenes/parque/SampleScene 7.unity
     guid: 7d1a07bc37722e5449debd90550eca1f
   m_configObjects: {}
