@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/apartamentos/SampleScene 1.unity
     guid: 36290746ed9e96f42a4f3566b5126284
   - enabled: 1
-    path: Assets/Scenes/industrial/SampleScene 2.unity
+    path: Assets/Scenes/ejecutivo/SampleScene 2.unity
     guid: 1574824b496d5594b8e29d31c622a690
   - enabled: 1
     path: Assets/Scenes/escolar/SampleScene 3.unity
