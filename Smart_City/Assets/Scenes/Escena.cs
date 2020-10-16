@@ -7,6 +7,11 @@ public class Escena : MonoBehaviour
 {
     public void cambiarescena(string nombreescena)
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(nombreescena);
+    }
+
+    public void salirescena()
+    {
+        Application.Quit();
     }
 }
