@@ -13914,6 +13914,7 @@ GameObject:
   - component: {fileID: 1626061015}
   - component: {fileID: 1626061014}
   - component: {fileID: 1626061013}
+  - component: {fileID: 1626061016}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -13983,7 +13984,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1626061014}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963194229}
+        m_TargetAssemblyTypeName: boton_apartamento, Assembly-CSharp
+        m_MethodName: changescene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SampleScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1626061014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14022,6 +14035,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626061011}
   m_CullTransparentMesh: 0
+--- !u!114 &1626061016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626061011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
+  anim: {fileID: 0}
 --- !u!1001 &1628761838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17622,6 +17649,7 @@ GameObject:
   - component: {fileID: 2057911325}
   - component: {fileID: 2057911324}
   - component: {fileID: 2057911323}
+  - component: {fileID: 2057911326}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -17691,7 +17719,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2057911324}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963194229}
+        m_TargetAssemblyTypeName: boton_apartamento, Assembly-CSharp
+        m_MethodName: changescene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SampleScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2057911324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17730,6 +17770,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057911321}
   m_CullTransparentMesh: 0
+--- !u!114 &2057911326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057911321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
+  anim: {fileID: 0}
 --- !u!1001 &2062792375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18038,6 +18092,7 @@ GameObject:
   - component: {fileID: 2072969767}
   - component: {fileID: 2072969766}
   - component: {fileID: 2072969765}
+  - component: {fileID: 2072969768}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -18107,7 +18162,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2072969766}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963194229}
+        m_TargetAssemblyTypeName: boton_apartamento, Assembly-CSharp
+        m_MethodName: changescene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SampleScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2072969766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18146,6 +18213,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072969763}
   m_CullTransparentMesh: 0
+--- !u!114 &2072969768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072969763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
+  anim: {fileID: 0}
 --- !u!1001 &2081840711
 PrefabInstance:
   m_ObjectHideFlags: 0
