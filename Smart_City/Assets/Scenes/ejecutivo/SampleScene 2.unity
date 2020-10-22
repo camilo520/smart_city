@@ -4631,7 +4631,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Contexto y descripcion del caso casas
+  m_Text: Contexto y descripcion del caso administrativo
 --- !u!222 &510002515
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15940,7 +15940,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Instrucciones del caso casas
+  m_Text: Instrucciones del caso administrativo
 --- !u!222 &1746801897
 CanvasRenderer:
   m_ObjectHideFlags: 0
