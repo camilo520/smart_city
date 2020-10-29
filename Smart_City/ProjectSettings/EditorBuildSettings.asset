@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/apartamentos/pre-apartamentos.unity
     guid: 1f4ecfa5dcfc193498cad20bd65b979d
+  - enabled: 1
+    path: Assets/Scenes/ejecutivo/pre-ejecutivo.unity
+    guid: 0a3dc76641ebe234ebc474668c345380
   m_configObjects: {}
