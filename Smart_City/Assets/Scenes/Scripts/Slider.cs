@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Slider : MonoBehaviour
 {
-    private int porc;
+    private static int porc;
     Text porcentaje;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,6 @@ public class Slider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        aEntero();
     }
 
     public void actualizacionTexto(float value)
@@ -32,9 +31,5 @@ public class Slider : MonoBehaviour
 
     }
 
-    private void aEntero()
-    {
-        
-    }
 }
 
