@@ -6,25 +6,30 @@ using System.Text;
 using System;
 
 
+
 public class CallRestService : MonoBehaviour
 {
-
+	public string WEB_URL = "";
+	
 	// Use this for initialization
 	void Start()
 	{
 		StartCoroutine(postUnityWebRequest());
 		StartCoroutine(getUnityWebRequest());
+		
 	}
+
 
 	IEnumerator postUnityWebRequest()
 	{
 		///<summary>
 		/// Post using UnityWebRequest class
 		/// </summary>
-		var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
+		/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
+		var jsonString = "{\"field1\":60}";
 		byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
 
-		UnityWebRequest unityWebRequest = new UnityWebRequest("https://localhost:44326/api/values", "POST");
+		UnityWebRequest unityWebRequest = new UnityWebRequest(WEB_URL, "POST");
 		unityWebRequest.uploadHandler = new UploadHandlerRaw(byteData);
 		unityWebRequest.SetRequestHeader("Content-Type", "application/json");
 		yield return unityWebRequest.SendWebRequest();
