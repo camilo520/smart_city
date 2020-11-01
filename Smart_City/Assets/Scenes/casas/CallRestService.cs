@@ -4,29 +4,36 @@ using System.Collections.Generic;
 using UnityEngine.Networking;
 using System.Text;
 using System;
-
-
+using System.Threading;
+using System.Threading.Tasks;
 
 public class CallRestService : MonoBehaviour
 {
+	private Timer timer1;
 	public string WEB_URL = "";
-	
+	private int por;
 	// Use this for initialization
 	void Start()
 	{
-		StartCoroutine(postUnityWebRequest());
+		//StartCoroutine(postUnityWebRequest());
 		StartCoroutine(getUnityWebRequest());
 		
 	}
 
-
-	IEnumerator postUnityWebRequest()
+	private void Update()
 	{
+		StartCoroutine(postUnityWebRequest());
+	}
+
+
+    IEnumerator postUnityWebRequest()
+	{
+		por=Slider.porc;
 		///<summary>
 		/// Post using UnityWebRequest class
 		/// </summary>
 		/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
-		var jsonString = "{\"field1\":60}";
+		var jsonString = "{\"field1\":" + por.ToString() + "}";
 		byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
 
 		UnityWebRequest unityWebRequest = new UnityWebRequest(WEB_URL, "POST");
@@ -47,7 +54,7 @@ public class CallRestService : MonoBehaviour
 
 	IEnumerator getUnityWebRequest()
 	{
-		UnityWebRequest www = UnityWebRequest.Get("https://localhost:44326/api/values/3");
+		UnityWebRequest www = UnityWebRequest.Get("https://api.thingspeak.com/channels/1057026/fields/1");
 		yield return www.SendWebRequest();
 
 		if (www.isNetworkError || www.isHttpError)
@@ -59,4 +66,6 @@ public class CallRestService : MonoBehaviour
 			Debug.Log(www.downloadHandler.text);
 		}
 	}
+
+
 }
