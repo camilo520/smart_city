@@ -17,17 +17,23 @@ public class CallRestService : MonoBehaviour
 	{
 		//StartCoroutine(postUnityWebRequest());
 		StartCoroutine(getUnityWebRequest());
-		
+	
 	}
 
 	private void Update()
 	{
+		StartCoroutine(esperar());
 		StartCoroutine(postUnityWebRequest());
+		StartCoroutine(esperar());
+	
 	}
+	
 
 
-    IEnumerator postUnityWebRequest()
+
+	IEnumerator postUnityWebRequest()
 	{
+		
 		por=Slider.porc;
 		///<summary>
 		/// Post using UnityWebRequest class
@@ -39,7 +45,8 @@ public class CallRestService : MonoBehaviour
 		UnityWebRequest unityWebRequest = new UnityWebRequest(WEB_URL, "POST");
 		unityWebRequest.uploadHandler = new UploadHandlerRaw(byteData);
 		unityWebRequest.SetRequestHeader("Content-Type", "application/json");
-		yield return unityWebRequest.SendWebRequest();
+		
+		StartCoroutine(esperar());
 
 		if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError)
 		{
@@ -47,9 +54,13 @@ public class CallRestService : MonoBehaviour
 		}
 		else
 		{
+			
+			yield return unityWebRequest.SendWebRequest();
 			Debug.Log("Form upload complete! Status Code: " + unityWebRequest.responseCode);
+			
+			StartCoroutine(esperar());
 		}
-
+		
 	}
 
 	IEnumerator getUnityWebRequest()
@@ -66,6 +77,12 @@ public class CallRestService : MonoBehaviour
 			Debug.Log(www.downloadHandler.text);
 		}
 	}
+
+	IEnumerator esperar(){
+
+		yield return new WaitForSeconds(3);
+	}
+
 
 
 }
