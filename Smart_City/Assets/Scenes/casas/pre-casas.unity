@@ -1266,7 +1266,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 5.67, y: 7.3}
-  m_SizeDelta: {x: 759.7, y: 213.7}
+  m_SizeDelta: {x: 466.3, y: 213.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &149977789
 MonoBehaviour:
@@ -19982,7 +19982,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -20001,7 +20001,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030766431}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!1 &2031377814
 GameObject:
   m_ObjectHideFlags: 0
