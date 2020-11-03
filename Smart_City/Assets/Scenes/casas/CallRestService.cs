@@ -9,22 +9,18 @@ using System.Threading.Tasks;
 
 public class CallRestService : MonoBehaviour
 {
-	private Timer timer1;
 	public string WEB_URL = "";
 	private int por;
 	// Use this for initialization
 	void Start()
 	{
-		//StartCoroutine(postUnityWebRequest());
+		StartCoroutine(postUnityWebRequest());
 		StartCoroutine(getUnityWebRequest());
 	
 	}
 
-	private void Update()
-	{
-		StartCoroutine(esperar());
-		StartCoroutine(postUnityWebRequest());
-		StartCoroutine(esperar());
+	void Update() { 
+
 	
 	}
 	
@@ -33,34 +29,37 @@ public class CallRestService : MonoBehaviour
 
 	IEnumerator postUnityWebRequest()
 	{
-		
-		por=Slider.porc;
-		///<summary>
-		/// Post using UnityWebRequest class
-		/// </summary>
-		/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
-		var jsonString = "{\"field1\":" + por.ToString() + "}";
-		byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
-
-		UnityWebRequest unityWebRequest = new UnityWebRequest(WEB_URL, "POST");
-		unityWebRequest.uploadHandler = new UploadHandlerRaw(byteData);
-		unityWebRequest.SetRequestHeader("Content-Type", "application/json");
-		
-		StartCoroutine(esperar());
-
-		if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError)
+		while (true)
 		{
-			Debug.Log(unityWebRequest.error);
-		}
-		else
-		{
+			por = Slider.porc;
+			///<summary>
+			/// Post using UnityWebRequest class
+			/// </summary>
+			/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
+			var jsonString = "{\"field1\":" + por.ToString() + "}";
+			byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
+
+			UnityWebRequest unityWebRequest = new UnityWebRequest(WEB_URL, "POST");
+			unityWebRequest.uploadHandler = new UploadHandlerRaw(byteData);
+			unityWebRequest.SetRequestHeader("Content-Type", "application/json");
+
+			//StartCoroutine(esperar());
+
+			if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError)
+			{
+				Debug.Log(unityWebRequest.error);
+			}
+			else
+			{
+				//StartCoroutine(esperar());
+				yield return unityWebRequest.SendWebRequest();
+				Debug.Log("Form upload complete! Status Code: " + unityWebRequest.responseCode + (int)Time.time);
+				yield return new WaitForSeconds(3);
+			}
 			
-			yield return unityWebRequest.SendWebRequest();
-			Debug.Log("Form upload complete! Status Code: " + unityWebRequest.responseCode);
-			
-			StartCoroutine(esperar());
+
 		}
-		
+
 	}
 
 	IEnumerator getUnityWebRequest()
@@ -76,11 +75,6 @@ public class CallRestService : MonoBehaviour
 		{
 			Debug.Log(www.downloadHandler.text);
 		}
-	}
-
-	IEnumerator esperar(){
-
-		yield return new WaitForSeconds(3);
 	}
 
 
