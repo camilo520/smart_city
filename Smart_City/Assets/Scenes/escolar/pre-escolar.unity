@@ -817,7 +817,7 @@ RectTransform:
   m_GameObject: {fileID: 74986091}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.62500006, y: 0.5, z: 0.62500006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1482061566}
   m_RootOrder: 1
@@ -859,7 +859,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 88661c3106330674cbf02dce01090149, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30ef8c73f69aabc4194b6999ae167f05, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1080,7 +1080,7 @@ RectTransform:
   m_GameObject: {fileID: 86335323}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.62500006, y: 0.5, z: 0.62500006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1482061566}
   m_RootOrder: 2
@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 88661c3106330674cbf02dce01090149, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30ef8c73f69aabc4194b6999ae167f05, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9566,7 +9566,7 @@ RectTransform:
   m_GameObject: {fileID: 958388918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.62500006, y: 0.5, z: 0.62500006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1482061566}
   m_RootOrder: 0
@@ -9608,7 +9608,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 88661c3106330674cbf02dce01090149, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30ef8c73f69aabc4194b6999ae167f05, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10794,7 +10794,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Tienes que ubicar los sensores en los lugares correspondientes
+  m_Text: 'Tienes que ubicar los sensores de calidad de aire en los lugares correspondientes
 
 
 
@@ -14865,7 +14865,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 272.68655, y: -182.3}
-  m_SizeDelta: {x: 300, y: 100}
+  m_SizeDelta: {x: 300, y: 91.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1482061568
 MonoBehaviour:
