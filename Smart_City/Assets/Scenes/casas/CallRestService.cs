@@ -14,8 +14,8 @@ public class CallRestService : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		StartCoroutine(postUnityWebRequest());
-		StartCoroutine(getUnityWebRequest());
+		//StartCoroutine(postUnityWebRequest());
+		//StartCoroutine(getUnityWebRequest());
 	
 	}
 
@@ -31,7 +31,7 @@ public class CallRestService : MonoBehaviour
 	{
 		while (true)
 		{
-			por = Slider.porc;
+			por = SliderCasas1.porc;
 			///<summary>
 			/// Post using UnityWebRequest class
 			/// </summary>
