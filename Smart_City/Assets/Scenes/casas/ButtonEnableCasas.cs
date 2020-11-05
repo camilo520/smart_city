@@ -19,6 +19,7 @@ public class ButtonEnableCasas : MonoBehaviour
         if(DropSlotCasas1.encasilla==true && DropSlotCasas2.encasilla == true && DropSlotCasas3.encasilla == true)
         {
             continuar.interactable = true;
+
         }
         else
         {

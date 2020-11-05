@@ -9012,7 +9012,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sector educativo
+  m_Text: Sector comercial
 --- !u!222 &901592467
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15554,7 +15554,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sector comercial
+  m_Text: Sector educativo
 --- !u!222 &1659504050
 CanvasRenderer:
   m_ObjectHideFlags: 0
