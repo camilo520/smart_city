@@ -498,7 +498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f739dbd68a33fd641ad8588e3ccf1d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WEB_URL: https://things.ubidots.com/api/v1.6/devices/prueba/?token=BBFF-yNzuzk5lfdiuZ7IgLtDj7bAkFUodXZ
+  WEB_URL: https://things.ubidots.com/api/v1.6/devices/prueba1/?token=BBFF-nkk1C2p0psneBMeuWK5Sgimr2itO4R
 --- !u!4 &27694166
 Transform:
   m_ObjectHideFlags: 0
