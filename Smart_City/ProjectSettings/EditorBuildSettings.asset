@@ -47,4 +47,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/escolar/pre-escolar.unity
     guid: 47bf70cf36bdbce4689c70276bdc3554
+  - enabled: 1
+    path: Assets/Scenes/industrial/pre-industrial.unity
+    guid: 880c73d280c43424dae48dec69ae8388
+  - enabled: 1
+    path: Assets/Scenes/mixto/pre-comercial.unity
+    guid: 7d476927d6403564f9b73fbc33b94564
+  - enabled: 1
+    path: Assets/Scenes/parque/pre-parque.unity
+    guid: d8b8017cabc4b2d4589da1f00cfed81a
   m_configObjects: {}

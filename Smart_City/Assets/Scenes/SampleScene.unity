@@ -7225,7 +7225,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SampleScene 5
+          m_StringArgument: pre-industrial
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &748222203
@@ -14775,7 +14775,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SampleScene 6
+          m_StringArgument: pre-comercial
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1572259026
@@ -19327,7 +19327,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SampleScene 7
+          m_StringArgument: pre-parque
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2063231809
