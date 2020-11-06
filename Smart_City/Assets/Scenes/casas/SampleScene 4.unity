@@ -4146,6 +4146,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b05c2841e7e91349a3d42b995c3dc46, type: 3}
   m_PrefabInstance: {fileID: 1177756805}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &388207431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 388207432}
+  - component: {fileID: 388207434}
+  - component: {fileID: 388207433}
+  m_Layer: 5
+  m_Name: texto contexto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &388207432
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388207431}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1629190159}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -147, y: -60}
+  m_SizeDelta: {x: 273.3, y: 45.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &388207433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388207431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "En el sector de casas de la ciudad de Cleverville, se han presentado diferentes
+    tipos de cambios en la temperatura relativa que se presenta en el entorno, por
+    ello se han decidi\xF3 colocar diferentes sensores en puntos estrat\xE9gicos,
+    para monitorear el estado meteorol\xF3gico del mismo, principalmente se desea
+    saber la temperatura y humedad relativa del sector, y que se simulen las condiciones
+    \xF3ptimas de la misma"
+--- !u!222 &388207434
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388207431}
+  m_CullTransparentMesh: 0
 --- !u!1001 &388294188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4287,7 +4371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 136.8258, y: -38}
+  m_AnchoredPosition: {x: 154, y: -38}
   m_SizeDelta: {x: 275.7, y: 47.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395876411
@@ -7115,6 +7199,88 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d4631c3769ad84a41aabd8e691c04960, type: 3}
   m_PrefabInstance: {fileID: 635475796}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &647986823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 647986824}
+  - component: {fileID: 647986826}
+  - component: {fileID: 647986825}
+  m_Layer: 5
+  m_Name: instrucciones texto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &647986824
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647986823}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1629190159}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -651, y: -61}
+  m_SizeDelta: {x: 273.3, y: 45.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &647986825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647986823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "Usted como ingeniero en formaci\xF3n, haga uso de las barras deslizadoras 
+    para modificar los valores que recibir\xE1n los sensores, envi\xE9 esos datos
+    a una plataforma en la nube y simule las condiciones \xF3ptimas para pasar a
+    la siguiente zona."
+--- !u!222 &647986826
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647986823}
+  m_CullTransparentMesh: 0
 --- !u!1001 &659819332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17174,6 +17340,8 @@ RectTransform:
   - {fileID: 1500738323}
   - {fileID: 745286029}
   - {fileID: 456598817}
+  - {fileID: 388207432}
+  - {fileID: 647986824}
   m_Father: {fileID: 1148378977}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18027,7 +18195,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -125.5, y: -38}
+  m_AnchoredPosition: {x: -147, y: -38}
   m_SizeDelta: {x: 273.3, y: 45.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1706455892
@@ -18063,7 +18231,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Contexto del caso
+  m_Text: 'Contexto del caso
+
+'
 --- !u!222 &1706455893
 CanvasRenderer:
   m_ObjectHideFlags: 0
