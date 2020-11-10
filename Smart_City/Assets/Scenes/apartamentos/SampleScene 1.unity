@@ -770,7 +770,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sensores a utilizar
+  m_Text: Sensores disponibles
 --- !u!222 &78154970
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -986,18 +986,21 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: informacion del sensor de humedad
+  m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
+    detectar la temperatura y humedad del ambeiente.\nCaracteristicas:\n-5V DC\n-Rango
+    de valores 20-95% en humedad y 0 a 50\xB0 temp\n-Salida digital\n-Dimensiones:
+    3.6x1.4x1.4cm"
 --- !u!222 &110680121
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5412,20 +5415,21 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'informacion del sensor de aire
-
-'
+  m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
+    detectar gases presentes en el ambiente(Amoniaco, Dioxido de Nitr\xF3geno, Alcohol,
+    Benzeno, Dioxido y Monoxido de carbono)\nCaracteristicas:\n-5V DC\n-Valores que
+    registra 10-1000ppm\n-Salida digital\n-Dimensiones: 3.6x1.5x1.5cm"
 --- !u!222 &583574576
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13175,8 +13179,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 398.4, y: -138.6}
-  m_SizeDelta: {x: 275.7, y: 47.4}
+  m_AnchoredPosition: {x: 392, y: -70}
+  m_SizeDelta: {x: 421.83392, y: 43.570442}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1323974033
 MonoBehaviour:
@@ -13209,9 +13213,14 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: informacion del contexto
+  m_Text: "En el sector de cleverville existen normativas que regulan el ruido en
+    sectores residenciales, dichas normas rigen no se permiten ruidos muy fuertes
+    en determinados tiempos del d\xEDa.  En el ayuntamiento de cleverville han llegado
+    muchas quejas por parte de los residentes acerca de que se presenta mucho ruido.
+    En las lecturas que realiza en un sensor se identifica un valor de 80dB debido
+    a una construcci\xF3n que se est\xE1 realizando a los alrededores."
 --- !u!222 &1323974034
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13279,18 +13288,21 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: informacion del sensor de ruido
+  m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
+    detectar de forma f\xE1cil, r\xE1pida y precisa vibraci\xF3n producida en alg\xFAn
+    lugar\nCaracteristicas:\n-5V DC\n-Valor minimo de registro 55 dB\n-Salida digital\n-Dimensiones:
+    3.6x1.5x1.5cm"
 --- !u!222 &1328261149
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18278,7 +18290,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: instrucciones de lo que tiene que hacer
+  m_Text: "Lee las descripciones de los sensores y haz clic en el bot\xF3n Continuar."
 --- !u!222 &1850630965
 CanvasRenderer:
   m_ObjectHideFlags: 0
