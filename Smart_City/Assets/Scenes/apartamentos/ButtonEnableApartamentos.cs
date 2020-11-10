@@ -16,7 +16,7 @@ public class ButtonEnableApartamentos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (DropSlotApartamentos1.encasilla == true && DropSlotApartamentos2.encasilla == true && DropSlotApartamentos3.encasilla == true)
+        if (DropSlotApartamentos1.encasilla == true)
         {
             continuar.interactable = true;
         }

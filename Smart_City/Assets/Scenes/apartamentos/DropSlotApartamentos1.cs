@@ -12,7 +12,7 @@ public class DropSlotApartamentos1 : MonoBehaviour, IDropHandler
     {
         if (!item)
         {
-            item = DragHandlerApartamentos.itemDragginng;
+            item = DragHandlerAparatamentosCorrecto.itemDragginng;
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
             Debug.Log("Soy el primero");
