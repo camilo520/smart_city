@@ -21,7 +21,7 @@ public class SliderCasas1 : MonoBehaviour
 
     public void actualizacionTexto(float value)
     {
-        porcentaje.text = Mathf.RoundToInt(value * 100) + "";
+        porcentaje.text = Mathf.RoundToInt(value) + "";
         int otro = 0;
         if (Int32.TryParse(porcentaje.text, out otro))
         {

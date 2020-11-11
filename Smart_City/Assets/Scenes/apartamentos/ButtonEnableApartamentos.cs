@@ -5,12 +5,17 @@ using UnityEngine.UI;
 
 public class ButtonEnableApartamentos : MonoBehaviour
 {
-    public Button continuar;
+    public GameObject slider;
+    public GameObject texto1;
+    public GameObject texto2;
 
     // Start is called before the first frame update
     void Start()
     {
-        continuar.interactable = false;
+        slider.SetActive(false);
+        texto1.SetActive(false);
+        texto2.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -18,11 +23,15 @@ public class ButtonEnableApartamentos : MonoBehaviour
     {
         if (DropSlotApartamentos1.encasilla == true)
         {
-            continuar.interactable = true;
+            slider.SetActive(true);
+            texto1.SetActive(true);
+            texto2.SetActive(true);
         }
         else
         {
-            continuar.interactable = false;
+            slider.SetActive(false);
+            texto1.SetActive(false);
+            texto2.SetActive(false);
         }
     }
 }
