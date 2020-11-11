@@ -7,10 +7,12 @@ using UnityEngine.UIElements;
 public class ComprobarApartamentos : MonoBehaviour
 {
     public GameObject panel;
+    public GameObject panel2;
     // Start is called before the first frame update
     void Start()
     {
         panel.SetActive(false);
+        panel2.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,12 +27,14 @@ public class ComprobarApartamentos : MonoBehaviour
         {
             Debug.Log("Sisas");
             panel.SetActive(true);
+            panel2.SetActive(false);
         }
 
         else
         {
             Debug.Log("Nonas");
             panel.SetActive(false);
+            panel2.SetActive(true);
         }
     }
     }

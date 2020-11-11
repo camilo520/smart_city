@@ -18495,7 +18495,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 11.27}
-  m_SizeDelta: {x: 372.4, y: 111.8}
+  m_SizeDelta: {x: 372.4, y: 146.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1850630964
 MonoBehaviour:
@@ -18530,8 +18530,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lee el contexto del caso y las descripciones de los sensores, cuando termines
-    haz clic en el bot\xF3n Continuar para avanzar a la parte practica de la simulacion."
+  m_Text: "Lee el contexto del caso y las descripciones de los sensores.\n\nCuando
+    termines haz clic en el bot\xF3n Continuar para avanzar a la parte practica de
+    la simulacion."
 --- !u!222 &1850630965
 CanvasRenderer:
   m_ObjectHideFlags: 0
