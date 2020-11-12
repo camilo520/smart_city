@@ -13341,7 +13341,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 392, y: -70}
-  m_SizeDelta: {x: 600, y: 43.570442}
+  m_SizeDelta: {x: 691.7, y: 43.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1323974033
 MonoBehaviour:
@@ -13376,12 +13376,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "En el sector de cleverville existen normativas que regulan el ruido en
-    sectores residenciales, dichas normas no permiten ruidos muy fuertes en determinados
-    horas del d\xEDa.  En el ayuntamiento de cleverville han llegado muchas quejas
-    por parte de los residentes acerca de que se presenta mucho ruido en esta zona
-    residencial. En las lecturas que realiza en un sensor se identifica un valor
-    de 80dB debido a una construcci\xF3n que se est\xE1 realizando a los alrededores."
+  m_Text: "En el sector de Cleverville existen normativas que regulan el ruido en
+    sectores residenciales, una de estas normativas considera el rango entre 55 a
+    65 dB como tranquilidad y ruido moderado para estas zonas.  En el ayuntamiento
+    de Cleverville han llegado muchas quejas por parte de los residentes del sector
+    los cuales notifican que se presenta mucho ruido en esta zona residencial. Por
+    esta raz\xF3n el ayuntamiento desea implementar un sistema de monitoreo del ruido
+    haciendo uso de sensores en esta zona.  Los sensores que ha adquirido el ayuntamiento
+    son los siguientes:"
 --- !u!222 &1323974034
 CanvasRenderer:
   m_ObjectHideFlags: 0

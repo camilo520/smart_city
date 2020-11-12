@@ -23,7 +23,7 @@ public class ComprobarApartamentos : MonoBehaviour
 
     public void comprobar()
     {
-        if (SliderCasas1.porc >= 40 && SliderCasas1.porc <= 55)
+        if (SliderCasas1.porc >= 55 && SliderCasas1.porc <= 65)
         {
             Debug.Log("Sisas");
             panel.SetActive(true);
