@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class SliderCasas1 : MonoBehaviour
 {
-    public static int porc;
+    public static int porc=80;
     Text porcentaje;
     // Start is called before the first frame update
     void Start()

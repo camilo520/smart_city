@@ -1424,7 +1424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.67, y: -104.52}
+  m_AnchoredPosition: {x: 5.67, y: -118.79}
   m_SizeDelta: {x: 466.3, y: 213.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &159907536
@@ -1460,11 +1460,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'No estas en el rango correcto de dB que debe detectar el sensor de ruido.
+  m_Text: 'No estas en el rango correcto de dB que debe detectar el sensor de ruido
+    para que se cumpla la norma de tranquilidad y ruido moderado.
 
-
-    Vuelve
-    a intentarlo por favor'
+'
 --- !u!222 &159907537
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6139,6 +6138,7 @@ MonoBehaviour:
   slider: {fileID: 1912657199}
   texto1: {fileID: 286661478}
   texto2: {fileID: 2048700386}
+  validar: {fileID: 879881826}
 --- !u!114 &639525869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10947,7 +10947,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.67, y: 7.3}
+  m_AnchoredPosition: {x: 5.67, y: -2.3}
   m_SizeDelta: {x: 701.8, y: 213.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1179437348
@@ -11436,7 +11436,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Volver a intentar
+  m_Text: Volver a intentarlo
 --- !u!222 &1227901525
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13996,7 +13996,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Estas en el rango correcto de dB que debe detectar el sensor de ruido
+  m_Text: Estas en el rango correcto de dB que deberia detectar el sensor para que
+    se cumpla la norma de tranquilidad y ruido moderado.
 --- !u!222 &1510020167
 CanvasRenderer:
   m_ObjectHideFlags: 0
