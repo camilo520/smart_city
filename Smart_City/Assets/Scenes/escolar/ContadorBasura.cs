@@ -7,31 +7,53 @@ public class ContadorBasura : MonoBehaviour
 {
 
     public Text contador;
+    public bool condition = false;
     private float tiempo = 0f;
     // Start is called before the first frame update
     void Start()
     {
-        contador.text = " " + tiempo;
+        contador.text = " " + tiempo + " Kg";
+        StartCoroutine(contaminacion());
     }
 
     // Update is called once per frame
     void Update()
     {
-        tiempo += Time.deltaTime;
-        contador.text = " " + tiempo.ToString("f0");
-        /*if(tiempo>=5 && tiempo <= 10)
+        
+        if(tiempo>=5 && tiempo <= 14)
         {
             Debug.Log("Bien");
         }
-        else if (tiempo >= 11 && tiempo <= 20)
+        else if (tiempo >= 15 && tiempo <= 30)
         {
             Debug.Log("Mal");
         }
-        else if(tiempo >=21)
+        else if(tiempo >=31)
         {
             Debug.Log("En la inmunda");
 
-        }*/
+        }
     }
 
+    IEnumerator contaminacion()
+    {
+        while (true)
+        {
+            
+            if (condition == true)
+            {
+                
+                tiempo += Random.Range(1, 8);
+                contador.text = " " + tiempo.ToString("f0") + " Kg";
+                Debug.Log(tiempo);
+
+            }
+            else
+            {
+
+            }
+            yield return new WaitForSeconds(3);
+        }
+        
+    }
 }
