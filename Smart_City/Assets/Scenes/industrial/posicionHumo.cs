@@ -24,7 +24,6 @@ public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBegin
     {
         //Debug.Log(humo.transform.position.y);
         
-        Debug.Log(posy);
         contaminado();
     }
 

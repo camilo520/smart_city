@@ -6,17 +6,19 @@ using UnityEngine.EventSystems;
 public class DropSlotComercial1 : MonoBehaviour, IDropHandler
 {
     public GameObject item;
+    public GameObject textoContador;
     public static bool encasilla;
 
     public void OnDrop(PointerEventData eventData)
     {
         if (!item)
         {
-            item = DragHandlerComercial.itemDragginng;
+            item = DragHandlerComercialCorrecto.itemDragginng;
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
             Debug.Log("Soy el primero");
             encasilla = true;
+            textoContador.SetActive(true);
         }
         else
         {
@@ -27,7 +29,7 @@ public class DropSlotComercial1 : MonoBehaviour, IDropHandler
     // Start is called before the first frame update
     void Start()
     {
-
+        encasilla = false;
     }
 
     // Update is called once per frame
@@ -35,7 +37,8 @@ public class DropSlotComercial1 : MonoBehaviour, IDropHandler
     {
         if (item != null && item.transform.parent != transform)
         {
-            item = null;
+            item = null; 
+            encasilla = false;
             Debug.Log("No la pusiste");
         }
     }

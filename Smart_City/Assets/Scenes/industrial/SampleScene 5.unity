@@ -699,7 +699,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 783604938}
         m_TargetAssemblyTypeName: ventanaEmergente, Assembly-CSharp
         m_MethodName: closePanel2
         m_Mode: 1
@@ -3232,7 +3232,7 @@ RectTransform:
   m_Children:
   - {fileID: 2057258699}
   m_Father: {fileID: 1081185249}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3506,7 +3506,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 783604938}
         m_TargetAssemblyTypeName: ventanaEmergente, Assembly-CSharp
         m_MethodName: openPanel
         m_Mode: 1
@@ -4421,7 +4421,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 963194230}
         m_TargetAssemblyTypeName: ventanaEmergente, Assembly-CSharp
         m_MethodName: openPanel
         m_Mode: 1
@@ -7657,6 +7657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 783604937}
   - component: {fileID: 783604936}
+  - component: {fileID: 783604938}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -7692,6 +7693,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &783604938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783604935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389180a2ddaff324d91661e820e65a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 854167958}
+  panel2: {fileID: 689326196}
+  panel3: {fileID: 1472740936}
 --- !u!1001 &786617827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8231,7 +8247,7 @@ RectTransform:
   - {fileID: 2057817681}
   - {fileID: 925906951}
   m_Father: {fileID: 1081185249}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8580,7 +8596,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 783604938}
         m_TargetAssemblyTypeName: ventanaEmergente, Assembly-CSharp
         m_MethodName: closePanel
         m_Mode: 1
@@ -8727,7 +8743,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 963194229}
         m_TargetAssemblyTypeName: boton_apartamento, Assembly-CSharp
         m_MethodName: changescene
         m_Mode: 5
@@ -8932,7 +8948,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 783604938}
         m_TargetAssemblyTypeName: ventanaEmergente, Assembly-CSharp
         m_MethodName: openPanel3
         m_Mode: 1
@@ -10344,6 +10360,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10428,6 +10445,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b54fc9a4a67c7342ac75b13f3fc3c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389180a2ddaff324d91661e820e65a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 767878594}
+  panel2: {fileID: 0}
+  panel3: {fileID: 0}
 --- !u!1001 &969001056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11545,10 +11577,10 @@ RectTransform:
   m_Children:
   - {fileID: 2087201290}
   - {fileID: 767878595}
-  - {fileID: 1472740937}
-  - {fileID: 689326197}
-  - {fileID: 339829944}
   - {fileID: 854167959}
+  - {fileID: 689326197}
+  - {fileID: 1472740937}
+  - {fileID: 339829944}
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14404,7 +14436,7 @@ RectTransform:
   - {fileID: 525034187}
   - {fileID: 702971357}
   m_Father: {fileID: 1081185249}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14908,7 +14940,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 783604938}
         m_TargetAssemblyTypeName: ventanaEmergente, Assembly-CSharp
         m_MethodName: closePanel3
         m_Mode: 1
@@ -15040,7 +15072,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 963194230}
         m_TargetAssemblyTypeName: ventanaEmergente, Assembly-CSharp
         m_MethodName: closePanel
         m_Mode: 1
@@ -19302,7 +19334,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 783604938}
         m_TargetAssemblyTypeName: ventanaEmergente, Assembly-CSharp
         m_MethodName: openPanel2
         m_Mode: 1

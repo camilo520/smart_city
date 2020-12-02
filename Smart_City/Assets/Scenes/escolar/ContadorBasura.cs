@@ -7,7 +7,6 @@ public class ContadorBasura : MonoBehaviour
 {
 
     public Text contador;
-    public bool condition = false;
     private float tiempo = 0f;
     // Start is called before the first frame update
     void Start()
@@ -40,7 +39,7 @@ public class ContadorBasura : MonoBehaviour
         while (true)
         {
             
-            if (condition == true)
+            if (DropSlotComercial1.encasilla == true)
             {
                 
                 tiempo += Random.Range(1, 8);
