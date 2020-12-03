@@ -7,11 +7,14 @@ public class ContadorBasura : MonoBehaviour
 {
 
     public Text contador;
-    private float tiempo = 0f;
+    public Text estado;
+    public static float tiempo = 0f;
+    public GameObject panel;
     // Start is called before the first frame update
     void Start()
     {
         contador.text = " " + tiempo + " Kg";
+        estado.text = "";
         StartCoroutine(contaminacion());
     }
 
@@ -22,27 +25,33 @@ public class ContadorBasura : MonoBehaviour
         if(tiempo>=5 && tiempo <= 14)
         {
             Debug.Log("Bien");
+            estado.text = "Poca basura";
         }
-        else if (tiempo >= 15 && tiempo <= 30)
+        else if (tiempo >= 15 && tiempo <= 25)
         {
             Debug.Log("Mal");
+            estado.text = "Media basura";
         }
-        else if(tiempo >=31)
+        else if(tiempo >=26)
         {
             Debug.Log("En la inmunda");
-
+            estado.text = "Mucha basura";
+        }
+        else
+        {
+            estado.text = "";
         }
     }
 
     IEnumerator contaminacion()
     {
-        while (true)
+        while (BotonRecoger.b==false)
         {
             
             if (DropSlotComercial1.encasilla == true)
             {
                 
-                tiempo += Random.Range(1, 8);
+                tiempo += Random.Range(2, 4);
                 contador.text = " " + tiempo.ToString("f0") + " Kg";
                 Debug.Log(tiempo);
 
@@ -51,8 +60,10 @@ public class ContadorBasura : MonoBehaviour
             {
 
             }
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(2);
         }
         
     }
+
+
 }
