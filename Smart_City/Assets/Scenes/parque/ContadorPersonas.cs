@@ -47,7 +47,7 @@ public class ContadorPersonas : MonoBehaviour
 
     private void sumarPersonas()
     {
-        personas += 1;  
+        personas += 1; 
     }
 
     private void restarPersonas()

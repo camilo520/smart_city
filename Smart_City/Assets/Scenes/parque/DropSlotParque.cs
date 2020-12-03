@@ -3,27 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DropSlotIndustrial : MonoBehaviour, IDropHandler
+public class DropSlotParque : MonoBehaviour, IDropHandler
 {
     public GameObject item;
-    public GameObject humo;
+    public GameObject mas;
+    public GameObject menos;
+    public GameObject contador;
     public static bool encasilla;
 
     public void OnDrop(PointerEventData eventData)
     {
         if (!item)
         {
-            item = DragHandlerIndustrialCorrecto.itemDragginng;
+            item = DragHandlerParqueCorrecto.itemDragginng;
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
             Debug.Log("Soy el primero");
             encasilla = true;
-            humo.SetActive(true);
+            mas.SetActive(true);
+            menos.SetActive(true);
+            contador.SetActive(true);
         }
         else
         {
             encasilla = false;
-            humo.SetActive(false);
+            mas.SetActive(false);
+            menos.SetActive(false);
+            contador.SetActive(false);
         }
     }
 
@@ -31,7 +37,9 @@ public class DropSlotIndustrial : MonoBehaviour, IDropHandler
     void Start()
     {
         encasilla = false;
-        humo.SetActive(false);
+        mas.SetActive(false);
+        menos.SetActive(false);
+        contador.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,7 +49,9 @@ public class DropSlotIndustrial : MonoBehaviour, IDropHandler
         {
             item = null;
             encasilla = false;
-            humo.SetActive(false);
+            mas.SetActive(false);
+            menos.SetActive(false);
+            contador.SetActive(false);
             Debug.Log("No la pusiste");
         }
     }

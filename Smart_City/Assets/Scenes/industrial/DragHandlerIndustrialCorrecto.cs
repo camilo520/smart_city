@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragHandlerIndustrial : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
+public class DragHandlerIndustrialCorrecto : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
 {
     public static GameObject itemDragginng;
 
