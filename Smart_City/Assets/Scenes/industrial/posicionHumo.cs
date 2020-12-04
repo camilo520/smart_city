@@ -2,12 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
 {
 
     public static GameObject humo;
+    public Text texto;
     Vector3 posicioninicial;
     Transform startParent;
     Transform dragParent;
@@ -16,7 +18,7 @@ public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBegin
     void Start()
     {
         dragParent = GameObject.FindGameObjectWithTag("DragParent").transform;
-
+        texto.text = "";
     }
 
     // Update is called once per frame
@@ -63,17 +65,15 @@ public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBegin
     {
         humo = gameObject;
         Int32.TryParse(humo.transform.position.y.ToString(), out posy);
-        if (posy >= 255)
+        if (posy >= 200)
         {
             Debug.Log("Esta en el cielo");
+            texto.text = "Contaminacion en la atmosfera";
         }
-        else if (posy >= 170 && posy<255)
-        {
-            Debug.Log("Esta en los edificios");
-        }
-        else if (posy<170 && posy>=0)
+        else if (posy<=199 && posy>=0)
         {
             Debug.Log("En la calle");
+            texto.text = "Contaminacion muy cerca de la ciudad";
         }
         else
         {
