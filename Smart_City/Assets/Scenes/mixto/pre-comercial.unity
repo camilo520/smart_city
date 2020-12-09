@@ -2037,7 +2037,7 @@ Transform:
   - {fileID: 1460816397}
   - {fileID: 1946329130}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &227339815
 GameObject:
@@ -3863,6 +3863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  textoContador: {fileID: 0}
 --- !u!114 &389935057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7828,7 +7829,7 @@ Transform:
   - {fileID: 252237665}
   - {fileID: 1827401967}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &850896224
 PrefabInstance:
@@ -9426,7 +9427,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu principal
+  m_Text: Volver
 --- !u!222 &1006250195
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10721,7 +10722,7 @@ RectTransform:
   m_Children:
   - {fileID: 1118056783}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11740,7 +11741,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1384597624
 MonoBehaviour:
@@ -11755,6 +11756,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 994735787}
+  panel2: {fileID: 0}
+  panel3: {fileID: 0}
 --- !u!1001 &1413623648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12550,7 +12553,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SampleScene
+          m_StringArgument: SampleScene 6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1501355454
@@ -17079,7 +17082,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41651e74699fdcb4c97515f00011738a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  continuar: {fileID: 1903913625}
+  contador: {fileID: 0}
+  validar: {fileID: 0}
 --- !u!114 &1903913624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20027,7 +20031,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Continuar
+  m_Text: Comprobar
 --- !u!222 &2143310357
 CanvasRenderer:
   m_ObjectHideFlags: 0

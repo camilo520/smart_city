@@ -16,7 +16,7 @@ public class ButtonEnableEjecutivo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (DropSlotEjecutivo1.encasilla == true && DropSlotEjecutivo2.encasilla == true && DropSlotEjecutivo3.encasilla == true)
+        if (DropSlotEjecutivo1.encasilla == true)
         {
             continuar.interactable = true;
         }

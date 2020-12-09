@@ -7005,7 +7005,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: pre-escolar
+          m_StringArgument: SampleScene 3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &743166389
@@ -7225,7 +7225,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: pre-industrial
+          m_StringArgument: SampleScene 5
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &748222203
@@ -14775,7 +14775,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: pre-comercial
+          m_StringArgument: SampleScene 6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1572259026
@@ -16298,7 +16298,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: pre-ejecutivo
+          m_StringArgument: SampleScene 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1752782774
@@ -19327,7 +19327,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: pre-parque
+          m_StringArgument: SampleScene 7
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2063231809
