@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class DropSlotComercial1 : MonoBehaviour, IDropHandler
 {
     public GameObject item;
-    public GameObject textoContador;
+    //public GameObject textoContador;
     public static bool encasilla;
 
     public void OnDrop(PointerEventData eventData)
@@ -18,7 +18,7 @@ public class DropSlotComercial1 : MonoBehaviour, IDropHandler
             item.transform.position = transform.position;
             Debug.Log("Soy el primero");
             encasilla = true;
-            textoContador.SetActive(true);
+            //textoContador.SetActive(true);
         }
         else
         {

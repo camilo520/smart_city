@@ -12,7 +12,7 @@ public class DropSlotComercial3 : MonoBehaviour, IDropHandler
     {
         if (!item)
         {
-            item = DragHandlerComercial.itemDragginng;
+            item = DragHandlerComercialCorrecto.itemDragginng;
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
             Debug.Log("Soy el tercero");
