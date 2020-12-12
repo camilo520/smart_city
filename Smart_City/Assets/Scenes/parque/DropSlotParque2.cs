@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DropSlotParque : MonoBehaviour, IDropHandler
+public class DropSlotParque2 : MonoBehaviour, IDropHandler
 {
     public GameObject item;
     public static bool encasilla;
@@ -15,7 +15,7 @@ public class DropSlotParque : MonoBehaviour, IDropHandler
             item = DragHandlerParqueCorrecto.itemDragginng;
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
-            Debug.Log("Soy el primero");
+            Debug.Log("Soy el segundo");
             encasilla = true;
         }
         else
