@@ -15,17 +15,27 @@ public class ContadorBasura : MonoBehaviour
     public static float tiempo = 0f;
     public static float tiempo2 = 0f;
     public static float tiempo3 = 0f;
-    public GameObject panel;
+    public GameObject panel2;
+    private bool desbordado;
+
     // Start is called before the first frame update
     void Start()
     {
-        contador.text = " " + tiempo + " Kg";
-        contador2.text = " " + tiempo2 + " Kg";
-        contador3.text = " " + tiempo3 + " Kg";
+        tiempo = 0f;
+        tiempo2 = 0f;
+        tiempo3 = 0f;
+        desbordado = false;
+        //contador.text = " " + tiempo + " Kg";
+        //contador2.text = " " + tiempo2 + " Kg";
+        //contador3.text = " " + tiempo3 + " Kg";
         estado.text = "";
         estado2.text = "";
         estado3.text = "";
         StartCoroutine(contaminacion());
+        StartCoroutine(contaminacion2());
+        StartCoroutine(contaminacion3());
+        panel2.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -35,96 +45,140 @@ public class ContadorBasura : MonoBehaviour
 
         if (tiempo>=5 && tiempo <= 14 )
         {
-            Debug.Log("Bien");
-            estado.text = "Poca basura";
+            estado.text = "Bote medio vacio";
+            desbordado = false;
         }
         else if (tiempo >= 15 && tiempo <= 25)
         {
-            Debug.Log("Mal");
-            estado.text = "Media basura";
+            estado.text = "Bote medio lleno";
+            desbordado = false;
         }
         else if(tiempo >=26)
         {
-            Debug.Log("En la inmunda");
-            estado.text = "Mucha basura";
+            estado.text = "Bote lleno";
+            desbordado = false;
+
         }
         else
         {
             estado.text = "";
         }
 
+        
+
 
         //---------------------tiempo2-------------
 
         if (tiempo2 >= 5 && tiempo2 <= 14)
         {
-            Debug.Log("Bien");
-            estado2.text = "Poca basura";
+            estado2.text = "Bote medio vacio";
+            desbordado = false;
         }
         else if (tiempo2 >= 15 && tiempo2 <= 25)
         {
-            Debug.Log("Mal");
-            estado2.text = "Media basura";
+            estado2.text = "Bote medio lleno";
+            desbordado = false;
         }
         else if (tiempo2 >= 26)
         {
-            Debug.Log("En la inmunda");
-            estado2.text = "Mucha basura";
+            estado2.text = "Bote lleno";
+            desbordado = false;
         }
         else
         {
             estado2.text = "";
+            desbordado = false;
         }
 
+        
         //---------------------tiempo3-------------
 
         if (tiempo3 >= 5 && tiempo3 <= 14)
         {
-            Debug.Log("Bien");
-            estado3.text = "Poca basura";
+            estado3.text = "Bote medio vacio";
+            desbordado = false;
         }
         else if (tiempo3 >= 15 && tiempo3 <= 25)
         {
-            Debug.Log("Mal");
-            estado3.text = "Media basura";
+            estado3.text = "Bote medio lleno";
+            desbordado = false;
         }
         else if (tiempo3 >= 26)
         {
-            Debug.Log("En la inmunda");
-            estado3.text = "Mucha basura";
+            estado3.text = "Bote lleno";
+            desbordado = false;
         }
         else
         {
             estado3.text = "";
+            
+        }
+
+        if (tiempo >= 40 || tiempo2 >= 40 || tiempo3 >= 40)
+        {
+            desbordado = true;
+            panel2.SetActive(true);
         }
 
     }
 
     IEnumerator contaminacion()
     {
-        while (BotonRecoger.b==false)
+        while (BotonRecoger.b==false && desbordado==false)
         {
+                    if (DropSlotComercial1.encasilla == true && DropSlotComercial2.encasilla == true && DropSlotComercial3.encasilla == true)
+                    {
+                        tiempo += Random.Range(2, 5);
+                        contador.text = " " + tiempo.ToString("f0") + " Kg";
+
+                    }
+                    else
+                    {
+
+                    }
+                    yield return new WaitForSeconds(2);
             
+            
+        }
+        
+    }
+
+    IEnumerator contaminacion2()
+    {
+        while (BotonRecoger2.b == false && desbordado == false)
+        {
+                if (DropSlotComercial1.encasilla == true && DropSlotComercial2.encasilla == true && DropSlotComercial3.encasilla == true)
+                {
+                    tiempo2 += Random.Range(2, 5);
+                    contador2.text = " " + tiempo2.ToString("f0") + " Kg";
+                }
+                else
+                {
+
+                }
+                yield return new WaitForSeconds(2);
+
+            }
+        }
+
+    IEnumerator contaminacion3()
+    {
+        while(BotonRecoger3.b == false && desbordado == false)
+            {
             if (DropSlotComercial1.encasilla == true && DropSlotComercial2.encasilla == true && DropSlotComercial3.encasilla == true)
             {
-                
-                tiempo += Random.Range(2, 4);
-                tiempo2 += Random.Range(2, 4);
-                tiempo3 += Random.Range(2, 4);
-                contador.text = " " + tiempo.ToString("f0") + " Kg";
-                contador2.text = " " + tiempo2.ToString("f0") + " Kg";
+                tiempo3 += Random.Range(2, 5);
                 contador3.text = " " + tiempo3.ToString("f0") + " Kg";
-                Debug.Log(tiempo);
-
             }
             else
             {
 
             }
             yield return new WaitForSeconds(2);
+
         }
-        
+    }
+
     }
 
 
-}

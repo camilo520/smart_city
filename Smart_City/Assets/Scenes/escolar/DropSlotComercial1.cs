@@ -41,6 +41,10 @@ public class DropSlotComercial1 : MonoBehaviour, IDropHandler
             encasilla = false;
             Debug.Log("No la pusiste");
         }
+
+        
     }
+
+
 
 }

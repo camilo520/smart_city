@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class BotonRecoger : MonoBehaviour
 {
     public Button recogio;
-    public GameObject panel;
     private int contador;
     public static bool b;
     // Start is called before the first frame update
@@ -20,7 +19,7 @@ public class BotonRecoger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        Debug.Log("bote 1: " + b);
     }
 
     public void recoger()
@@ -31,17 +30,15 @@ public class BotonRecoger : MonoBehaviour
             contador += 1;
         }
 
-        Debug.Log("este es el contador de intentos " + contador);
+        //Debug.Log("contador1 " + contador);
         if (contador == 3)
         {
             b = true;
-            panel.SetActive(true);
             ContadorBasura.tiempo = 0f;
         }
         else
         {
             b = false;
-            panel.SetActive(false);
         }
     }
 }

@@ -14,6 +14,8 @@ public class ButtonEnabledComercial : MonoBehaviour
     public Button validar;
     public Button validar2;
     public Button validar3;
+    public GameObject panel;
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +28,8 @@ public class ButtonEnabledComercial : MonoBehaviour
         text3.SetActive(false);
         validar.interactable = false;
         validar2.interactable = false;
-        validar3.interactable = false;
+        validar3.interactable = false; 
+
 
     }
 
@@ -58,5 +61,13 @@ public class ButtonEnabledComercial : MonoBehaviour
             validar2.interactable = false;
             validar3.interactable = false;
         }
+
+        if (BotonRecoger.b == true && BotonRecoger2.b == true && BotonRecoger3.b == true)
+        {
+            panel.SetActive(true);
+        }
+
+        Debug.Log("casilla 1: " + DropSlotComercial1.encasilla + " casilla 2: " + DropSlotComercial2.encasilla + " casilla 3: " + DropSlotComercial3.encasilla);
+        
     }
 }
