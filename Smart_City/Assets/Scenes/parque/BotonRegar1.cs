@@ -17,11 +17,17 @@ public class BotonRegar1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
     }
 
     public void recoger()
     {
-        ContadorHumedad.verdadero=false;
+
+        if (ContadorHumedad.tiempo > 700f && ContadorHumedad.tiempo <= 1023f)
+        {
+            ContadorHumedad.verdadero1=false;
+        }
+        
         //Debug.Log("contador1 " + contador);
     }
 }
