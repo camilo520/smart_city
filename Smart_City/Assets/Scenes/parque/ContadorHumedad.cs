@@ -9,6 +9,7 @@ public class ContadorHumedad : MonoBehaviour
     public Text humedad1;
     public Text humedad2;
     public Text avisoHumedad;
+    public Text avisoHumedad2;
     public GameObject panelIncorrecto;
     public GameObject panelCorrecto;
     public static float tiempo;
@@ -28,6 +29,7 @@ public class ContadorHumedad : MonoBehaviour
         humedad1.text = "";
         humedad2.text = "";
         avisoHumedad.text = "";
+        avisoHumedad2.text = "";
         verdadero1 = true;
         verdadero2 = true;
         sepaso = false;
@@ -58,6 +60,15 @@ public class ContadorHumedad : MonoBehaviour
         }else if (tiempo>=700f && tiempo<1023)
         {
             avisoHumedad.text = "Suelo Seco";
+        }
+        if (tiempo2 > 501f && tiempo2 < 700)
+        {
+            avisoHumedad2.text = "Suelo Humedo";
+
+        }
+        else if (tiempo2 >= 700f && tiempo2 < 1023)
+        {
+            avisoHumedad2.text = "Suelo Seco";
         }
 
     }

@@ -8,6 +8,7 @@ public class ButtonEnabledParque : MonoBehaviour
     public Button validar;
     public Button validar2;
     public GameObject texto;
+    public GameObject texto2;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class ButtonEnabledParque : MonoBehaviour
         validar.interactable = false;
         validar2.interactable = false;
         texto.SetActive(false);
+        texto2.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,6 +36,7 @@ public class ButtonEnabledParque : MonoBehaviour
             validar.interactable = false;
             validar2.interactable = false;
             texto.SetActive(false);
+            texto2.SetActive(false);
         }
     }
 
@@ -42,6 +45,7 @@ public class ButtonEnabledParque : MonoBehaviour
         while (true)
         {
             texto.SetActive(true);
+            texto2.SetActive(true);
             yield return new WaitForSeconds(3f);
         }
         
