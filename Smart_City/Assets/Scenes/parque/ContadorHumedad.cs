@@ -11,8 +11,8 @@ public class ContadorHumedad : MonoBehaviour
     public Text avisoHumedad;
     public GameObject panelIncorrecto;
     public GameObject panelCorrecto;
-    public static float tiempo=500f;
-    public static float tiempo2 = 500f;
+    public static float tiempo;
+    public static float tiempo2;
     public static bool verdadero1;
     public static bool verdadero2;
     private bool sepaso;
@@ -31,6 +31,8 @@ public class ContadorHumedad : MonoBehaviour
         verdadero1 = true;
         verdadero2 = true;
         sepaso = false;
+        panelCorrecto.SetActive(false);
+        panelIncorrecto.SetActive(false);
     }
 
     // Update is called once per frame
@@ -47,6 +49,7 @@ public class ContadorHumedad : MonoBehaviour
             sepaso = true;
             panelIncorrecto.SetActive(true);
         }
+        
 
         if(tiempo>501f && tiempo < 700)
         {
@@ -57,17 +60,15 @@ public class ContadorHumedad : MonoBehaviour
             avisoHumedad.text = "Suelo Seco";
         }
 
-        Debug.Log("tiempo: " + tiempo);
-
     }
 
     IEnumerator sumarHume1()
     {
-        while (true)
+        while (sepaso==false)
         {
-            if (DropSlotParque.encasilla == true && DropSlotParque2.encasilla == true && verdadero1 == true && sepaso==false)
+            if (DropSlotParque.encasilla == true && DropSlotParque2.encasilla == true && verdadero1 == true)
             {
-                tiempo += Random.Range(25, 30);
+                tiempo += Random.Range(15, 20);
                 humedad1.text = " " + tiempo.ToString("f0");
             }
             else
@@ -80,11 +81,11 @@ public class ContadorHumedad : MonoBehaviour
 
     IEnumerator restarHume1()
     {
-        while (true)
+        while (sepaso==false)
         {
-            if (DropSlotParque.encasilla == true && DropSlotParque2.encasilla == true && verdadero1 == false && sepaso==false)
+            if (DropSlotParque.encasilla == true && DropSlotParque2.encasilla == true && verdadero1 == false)
             {
-                tiempo -= Random.Range(25, 30);
+                tiempo -= Random.Range(20, 25);
                 humedad1.text = " " + tiempo.ToString("f0");
 
             }
@@ -99,11 +100,11 @@ public class ContadorHumedad : MonoBehaviour
 
     IEnumerator sumarHume2()
     {
-        while (true)
+        while (sepaso==false)
         {
-            if (DropSlotParque.encasilla == true && DropSlotParque2.encasilla == true && verdadero2 == true && sepaso == false)
+            if (DropSlotParque.encasilla == true && DropSlotParque2.encasilla == true && verdadero2 == true)
             {
-                tiempo2 += Random.Range(25, 30);
+                tiempo2 += Random.Range(15, 20);
                 humedad2.text = " " + tiempo2.ToString("f0");
             }
             else
@@ -116,11 +117,11 @@ public class ContadorHumedad : MonoBehaviour
 
     IEnumerator restarHume2()
     {
-        while (true)
+        while (sepaso==false)
         {
-            if (DropSlotParque.encasilla == true && DropSlotParque2.encasilla == true && verdadero2 == false && sepaso == false)
+            if (DropSlotParque.encasilla == true && DropSlotParque2.encasilla == true && verdadero2 == false)
             {
-                tiempo2 -= Random.Range(25, 30);
+                tiempo2 -= Random.Range(20, 25);
                 humedad2.text = " " + tiempo2.ToString("f0");
 
             }

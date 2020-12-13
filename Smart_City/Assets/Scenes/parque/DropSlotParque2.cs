@@ -36,8 +36,8 @@ public class DropSlotParque2 : MonoBehaviour, IDropHandler
     {
         if (item != null && item.transform.parent != transform)
         {
-            item = null;
             encasilla = false;
+            item = null;
             Debug.Log("No la pusiste");
         }
     }

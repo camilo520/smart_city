@@ -10878,6 +10878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   validar: {fileID: 1311460703}
+  validar2: {fileID: 21011406}
+  texto: {fileID: 1160761137}
 --- !u!114 &946665020
 MonoBehaviour:
   m_ObjectHideFlags: 0
