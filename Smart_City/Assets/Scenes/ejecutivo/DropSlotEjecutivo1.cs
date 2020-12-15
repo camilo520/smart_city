@@ -9,6 +9,7 @@ public class DropSlotEjecutivo1 : MonoBehaviour, IDropHandler
     public GameObject contador;
     public GameObject sumar;
     public GameObject restar;
+    public GameObject espacio1;
 
     public static bool encasilla;
 
@@ -24,6 +25,7 @@ public class DropSlotEjecutivo1 : MonoBehaviour, IDropHandler
             contador.SetActive(true);
             sumar.SetActive(true);
             restar.SetActive(true);
+            espacio1.SetActive(true);
         }
         else
         {
@@ -31,6 +33,7 @@ public class DropSlotEjecutivo1 : MonoBehaviour, IDropHandler
             contador.SetActive(false);
             sumar.SetActive(false);
             restar.SetActive(false);
+            espacio1.SetActive(false);
         }
     }
 
@@ -41,6 +44,7 @@ public class DropSlotEjecutivo1 : MonoBehaviour, IDropHandler
         contador.SetActive(false);
         sumar.SetActive(false);
         restar.SetActive(false);
+        espacio1.SetActive(false);
     }
 
     // Update is called once per frame
@@ -53,6 +57,7 @@ public class DropSlotEjecutivo1 : MonoBehaviour, IDropHandler
             contador.SetActive(false);
             sumar.SetActive(false);
             restar.SetActive(false);
+            espacio1.SetActive(false);
             Debug.Log("No la pusiste");
         }
     }
