@@ -6,28 +6,33 @@ using UnityEngine.EventSystems;
 public class DropSlotEjecutivo3 : MonoBehaviour, IDropHandler
 {
     public GameObject item;
+    public GameObject espacio3;
+
     public static bool encasilla;
 
     public void OnDrop(PointerEventData eventData)
     {
         if (!item)
         {
-            item = DragHandlerEjecutivo.itemDragginng;
+            item = DragHandlerEjecutivoCorrecto.itemDragginng;
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
             Debug.Log("Soy el tercero");
             encasilla = true;
+            espacio3.SetActive(true);
         }
         else
         {
             encasilla = false;
+            espacio3.SetActive(false);
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-
+        encasilla = false;
+        espacio3.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,6 +41,8 @@ public class DropSlotEjecutivo3 : MonoBehaviour, IDropHandler
         if (item != null && item.transform.parent != transform)
         {
             item = null;
+            encasilla = false;
+            espacio3.SetActive(false);
             Debug.Log("No la pusiste");
         }
     }

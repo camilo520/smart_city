@@ -6,9 +6,6 @@ using UnityEngine.EventSystems;
 public class DropSlotEjecutivo1 : MonoBehaviour, IDropHandler
 {
     public GameObject item;
-    public GameObject contador;
-    public GameObject sumar;
-    public GameObject restar;
     public GameObject espacio1;
 
     public static bool encasilla;
@@ -22,17 +19,11 @@ public class DropSlotEjecutivo1 : MonoBehaviour, IDropHandler
             item.transform.position = transform.position;
             Debug.Log("Soy el primero");
             encasilla = true;
-            contador.SetActive(true);
-            sumar.SetActive(true);
-            restar.SetActive(true);
             espacio1.SetActive(true);
         }
         else
         {
             encasilla = false;
-            contador.SetActive(false);
-            sumar.SetActive(false);
-            restar.SetActive(false);
             espacio1.SetActive(false);
         }
     }
@@ -41,9 +32,6 @@ public class DropSlotEjecutivo1 : MonoBehaviour, IDropHandler
     void Start()
     {
         encasilla = false;
-        contador.SetActive(false);
-        sumar.SetActive(false);
-        restar.SetActive(false);
         espacio1.SetActive(false);
     }
 
@@ -54,9 +42,6 @@ public class DropSlotEjecutivo1 : MonoBehaviour, IDropHandler
         {
             item = null;
             encasilla = false;
-            contador.SetActive(false);
-            sumar.SetActive(false);
-            restar.SetActive(false);
             espacio1.SetActive(false);
             Debug.Log("No la pusiste");
         }
