@@ -20,7 +20,7 @@ public class BotonEspacio3 : MonoBehaviour
         btn.onClick.AddListener(ocuparEspacio);
         Button btn2 = botonVaciar.GetComponent<Button>();
         btn2.onClick.AddListener(vaciarEspacio);
-        texto.text = "vacio";
+        texto.text = "Vacio";
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class BotonEspacio3 : MonoBehaviour
         Button btn2 = botonVaciar.GetComponent<Button>();
         btn.gameObject.SetActive(false);
         btn2.gameObject.SetActive(true);
-        texto.text = "ocupado";
+        texto.text = "Ocupado";
     }
     public void vaciarEspacio()
     {
@@ -44,7 +44,7 @@ public class BotonEspacio3 : MonoBehaviour
         Button btn2 = botonVaciar.GetComponent<Button>();
         btn.gameObject.SetActive(true);
         btn2.gameObject.SetActive(false);
-        texto.text = "vacio";
+        texto.text = "Vacio";
     }
 
 }

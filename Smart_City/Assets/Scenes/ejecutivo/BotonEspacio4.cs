@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BotonEspacio2 : MonoBehaviour
+public class BotonEspacio4 : MonoBehaviour
 {
     public Button botonOcupar;
     public Button botonVaciar;
@@ -46,5 +46,4 @@ public class BotonEspacio2 : MonoBehaviour
         btn2.gameObject.SetActive(false);
         texto.text = "Vacio";
     }
-
 }

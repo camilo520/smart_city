@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BotonEspacio2 : MonoBehaviour
+public class BotonEspacio5 : MonoBehaviour
 {
     public Button botonOcupar;
     public Button botonVaciar;
     private bool disponible = true;
     private bool noDisponible;
-    public static string espacio1;
+    public static string espacio5;
     public Text texto;
 
     // Start is called before the first frame update
@@ -46,5 +46,4 @@ public class BotonEspacio2 : MonoBehaviour
         btn2.gameObject.SetActive(false);
         texto.text = "Vacio";
     }
-
 }
