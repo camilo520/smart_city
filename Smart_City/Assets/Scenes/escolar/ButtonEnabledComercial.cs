@@ -11,6 +11,9 @@ public class ButtonEnabledComercial : MonoBehaviour
     public GameObject text;
     public GameObject text2;
     public GameObject text3;
+    public GameObject slider1;
+    public GameObject slider2;
+    public GameObject slider3;
     public Button validar;
     public Button validar2;
     public Button validar3;
@@ -28,7 +31,10 @@ public class ButtonEnabledComercial : MonoBehaviour
         text3.SetActive(false);
         validar.interactable = false;
         validar2.interactable = false;
-        validar3.interactable = false; 
+        validar3.interactable = false;
+        slider1.SetActive(false);
+        slider2.SetActive(false);
+        slider3.SetActive(false);
 
 
     }
@@ -47,6 +53,9 @@ public class ButtonEnabledComercial : MonoBehaviour
             validar.interactable = true;
             validar2.interactable = true;
             validar3.interactable = true;
+            slider1.SetActive(true);
+            slider2.SetActive(true);
+            slider3.SetActive(true);
 
         }
         else
@@ -60,6 +69,9 @@ public class ButtonEnabledComercial : MonoBehaviour
             validar.interactable = false;
             validar2.interactable = false;
             validar3.interactable = false;
+            slider1.SetActive(false);
+            slider2.SetActive(false);
+            slider3.SetActive(false);
         }
 
         if (BotonRecoger.b == true && BotonRecoger2.b == true && BotonRecoger3.b == true)
