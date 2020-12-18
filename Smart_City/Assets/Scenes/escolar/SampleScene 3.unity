@@ -151,7 +151,7 @@ RectTransform:
   m_GameObject: {fileID: 4639914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 4.5, z: 1}
+  m_LocalScale: {x: 1.2, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 2123402354}
   m_RootOrder: 7
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6b18ac18946071d48b6914cd3f4dab59, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dfb7d27c8012e154c8530edf3e544670, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1670,7 +1670,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 51.4}
-  m_SizeDelta: {x: 372.4, y: 111.8}
+  m_SizeDelta: {x: 478.5, y: 129.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &135084282
 MonoBehaviour:
@@ -1694,7 +1694,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 19
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1705,10 +1705,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
-    detectar gases presentes en el ambiente(Amoniaco, Dioxido de Nitr\xF3geno, Alcohol,
-    Benzeno, Dioxido y Monoxido de carbono)\nCaracteristicas:\n-5V DC\n-Valores que
-    registra 10-1000ppm\n-Salida digital\n-Dimensiones: 3.6x1.5x1.5cm"
+  m_Text: "Este sensor puede medir la cantidad de humedad presente en el suelo que
+    lo rodea empleando dos electrodos que pasan corriente a trav\xE9s del suelo,
+    y lee la resistencia. Mayor presencia de agua hace que la tierra conduzca electricidad
+    m\xE1s f\xE1cil (Menor resistencia), mientras que un suelo seco es un conductor
+    pobre de la electricidad (Mayor resistencia).\r\nCaracter\xEDsticas:\r\n\n- Sensibilidad
+    ajustable ajustando el potenci\xF3metro digital (en azul).\r\n- Voltaje de operaci\xF3n:
+    3.3V ~ 5V\r\n- Modo de salida dual, salida digital y salida anal\xF3gica m\xE1s
+    precisa.\r\n- Agujeros de montaje para una f\xE1cil instalaci\xF3n.\r\n- Dimensiones
+    PCB: 30mm * 16mm\r\n- Dimensiones de sonda: 60mm * 30mm\r\n\n"
 --- !u!222 &135084283
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3584,7 +3589,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 44.03}
+  m_AnchoredPosition: {x: 0, y: 50.6}
   m_SizeDelta: {x: 372.4, y: 111.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &253945191
@@ -3621,9 +3626,9 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
-    detectar de forma f\xE1cil, r\xE1pida y precisa vibraci\xF3n producida en alg\xFAn
-    lugar\nCaracteristicas:\n-5V DC\n-Valor minimo de registro 55 dB\n-Salida digital\n-Dimensiones:
-    3.6x1.5x1.5cm"
+    detectar la temperatura y humedad del ambeiente.\nCaracteristicas:\n-5V DC\n-Rango
+    de valores 20-95% en humedad y 0 a 50\xB0 temp\n-Salida digital\n-Dimensiones:
+    3.6x1.4x1.4cm"
 --- !u!222 &253945192
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5186,7 +5191,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 131.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 396.9, y: 41.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &463068944
 MonoBehaviour:
@@ -5221,7 +5226,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sensor Mq135
+  m_Text: "Sensor Humedad Del Suelo Yl-69 Anal\xF3gico"
 --- !u!222 &463068945
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7497,7 +7502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -135.2}
+  m_AnchoredPosition: {x: 0, y: -142.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &683160223
@@ -9167,7 +9172,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 109.4, y: 118.88}
+  m_AnchoredPosition: {x: 109.4, y: 100.85}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &808888004
@@ -11980,7 +11985,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 133.33}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 414.9, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1007663692
 MonoBehaviour:
@@ -12015,7 +12020,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sensor Dht11
+  m_Text: Sensor de Distancia de Ultrasonido HC-SR04
 --- !u!222 &1007663693
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15899,7 +15904,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sensor Ky-038
+  m_Text: Sensor Dht11
 --- !u!222 &1466369582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17512,7 +17517,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 54.68}
-  m_SizeDelta: {x: 372.4, y: 111.8}
+  m_SizeDelta: {x: 452.5, y: 134.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1621607212
 MonoBehaviour:
@@ -17536,10 +17541,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -17547,10 +17552,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
-    detectar la temperatura y humedad del ambeiente.\nCaracteristicas:\n-5V DC\n-Rango
-    de valores 20-95% en humedad y 0 a 50\xB0 temp\n-Salida digital\n-Dimensiones:
-    3.6x1.4x1.4cm"
+  m_Text: "El HC-SR04 es un sensor de distancias por ultrasonidos capaz de detectar
+    objetos y calcular la distancia a la que se encuentra en un rango de 2 a 450
+    cm. El sensor funciona por ultrasonidos y contiene toda la electr\xF3nica encargada
+    de hacer la medici\xF3n. Su uso es tan sencillo como enviar el pulso de arranque
+    y medir la anchura del pulso de retorno. Sus caracteristicas son las siguientes:\n\n-Alimentaci\xF3n
+    de 5 volts\r\n-Interfaz sencilla: Solamente 4 hilos Vcc, Trigger, Echo, GND\r\n-Rango
+    de medici\xF3n:2 cm a 400 cm\r\n-Corriente de alimentaci\xF3n: 15 mA\r\n-Frecuencia
+    del pulso: 40 Khz\r\n-Apertura del pulso ultras\xF3nico: 15\xBA\r\n-Se\xF1al
+    de disparo: 10uS\r\n-Dimensiones del m\xF3dulo: 45x20x15 mm.\r\n"
 --- !u!222 &1621607213
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20958,15 +20968,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "En Cleverville existen normativas que regulan el ruido en diferentes sectores
-    de la ciudad, una de estas normativas es la norma 0627 DE 2006 en donde se establecen
-    los est\xE1ndares m\xE1ximos permisibles de niveles de emisi\xF3n de ruido expresados
-    en decibeles dB.  \nLa norma expresa lo siguiente:            \nAl ayuntamiento
-    de Cleverville han llegado muchas quejas por parte de los residentes del sector
-    de Skyline Apartments, los cuales notifican que se presenta mucho ruido en esta
-    zona residencial. \r\nPor esta raz\xF3n el ayuntamiento desea implementar un
-    sistema de monitoreo del ruido haciendo uso de sensores en esta zona.  Los sensores
-    que ha adquirido el ayuntamiento son los siguientes:\r\n"
+  m_Text: "En el sector comercial de la ciudad de Cleverville se han reportado grandes
+    cantidades de basura que se han estado amontonando debido a los negocios que
+    est\xE1n en el sector. Para ayudar a este problema el ayuntamiento de Cleverville
+    ha dispuesto de sensores de llenado para ponerlos en los botes de basura y a
+    si medir el nivel de basura que hay en el bote correspondiente.\n"
 --- !u!222 &1949181246
 CanvasRenderer:
   m_ObjectHideFlags: 0

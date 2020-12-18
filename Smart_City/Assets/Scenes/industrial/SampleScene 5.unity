@@ -10666,15 +10666,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "En Cleverville existen normativas que regulan el ruido en diferentes sectores
-    de la ciudad, una de estas normativas es la norma 0627 DE 2006 en donde se establecen
-    los est\xE1ndares m\xE1ximos permisibles de niveles de emisi\xF3n de ruido expresados
-    en decibeles dB.  \nLa norma expresa lo siguiente:            \nAl ayuntamiento
-    de Cleverville han llegado muchas quejas por parte de los residentes del sector
-    de Skyline Apartments, los cuales notifican que se presenta mucho ruido en esta
-    zona residencial. \r\nPor esta raz\xF3n el ayuntamiento desea implementar un
-    sistema de monitoreo del ruido haciendo uso de sensores en esta zona.  Los sensores
-    que ha adquirido el ayuntamiento son los siguientes:\r\n"
+  m_Text: "En el sector industrial de la ciudad de Cleverville se han reportado altas
+    cifras de contaminaci\xF3n, debido a esto se ha expedido una ley en la que indica
+    que las fabricas no puede generar un nivel de contaminaci\xF3n superior a NN.
+    Ha pasado cierto tiempo despu\xE9s de aplicada esta ley y algunas personas y
+    entidades indican que este nivel se sigue sobrepasando, para saber si de verdad
+    esto est\xE1 sucediendo en el sector, el ayuntamiento de la ciudad dispuso de
+    sensores para que detecten la calidad del aire y conocer si se est\xE1 incumpliendo
+    con esta ley impuesta. "
 --- !u!222 &982524317
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19883,7 +19882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 109.4, y: 118.88}
+  m_AnchoredPosition: {x: 109.4, y: 61.86}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2045618366

@@ -846,7 +846,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -135.2}
+  m_AnchoredPosition: {x: 0, y: -139.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &82452424
@@ -969,7 +969,7 @@ RectTransform:
   m_GameObject: {fileID: 89866072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.715, y: 0.715, z: 0.715}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 614537441}
   - {fileID: 1871842542}
@@ -5174,9 +5174,9 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
-    detectar gases presentes en el ambiente(Amoniaco, Dioxido de Nitr\xF3geno, Alcohol,
-    Benzeno, Dioxido y Monoxido de carbono)\nCaracteristicas:\n-5V DC\n-Valores que
-    registra 10-1000ppm\n-Salida digital\n-Dimensiones: 3.6x1.5x1.5cm"
+    detectar de forma f\xE1cil, r\xE1pida y precisa vibraci\xF3n producida en alg\xFAn
+    lugar\nCaracteristicas:\n-5V DC\n-Valor minimo de registro 55 dB\n-Salida digital\n-Dimensiones:
+    3.6x1.5x1.5cm"
 --- !u!222 &518583423
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8157,8 +8157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 133.33}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 139.2}
+  m_SizeDelta: {x: 404.3, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &774740011
 MonoBehaviour:
@@ -8193,7 +8193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sensor Dht11
+  m_Text: Sensor de Distancia de Ultrasonido HC-SR04
 --- !u!222 &774740012
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8749,7 +8749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 106.42, y: 122.08}
+  m_AnchoredPosition: {x: 106.42, y: 45.47}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &844043504
@@ -9416,7 +9416,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sensor Ky-038
+  m_Text: Sensor Mq135
 --- !u!222 &863945957
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10257,7 +10257,7 @@ RectTransform:
   m_GameObject: {fileID: 929083786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.715, y: 0.715, z: 0.715}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 82452423}
   - {fileID: 1292199563}
@@ -11305,15 +11305,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "En Cleverville existen normativas que regulan el ruido en diferentes sectores
-    de la ciudad, una de estas normativas es la norma 0627 DE 2006 en donde se establecen
-    los est\xE1ndares m\xE1ximos permisibles de niveles de emisi\xF3n de ruido expresados
-    en decibeles dB.  \nLa norma expresa lo siguiente:            \nAl ayuntamiento
-    de Cleverville han llegado muchas quejas por parte de los residentes del sector
-    de Skyline Apartments, los cuales notifican que se presenta mucho ruido en esta
-    zona residencial. \r\nPor esta raz\xF3n el ayuntamiento desea implementar un
-    sistema de monitoreo del ruido haciendo uso de sensores en esta zona.  Los sensores
-    que ha adquirido el ayuntamiento son los siguientes:\r\n"
+  m_Text: "En el sector ejecutivo de la ciudad de Cleverville se encuentra un estacionamiento
+    para los veh\xEDculos que manejan las personas que trabajan en las empresas que
+    est\xE1n situadas en este sector, han surgido varios problemas debido a que no
+    hay una buena gesti\xF3n sobre los espacios libres y ocupados que tiene el estacionamiento.
+    Para solucionar este problema se instalaron sensores en cada espacio que tiene
+    el estacionamiento para as\xED tener un mejor control de qu\xE9 espacio est\xE1
+    libre y cual no, esta informaci\xF3n ira a los conductores mediante una aplicaci\xF3n
+    para que ellos sepan si hay alg\xFAn espacio libre y en qu\xE9 lugar del estacionamiento
+    se encuentra, d\xE1ndole las indicaciones correspondientes. "
 --- !u!222 &999313886
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13632,7 +13632,7 @@ RectTransform:
   m_GameObject: {fileID: 1268044181}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.715, y: 0.715, z: 0.715}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 155461924}
   - {fileID: 518583421}
@@ -13870,8 +13870,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 54.68}
-  m_SizeDelta: {x: 372.4, y: 111.8}
+  m_AnchoredPosition: {x: 0, y: 65.4}
+  m_SizeDelta: {x: 466, y: 124.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1292199564
 MonoBehaviour:
@@ -13895,10 +13895,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -13906,10 +13906,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
-    detectar la temperatura y humedad del ambeiente.\nCaracteristicas:\n-5V DC\n-Rango
-    de valores 20-95% en humedad y 0 a 50\xB0 temp\n-Salida digital\n-Dimensiones:
-    3.6x1.4x1.4cm"
+  m_Text: "El HC-SR04 es un sensor de distancias por ultrasonidos capaz de detectar
+    objetos y calcular la distancia a la que se encuentra en un rango de 2 a 450
+    cm. El sensor funciona por ultrasonidos y contiene toda la electr\xF3nica encargada
+    de hacer la medici\xF3n. Su uso es tan sencillo como enviar el pulso de arranque
+    y medir la anchura del pulso de retorno. Sus caracteristicas son las siguientes:\n\n-Alimentaci\xF3n
+    de 5 volts\r\n-Interfaz sencilla: Solamente 4 hilos Vcc, Trigger, Echo, GND\r\n-Rango
+    de medici\xF3n:2 cm a 400 cm\r\n-Corriente de alimentaci\xF3n: 15 mA\r\n-Frecuencia
+    del pulso: 40 Khz\r\n-Apertura del pulso ultras\xF3nico: 15\xBA\r\n-Se\xF1al
+    de disparo: 10uS\r\n-Dimensiones del m\xF3dulo: 45x20x15 mm.\r\n"
 --- !u!222 &1292199565
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15063,7 +15068,7 @@ RectTransform:
   m_GameObject: {fileID: 1430833163}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.715, y: 0.715, z: 0.715}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1730758191}
   - {fileID: 1425860273}
@@ -18355,7 +18360,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sensor Mq135
+  m_Text: Sensor Ky-038
 --- !u!222 &1773599587
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19833,7 +19838,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 44.03}
-  m_SizeDelta: {x: 372.4, y: 111.8}
+  m_SizeDelta: {x: 410.7, y: 132.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871842543
 MonoBehaviour:
@@ -19869,9 +19874,9 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
-    detectar de forma f\xE1cil, r\xE1pida y precisa vibraci\xF3n producida en alg\xFAn
-    lugar\nCaracteristicas:\n-5V DC\n-Valor minimo de registro 55 dB\n-Salida digital\n-Dimensiones:
-    3.6x1.5x1.5cm"
+    detectar gases presentes en el ambiente(Amoniaco, Dioxido de Nitr\xF3geno, Alcohol,
+    Benzeno, Dioxido y Monoxido de carbono)\nCaracteristicas:\n-5V DC\n-Valores que
+    registra 10-1000ppm\n-Salida digital\n-Dimensiones: 3.6x1.5x1.5cm"
 --- !u!222 &1871842544
 CanvasRenderer:
   m_ObjectHideFlags: 0

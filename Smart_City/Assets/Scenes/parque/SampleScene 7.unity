@@ -10351,7 +10351,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sensor Dht11
+  m_Text: Sensor Mq135
 --- !u!222 &1119177111
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10867,9 +10867,9 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
-    detectar la temperatura y humedad del ambeiente.\nCaracteristicas:\n-5V DC\n-Rango
-    de valores 20-95% en humedad y 0 a 50\xB0 temp\n-Salida digital\n-Dimensiones:
-    3.6x1.4x1.4cm"
+    detectar gases presentes en el ambiente(Amoniaco, Dioxido de Nitr\xF3geno, Alcohol,
+    Benzeno, Dioxido y Monoxido de carbono)\nCaracteristicas:\n-5V DC\n-Valores que
+    registra 10-1000ppm\n-Salida digital\n-Dimensiones: 3.6x1.5x1.5cm"
 --- !u!222 &1179434361
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11208,8 +11208,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 137.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 139.9}
+  m_SizeDelta: {x: 420.5, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1221624373
 MonoBehaviour:
@@ -11244,7 +11244,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sensor Ky-038
+  m_Text: Sensor de Distancia de Ultrasonido HC-SR04
 --- !u!222 &1221624374
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15013,7 +15013,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 51.4}
-  m_SizeDelta: {x: 372.4, y: 111.8}
+  m_SizeDelta: {x: 447.5, y: 142.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1631594451
 MonoBehaviour:
@@ -15037,7 +15037,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 19
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -15048,10 +15048,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
-    detectar gases presentes en el ambiente(Amoniaco, Dioxido de Nitr\xF3geno, Alcohol,
-    Benzeno, Dioxido y Monoxido de carbono)\nCaracteristicas:\n-5V DC\n-Valores que
-    registra 10-1000ppm\n-Salida digital\n-Dimensiones: 3.6x1.5x1.5cm"
+  m_Text: "Este sensor puede medir la cantidad de humedad presente en el suelo que
+    lo rodea empleando dos electrodos que pasan corriente a trav\xE9s del suelo,
+    y lee la resistencia. Mayor presencia de agua hace que la tierra conduzca electricidad
+    m\xE1s f\xE1cil (Menor resistencia), mientras que un suelo seco es un conductor
+    pobre de la electricidad (Mayor resistencia).\r\nCaracter\xEDsticas:\r\n\n- Sensibilidad
+    ajustable ajustando el potenci\xF3metro digital (en azul).\r\n- Voltaje de operaci\xF3n:
+    3.3V ~ 5V\r\n- Modo de salida dual, salida digital y salida anal\xF3gica m\xE1s
+    precisa.\r\n- Agujeros de montaje para una f\xE1cil instalaci\xF3n.\r\n- Dimensiones
+    PCB: 30mm * 16mm\r\n- Dimensiones de sonda: 60mm * 30mm\r"
 --- !u!222 &1631594452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17411,8 +17416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 131.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 141.2}
+  m_SizeDelta: {x: 401.2, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1851288891
 MonoBehaviour:
@@ -17447,7 +17452,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sensor Mq135
+  m_Text: "Sensor Humedad Del Suelo Yl-69 Anal\xF3gico"
 --- !u!222 &1851288892
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17700,8 +17705,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 44.03}
-  m_SizeDelta: {x: 372.4, y: 111.8}
+  m_AnchoredPosition: {x: 0, y: 70.1}
+  m_SizeDelta: {x: 458.9, y: 111.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1904961566
 MonoBehaviour:
@@ -17725,7 +17730,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -17736,10 +17741,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
-    detectar de forma f\xE1cil, r\xE1pida y precisa vibraci\xF3n producida en alg\xFAn
-    lugar\nCaracteristicas:\n-5V DC\n-Valor minimo de registro 55 dB\n-Salida digital\n-Dimensiones:
-    3.6x1.5x1.5cm"
+  m_Text: "El HC-SR04 es un sensor de distancias por ultrasonidos capaz de detectar
+    objetos y calcular la distancia a la que se encuentra en un rango de 2 a 450
+    cm. El sensor funciona por ultrasonidos y contiene toda la electr\xF3nica encargada
+    de hacer la medici\xF3n. Su uso es tan sencillo como enviar el pulso de arranque
+    y medir la anchura del pulso de retorno. Sus caracteristicas son las siguientes:\n\n-Alimentaci\xF3n
+    de 5 volts\r\n-Interfaz sencilla: Solamente 4 hilos Vcc, Trigger, Echo, GND\r\n-Rango
+    de medici\xF3n:2 cm a 400 cm\r\n-Corriente de alimentaci\xF3n: 15 mA\r\n-Frecuencia
+    del pulso: 40 Khz\r\n-Apertura del pulso ultras\xF3nico: 15\xBA\r\n-Se\xF1al
+    de disparo: 10uS\r\n-Dimensiones del m\xF3dulo: 45x20x15 mm.\r\n"
 --- !u!222 &1904961567
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18033,15 +18043,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "En Cleverville existen normativas que regulan el ruido en diferentes sectores
-    de la ciudad, una de estas normativas es la norma 0627 DE 2006 en donde se establecen
-    los est\xE1ndares m\xE1ximos permisibles de niveles de emisi\xF3n de ruido expresados
-    en decibeles dB.  \nLa norma expresa lo siguiente:            \nAl ayuntamiento
-    de Cleverville han llegado muchas quejas por parte de los residentes del sector
-    de Skyline Apartments, los cuales notifican que se presenta mucho ruido en esta
-    zona residencial. \r\nPor esta raz\xF3n el ayuntamiento desea implementar un
-    sistema de monitoreo del ruido haciendo uso de sensores en esta zona.  Los sensores
-    que ha adquirido el ayuntamiento son los siguientes:\r\n"
+  m_Text: "El ayuntamiento de Cleverville ha dispuesto de varios sensores para determinar
+    de manera autom\xE1tica el momento en el que se debe regar el c\xE9sped y plantas
+    del parque principal de la ciudad, estos sensores detectan el nivel de humedad
+    del suelo y dependiendo de este se activaran o no los aspersores del parque. "
 --- !u!222 &1922965092
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18160,7 +18165,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 109.4, y: 118.88}
+  m_AnchoredPosition: {x: 109.4, y: 78.13}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1924496529
@@ -19809,7 +19814,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -135.2}
+  m_AnchoredPosition: {x: 0, y: -143.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081515324
