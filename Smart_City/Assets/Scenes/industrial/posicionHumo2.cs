@@ -5,21 +5,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
+public class posicionHumo2 : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
 {
-
     public static GameObject humo;
     public static bool desaparece;
     Vector3 posicioninicial;
     Transform startParent;
     Transform dragParent;
-    public static bool humo1;
+    public static bool humo2;
     private int posy;
     // Start is called before the first frame update
     void Start()
     {
         dragParent = GameObject.FindGameObjectWithTag("DragParent").transform;
-        humo1 = false;
+        humo2 = false;
         desaparece = false;
     }
 
@@ -27,13 +26,13 @@ public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBegin
     void Update()
     {
         //Debug.Log(humo.transform.position.y);
-        
+
         contaminado();
         Debug.Log("posision Y: " + posy);
         Int32.TryParse(humo.transform.position.y.ToString(), out posy);
     }
 
-    
+
 
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -71,8 +70,8 @@ public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBegin
         if (posy >= 290)
         {
             desaparece = true;
-            humo1 = true;
+            humo2 = true;
         }
-        
+
     }
 }

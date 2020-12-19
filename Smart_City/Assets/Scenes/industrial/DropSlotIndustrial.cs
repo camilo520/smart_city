@@ -6,7 +6,6 @@ using UnityEngine.EventSystems;
 public class DropSlotIndustrial : MonoBehaviour, IDropHandler
 {
     public GameObject item;
-    public GameObject humo;
     public static bool encasilla;
 
     public void OnDrop(PointerEventData eventData)
@@ -18,12 +17,10 @@ public class DropSlotIndustrial : MonoBehaviour, IDropHandler
             item.transform.position = transform.position;
             Debug.Log("Soy el primero");
             encasilla = true;
-            humo.SetActive(true);
         }
         else
         {
             encasilla = false;
-            humo.SetActive(false);
         }
     }
 
@@ -31,7 +28,7 @@ public class DropSlotIndustrial : MonoBehaviour, IDropHandler
     void Start()
     {
         encasilla = false;
-        humo.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -41,7 +38,6 @@ public class DropSlotIndustrial : MonoBehaviour, IDropHandler
         {
             item = null;
             encasilla = false;
-            humo.SetActive(false);
             Debug.Log("No la pusiste");
         }
     }
