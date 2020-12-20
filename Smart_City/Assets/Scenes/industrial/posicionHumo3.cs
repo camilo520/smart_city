@@ -26,10 +26,8 @@ public class posicionHumo3 : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
     void Update()
     {
         //Debug.Log(humo.transform.position.y);
-
+        Debug.Log("humo3 : " + desaparece);
         contaminado();
-        Debug.Log("posision Y: " + posy);
-        Int32.TryParse(humo.transform.position.y.ToString(), out posy);
     }
 
 
@@ -47,7 +45,7 @@ public class posicionHumo3 : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
     public void OnDrag(PointerEventData eventData)
     {
 
-        humo.transform.position = Input.mousePosition;
+        transform.position = Input.mousePosition;
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -66,7 +64,8 @@ public class posicionHumo3 : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
     {
         humo = gameObject;
         Int32.TryParse(humo.transform.position.y.ToString(), out posy);
-
+        desaparece = false;
+        humo3 = false;
         if (posy >= 290)
         {
             desaparece = true;

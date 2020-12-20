@@ -9,7 +9,6 @@ public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBegin
 {
 
     public static GameObject humo;
-    public static bool desaparece;
     Vector3 posicioninicial;
     Transform startParent;
     Transform dragParent;
@@ -19,8 +18,9 @@ public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBegin
     void Start()
     {
         dragParent = GameObject.FindGameObjectWithTag("DragParent").transform;
+        posy = 0;
         humo1 = false;
-        desaparece = false;
+
     }
 
     // Update is called once per frame
@@ -29,8 +29,7 @@ public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBegin
         //Debug.Log(humo.transform.position.y);
         
         contaminado();
-        Debug.Log("posision Y: " + posy);
-        Int32.TryParse(humo.transform.position.y.ToString(), out posy);
+        
     }
 
     
@@ -70,7 +69,6 @@ public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBegin
 
         if (posy >= 290)
         {
-            desaparece = true;
             humo1 = true;
         }
         

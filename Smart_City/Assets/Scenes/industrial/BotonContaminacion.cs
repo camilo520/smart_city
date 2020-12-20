@@ -6,18 +6,18 @@ using UnityEngine.UI;
 public class BotonContaminacion : MonoBehaviour
 {
     public Button recogio;
+    public static bool alerta;
     // Start is called before the first frame update
     void Start()
     {
         Button btn = recogio.GetComponent<Button>();
         btn.onClick.AddListener(recoger);
-
+        alerta = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
 
     public void recoger()
@@ -27,7 +27,9 @@ public class BotonContaminacion : MonoBehaviour
         {
             ContadorContaminacion.sepaso = true;
         }
-
-        //Debug.Log("contador1 " + contador);
+        else
+        {
+            ContadorContaminacion.sepaso = false;
+        }
     }
 }

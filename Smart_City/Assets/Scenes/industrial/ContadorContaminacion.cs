@@ -12,10 +12,11 @@ public class ContadorContaminacion : MonoBehaviour
     public GameObject nube1;
     public GameObject nube2;
     public GameObject nube3;
+    public GameObject panelCorrecto;
+    public GameObject panelIncorrecto;
     public static float contaminacion;
-    public static bool verdadero1;
-    public static bool verdadero2;
     public static bool sepaso;
+    private bool correcto;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,54 +24,70 @@ public class ContadorContaminacion : MonoBehaviour
         StartCoroutine(restarContaminacion());
         numeroContaminacion.text = "";
         avisoContaminacion1.text = "";
-        verdadero1 = true;
-        verdadero2 = true;
-        contaminacion = 0f;
+        contaminacion = 100f;
         sepaso = false;
         nube1.SetActive(false);
         nube2.SetActive(false);
         nube3.SetActive(false);
+        panelCorrecto.SetActive(false);
+        panelIncorrecto.SetActive(false);
+        correcto = false;
+        posicionHumo.humo1 = false;
+        posicionHumo2.humo2 = false;
+        posicionHumo3.humo3 = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         Debug.Log("¿se paso?: " + sepaso);
-        if (contaminacion >= 800f)
-        {
-
-        }
-        if (sepaso == true)
+        if (sepaso == true && correcto==false)
         {
             nube1.SetActive(true);
             nube2.SetActive(true);
             nube3.SetActive(true);
         }
-        if (sepaso == true && posicionHumo.desaparece == true)
+        if (sepaso == true && posicionHumo.humo1 == true)
         {
             nube1.SetActive(false);
         }
-        if (sepaso == true && posicionHumo2.desaparece == true)
+        if (sepaso == true && posicionHumo2.humo2 == true)
         {
             nube2.SetActive(false);
         }
-        if (sepaso == true && posicionHumo3.desaparece == true)
+        if (sepaso == true && posicionHumo3.humo3 == true)
         {
-
             nube3.SetActive(false);
         }
 
-
+        
+        if (contaminacion >= 950f)
+        {
+            panelIncorrecto.SetActive(true);
+            correcto = true;
+        }
+        if (contaminacion < 0f)
+        {
+            panelCorrecto.SetActive(true);
+            correcto = true;
+        }
+        Debug.Log("¿es correcto?: " + correcto);
+        Debug.Log("humo1: " + posicionHumo.humo1);
     }
 
     IEnumerator sumarContaminacion()
     {
-        while (sepaso == false)
+        while (sepaso == false && correcto==false)
         {
-            if (DropSlotIndustrial.encasilla == true )
+            if (DropSlotIndustrial.encasilla == true)
             {
                 contaminacion += Random.Range(50, 50);
-                numeroContaminacion.text = " " + contaminacion.ToString("f0");
+                numeroContaminacion.text = " " + contaminacion.ToString("f0") + " ppm";
+                avisoContaminacion1.text = "La contaminacion esta subiendo";
+                if (contaminacion >= 487f && contaminacion <= 797f)
+                {
+                    avisoContaminacion1.text = "Lanzar alerta de contaminacion";
+                }
             }
             else
             {
@@ -82,12 +99,13 @@ public class ContadorContaminacion : MonoBehaviour
 
     IEnumerator restarContaminacion()
     {
-        while (true)
+        while (correcto==false)
         {
-            if (DropSlotIndustrial.encasilla == true && posicionHumo.humo1 == true && posicionHumo2.humo2 == true && posicionHumo3.humo3 == true)
+            if (DropSlotIndustrial.encasilla == true && sepaso== true && posicionHumo.humo1 == true && posicionHumo2.humo2 == true && posicionHumo3.humo3 == true)
             {
                 contaminacion -= Random.Range(50, 50);
-                numeroContaminacion.text = " " + contaminacion.ToString("f0");
+                numeroContaminacion.text = " " + contaminacion.ToString("f0") + " ppm";
+                avisoContaminacion1.text = "La contaminacion esta bajando";
             }
             else
             {

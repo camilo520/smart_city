@@ -34,10 +34,11 @@ public class DropSlotIndustrial : MonoBehaviour, IDropHandler
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("encasilla: " + encasilla);
         if (item != null && item.transform.parent != transform)
         {
-            item = null;
             encasilla = false;
+            item = null;
             Debug.Log("No la pusiste");
         }
     }

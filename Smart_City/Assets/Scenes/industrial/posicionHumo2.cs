@@ -28,7 +28,6 @@ public class posicionHumo2 : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         //Debug.Log(humo.transform.position.y);
 
         contaminado();
-        Debug.Log("posision Y: " + posy);
         Int32.TryParse(humo.transform.position.y.ToString(), out posy);
     }
 
@@ -72,6 +71,7 @@ public class posicionHumo2 : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
             desaparece = true;
             humo2 = true;
         }
+        
 
     }
 }
