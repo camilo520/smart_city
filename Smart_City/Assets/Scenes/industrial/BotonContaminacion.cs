@@ -25,11 +25,7 @@ public class BotonContaminacion : MonoBehaviour
 
         if (ContadorContaminacion.contaminacion >= 500f && ContadorContaminacion.contaminacion <= 800f)
         {
-            ContadorContaminacion.sepaso = true;
-        }
-        else
-        {
-            ContadorContaminacion.sepaso = false;
+            alerta = true;
         }
     }
 }

@@ -23,8 +23,9 @@ public class ContadorContaminacion : MonoBehaviour
         StartCoroutine(sumarContaminacion());
         StartCoroutine(restarContaminacion());
         numeroContaminacion.text = "";
+        avisoContaminacion1.gameObject.GetComponent<Text>();
         avisoContaminacion1.text = "";
-        contaminacion = 100f;
+        contaminacion = 50f;
         sepaso = false;
         nube1.SetActive(false);
         nube2.SetActive(false);
@@ -35,27 +36,28 @@ public class ContadorContaminacion : MonoBehaviour
         posicionHumo.humo1 = false;
         posicionHumo2.humo2 = false;
         posicionHumo3.humo3 = false;
+        BotonContaminacion.alerta = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("¿se paso?: " + sepaso);
-        if (sepaso == true && correcto==false)
+        if (BotonContaminacion.alerta == true && correcto==false)
         {
             nube1.SetActive(true);
             nube2.SetActive(true);
             nube3.SetActive(true);
+            
         }
-        if (sepaso == true && posicionHumo.humo1 == true)
+        if (BotonContaminacion.alerta == true && posicionHumo.humo1 == true)
         {
             nube1.SetActive(false);
         }
-        if (sepaso == true && posicionHumo2.humo2 == true)
+        if (BotonContaminacion.alerta == true && posicionHumo2.humo2 == true)
         {
             nube2.SetActive(false);
         }
-        if (sepaso == true && posicionHumo3.humo3 == true)
+        if (BotonContaminacion.alerta == true && posicionHumo3.humo3 == true)
         {
             nube3.SetActive(false);
         }
@@ -66,27 +68,28 @@ public class ContadorContaminacion : MonoBehaviour
             panelIncorrecto.SetActive(true);
             correcto = true;
         }
-        if (contaminacion < 0f)
+        if (contaminacion < 50f)
         {
             panelCorrecto.SetActive(true);
             correcto = true;
         }
         Debug.Log("¿es correcto?: " + correcto);
-        Debug.Log("humo1: " + posicionHumo.humo1);
     }
 
     IEnumerator sumarContaminacion()
     {
-        while (sepaso == false && correcto==false)
+        while (BotonContaminacion.alerta == false && correcto==false)
         {
             if (DropSlotIndustrial.encasilla == true)
             {
                 contaminacion += Random.Range(50, 50);
                 numeroContaminacion.text = " " + contaminacion.ToString("f0") + " ppm";
                 avisoContaminacion1.text = "La contaminacion esta subiendo";
-                if (contaminacion >= 487f && contaminacion <= 797f)
-                {
-                    avisoContaminacion1.text = "Lanzar alerta de contaminacion";
+                avisoContaminacion1.color = new Color(255, 232, 0);
+                if (contaminacion >= 487f && contaminacion <=1000f )
+                { 
+                    avisoContaminacion1.color = new Color(255, 0, 0);
+                    avisoContaminacion1.text = "Lanza la alerta de contaminacion";
                 }
             }
             else
@@ -101,14 +104,17 @@ public class ContadorContaminacion : MonoBehaviour
     {
         while (correcto==false)
         {
-            if (DropSlotIndustrial.encasilla == true && sepaso== true && posicionHumo.humo1 == true && posicionHumo2.humo2 == true && posicionHumo3.humo3 == true)
+            if (DropSlotIndustrial.encasilla == true && BotonContaminacion.alerta == true && posicionHumo.humo1 == true && posicionHumo2.humo2 == true && posicionHumo3.humo3 == true)
             {
                 contaminacion -= Random.Range(50, 50);
                 numeroContaminacion.text = " " + contaminacion.ToString("f0") + " ppm";
+                avisoContaminacion1.color = new Color(0, 255, 0);
                 avisoContaminacion1.text = "La contaminacion esta bajando";
             }
-            else
+            else if(DropSlotIndustrial.encasilla == true && BotonContaminacion.alerta == true && posicionHumo.humo1 == false && posicionHumo2.humo2 == false && posicionHumo3.humo3 == false)
             {
+                avisoContaminacion1.color = new Color(255, 255, 255);
+                avisoContaminacion1.text = "Elimina los restos de contaminacion";
             }
             yield return new WaitForSeconds(1);
         }
