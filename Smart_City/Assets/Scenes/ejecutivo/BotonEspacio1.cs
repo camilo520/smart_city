@@ -8,8 +8,7 @@ public class BotonEspacio1 : MonoBehaviour
 {
     public Button botonOcupar;
     public Button botonVaciar;
-    private bool disponible = true;
-    private bool noDisponible;
+    public static bool disponible = true;
     public static string espacio1;
     public Text texto;
 
@@ -27,7 +26,7 @@ public class BotonEspacio1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("no disponible: " + noDisponible);
+        Debug.Log("disponible: " + disponible);
     }
 
 
@@ -37,6 +36,7 @@ public class BotonEspacio1 : MonoBehaviour
         Button btn2 = botonVaciar.GetComponent<Button>();
         btn.gameObject.SetActive(false);
         btn2.gameObject.SetActive(true);
+        disponible = false;
         texto.text = "Ocupado";
     }
     public void vaciarEspacio()
@@ -45,6 +45,7 @@ public class BotonEspacio1 : MonoBehaviour
         Button btn2 = botonVaciar.GetComponent<Button>();
         btn.gameObject.SetActive(true);
         btn2.gameObject.SetActive(false);
+        disponible = true;
         texto.text = "Vacio";
     }
 
