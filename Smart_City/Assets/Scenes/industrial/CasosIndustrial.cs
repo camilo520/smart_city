@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CasosParqueadero : MonoBehaviour
+public class CasosIndustrial : MonoBehaviour
 {
     private int intelligence;
-    public static bool caso5;
-    public static bool caso4;
     public static bool caso3;
     public static bool caso2;
     public static bool caso1;
@@ -15,13 +13,11 @@ public class CasosParqueadero : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        caso5 = false;
-        caso4 = false;
         caso3 = false;
         caso2 = false;
         caso1 = false;
         avisoCaso.text = "";
-        intelligence = Random.Range(1,6);
+        intelligence = Random.Range(1, 4);
         Greet();
     }
 
@@ -35,30 +31,20 @@ public class CasosParqueadero : MonoBehaviour
     {
         switch (intelligence)
         {
-            case 5:
-                Debug.Log("caso 5");
-                caso5 = true;
-                avisoCaso.text= "Espacios ocupados: 1, 2 y 4 \n" + "Espacios disponibles: 3 y 5";
-                break;
-            case 4:
-                Debug.Log("caso 4");
-                caso4=true;
-                avisoCaso.text = "Espacios ocupados: 1, 3 y 5 \n" + "Espacios disponibles: 2 y 4";
-                break;
             case 3:
                 Debug.Log("caso 3");
                 caso3 = true;
-                avisoCaso.text = "Espacios ocupados: 3, 4 y 5 \n" + "Espacios disponibles: 1 y 2";
+                avisoCaso.text = "Contaminacion de O3";
                 break;
             case 2:
                 Debug.Log("caso 2");
                 caso2 = true;
-                avisoCaso.text = "Espacios ocupados: 1, y 5 \n" + "Espacios disponibles: 2, 3 y 4";
+                avisoCaso.text = "Contaminacion de SO2";
                 break;
             case 1:
                 Debug.Log("caso 1");
                 caso1 = true;
-                avisoCaso.text = "Espacios ocupados: 2, 3 y 4 \n" + "Espacios disponibles: 1 y 5";
+                avisoCaso.text = "Contaminacion de NO2";
                 break;
             default:
                 avisoCaso.text = ("Incorrect intelligence level.");

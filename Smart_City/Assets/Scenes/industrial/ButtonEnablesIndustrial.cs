@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class ButtonEnablesIndustrial : MonoBehaviour
 {
     public Button validar;
+    public GameObject textoAviso;
 
     // Start is called before the first frame update
     void Start()
     {
 
         validar.interactable = false;
-
+        textoAviso.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,11 +23,13 @@ public class ButtonEnablesIndustrial : MonoBehaviour
         {
 
             validar.interactable = true;
+            textoAviso.SetActive(true);
         }
         else
         {
 
             validar.interactable = false;
+            textoAviso.SetActive(false);
         }
     }
 }

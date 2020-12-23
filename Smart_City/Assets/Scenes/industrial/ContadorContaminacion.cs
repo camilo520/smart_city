@@ -63,7 +63,17 @@ public class ContadorContaminacion : MonoBehaviour
         }
 
         
-        if (contaminacion >= 950f)
+        if (contaminacion >= 300f && CasosIndustrial.caso3==true)
+        {
+            panelIncorrecto.SetActive(true);
+            correcto = true;
+        }
+        if(contaminacion >= 900f && CasosIndustrial.caso2 == true)
+        {
+            panelIncorrecto.SetActive(true);
+            correcto = true;
+        }
+        if (contaminacion >= 1350f && CasosIndustrial.caso1 == true)
         {
             panelIncorrecto.SetActive(true);
             correcto = true;
@@ -82,12 +92,20 @@ public class ContadorContaminacion : MonoBehaviour
         {
             if (DropSlotIndustrial.encasilla == true)
             {
-                contaminacion += Random.Range(50, 50);
+                contaminacion += Random.Range(25, 40);
                 numeroContaminacion.text = " " + contaminacion.ToString("f0") + " ppm";
                 avisoContaminacion1.text = "La contaminacion esta subiendo";
                 avisoContaminacion1.color = new Color(255, 232, 0);
-                if (contaminacion >= 487f && contaminacion <=1000f )
+                if (contaminacion >= 168f  && CasosIndustrial.caso3==true)
                 { 
+                    avisoContaminacion1.color = new Color(255, 0, 0);
+                    avisoContaminacion1.text = "Lanza la alerta de contaminacion";
+                }else if (contaminacion >= 487f &&  CasosIndustrial.caso2 == true)
+                {
+                    avisoContaminacion1.color = new Color(255, 0, 0);
+                    avisoContaminacion1.text = "Lanza la alerta de contaminacion";
+                }else if (contaminacion >= 678f && CasosIndustrial.caso1 == true)
+                {
                     avisoContaminacion1.color = new Color(255, 0, 0);
                     avisoContaminacion1.text = "Lanza la alerta de contaminacion";
                 }
@@ -106,7 +124,7 @@ public class ContadorContaminacion : MonoBehaviour
         {
             if (DropSlotIndustrial.encasilla == true && BotonContaminacion.alerta == true && posicionHumo.humo1 == true && posicionHumo2.humo2 == true && posicionHumo3.humo3 == true)
             {
-                contaminacion -= Random.Range(50, 50);
+                contaminacion -= Random.Range(25, 40);
                 numeroContaminacion.text = " " + contaminacion.ToString("f0") + " ppm";
                 avisoContaminacion1.color = new Color(0, 255, 0);
                 avisoContaminacion1.text = "La contaminacion esta bajando";
