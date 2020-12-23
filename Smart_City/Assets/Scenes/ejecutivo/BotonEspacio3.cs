@@ -20,7 +20,8 @@ public class BotonEspacio3 : MonoBehaviour
         btn.onClick.AddListener(ocuparEspacio);
         Button btn2 = botonVaciar.GetComponent<Button>();
         btn2.onClick.AddListener(vaciarEspacio);
-        texto.text = "Vacio";
+        texto.text = "Ocupado";
+        disponible = false;
     }
 
     // Update is called once per frame
