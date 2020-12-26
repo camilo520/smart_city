@@ -3259,7 +3259,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6951658386cc93d49b0f4849d4d5eeae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c42e7d8dfda63d64d8518252e5b1cf54, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10458,7 +10458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 767878594}
-  panel2: {fileID: 0}
+  panel2: {fileID: 339829943}
   panel3: {fileID: 0}
 --- !u!1001 &969001056
 PrefabInstance:
@@ -19928,7 +19928,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 963194230}
         m_TargetAssemblyTypeName: ventanaEmergente, Assembly-CSharp
         m_MethodName: openPanel2
         m_Mode: 1
@@ -20190,7 +20190,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 963194230}
         m_TargetAssemblyTypeName: ventanaEmergente, Assembly-CSharp
         m_MethodName: closePanel2
         m_Mode: 1

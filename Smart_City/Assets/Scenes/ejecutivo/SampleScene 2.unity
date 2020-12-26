@@ -8187,13 +8187,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sensor de Distancia de Ultrasonido HC-SR04
+  m_Text: Sensor Infrarrojo IR FC-51 Arduino
 --- !u!222 &774740012
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13870,7 +13870,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 65.4}
+  m_AnchoredPosition: {x: 0, y: 59.23}
   m_SizeDelta: {x: 466, y: 124.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1292199564
@@ -13895,7 +13895,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 15
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -13906,15 +13906,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "El HC-SR04 es un sensor de distancias por ultrasonidos capaz de detectar
-    objetos y calcular la distancia a la que se encuentra en un rango de 2 a 450
-    cm. El sensor funciona por ultrasonidos y contiene toda la electr\xF3nica encargada
-    de hacer la medici\xF3n. Su uso es tan sencillo como enviar el pulso de arranque
-    y medir la anchura del pulso de retorno. Sus caracteristicas son las siguientes:\n\n-Alimentaci\xF3n
-    de 5 volts\r\n-Interfaz sencilla: Solamente 4 hilos Vcc, Trigger, Echo, GND\r\n-Rango
-    de medici\xF3n:2 cm a 400 cm\r\n-Corriente de alimentaci\xF3n: 15 mA\r\n-Frecuencia
-    del pulso: 40 Khz\r\n-Apertura del pulso ultras\xF3nico: 15\xBA\r\n-Se\xF1al
-    de disparo: 10uS\r\n-Dimensiones del m\xF3dulo: 45x20x15 mm.\r\n"
+  m_Text: "Un detector de obst\xE1culos infrarrojo es un dispositivo que detecta
+    la presencia de un objeto mediante la reflexi\xF3n que produce en la luz. El
+    uso de luz infrarroja (IR) es simplemente para que esta no sea visible para los
+    humanos. Se dispone de un LED emisor de luz infrarroja y de un fotodiodo (tipo
+    BPV10NF o similar) que recibe la luz reflejada por un posible obst\xE1culo.\r
+    Caracteristicas: \n\n- N\xFAmero de modelo: FC-51\r\n- \xC1ngulo de cobertura:
+    35 \xB0\r\n- Voltaje de funcionamiento: 3.0V \u2013 6.0V\r\n- Rango de detecci\xF3n:
+    2 cm \u2013 30 cm\r\n- PCB tama\xF1o: 3,1 cm (largo) x 1,4 cm (W)\r\n- Dimensi\xF3n
+    total: 4,5 cm (L) x 1,4 cm (W), 0.7cm (H)\r\n- Salidas de nivel l\xF3gico bajo
+    cuando se detecta obst\xE1culo\r\n- Salidas nivel l\xF3gico alto cuando no se
+    detecta obst\xE1culo\r\n- Consumo actual: a 3.3V: ~ 23 mA en 5.0V: ~ 43 mA\r\n"
 --- !u!222 &1292199565
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20646,7 +20648,7 @@ RectTransform:
   m_GameObject: {fileID: 1975554106}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 3.5, z: 0.715}
+  m_LocalScale: {x: 1, y: 6.5, z: 0}
   m_Children: []
   m_Father: {fileID: 680456537}
   m_RootOrder: 7
@@ -20731,7 +20733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dfb7d27c8012e154c8530edf3e544670, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4b53c55a0b2e4046ab43bee71de8ea8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
