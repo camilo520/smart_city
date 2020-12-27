@@ -53,22 +53,22 @@ public class ContadorHumedad : MonoBehaviour
         }
         
 
-        if(tiempo>501f && tiempo < 700)
+        if(tiempo>501f && tiempo < 700 && verdadero1 == true)
         {
-            avisoHumedad.text = "Suelo Humedo";
+            avisoHumedad.text = "Suelo Humedo \n" + "No es necesario regarlo";
 
-        }else if (tiempo>=700f && tiempo<1023)
+        }else if (tiempo>=700f && tiempo<1023 && verdadero1 == true)
         {
-            avisoHumedad.text = "Suelo Seco";
+            avisoHumedad.text = "Suelo Seco \n" + "Riega el parque";
         }
-        if (tiempo2 > 501f && tiempo2 < 700)
+        if (tiempo2 > 501f && tiempo2 < 700 && verdadero2 == true)
         {
-            avisoHumedad2.text = "Suelo Humedo";
+            avisoHumedad2.text = "Suelo Humedo \n" + "No es necesario regarlo";
 
         }
-        else if (tiempo2 >= 700f && tiempo2 < 1023)
+        else if (tiempo2 >= 700f && tiempo2 < 1023 && verdadero2 == true)
         {
-            avisoHumedad2.text = "Suelo Seco";
+            avisoHumedad2.text = "Suelo Seco \n" + "Riega el parque";
         }
 
     }
@@ -98,7 +98,7 @@ public class ContadorHumedad : MonoBehaviour
             {
                 tiempo -= Random.Range(20, 25);
                 humedad1.text = " " + tiempo.ToString("f0");
-
+                avisoHumedad.text = "El aspersor 1 esta \n" + "regando el parque";
             }
             else
             {
@@ -134,7 +134,7 @@ public class ContadorHumedad : MonoBehaviour
             {
                 tiempo2 -= Random.Range(20, 25);
                 humedad2.text = " " + tiempo2.ToString("f0");
-
+                avisoHumedad2.text = "El aspersor 2 esta \n" + "regando el parque";
             }
             else
             {

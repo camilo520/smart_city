@@ -8,7 +8,6 @@ using UnityEngine.EventSystems;
 public class posicionHumo3 : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
 {
     public static GameObject humo;
-    public static bool desaparece;
     Vector3 posicioninicial;
     Transform startParent;
     Transform dragParent;
@@ -19,14 +18,12 @@ public class posicionHumo3 : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
     {
         dragParent = GameObject.FindGameObjectWithTag("DragParent").transform;
         humo3 = false;
-        desaparece = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         //Debug.Log(humo.transform.position.y);
-        Debug.Log("humo3 : " + desaparece);
         contaminado();
     }
 
@@ -64,11 +61,9 @@ public class posicionHumo3 : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
     {
         humo = gameObject;
         Int32.TryParse(humo.transform.position.y.ToString(), out posy);
-        desaparece = false;
         humo3 = false;
-        if (posy >= 290)
+        if (posy >= 540)
         {
-            desaparece = true;
             humo3 = true;
         }
 
