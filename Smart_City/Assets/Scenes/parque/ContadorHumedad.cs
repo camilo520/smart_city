@@ -17,6 +17,8 @@ public class ContadorHumedad : MonoBehaviour
     public static bool verdadero1;
     public static bool verdadero2;
     private bool sepaso;
+    [SerializeField] private Animator animacion1;
+    [SerializeField] private Animator animacion2;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,20 +37,26 @@ public class ContadorHumedad : MonoBehaviour
         sepaso = false;
         panelCorrecto.SetActive(false);
         panelIncorrecto.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
         Debug.Log("es asi: " + sepaso);
         if(tiempo <=499f && tiempo2 <= 499f)
         {
             sepaso = true;
+            animacion1.SetBool("riegoVerdadero", false);
+            animacion2.SetBool("riegoVerdadero", false);
             panelCorrecto.SetActive(true);
         }
-        else if (tiempo > 1023 && tiempo2 > 1023)
+        else if (tiempo > 1023 || tiempo2 > 1023)
         {
             sepaso = true;
+            animacion1.SetBool("riegoVerdadero", false);
+            animacion2.SetBool("riegoVerdadero", false);
             panelIncorrecto.SetActive(true);
         }
         
@@ -81,6 +89,7 @@ public class ContadorHumedad : MonoBehaviour
             {
                 tiempo += Random.Range(15, 20);
                 humedad1.text = " " + tiempo.ToString("f0");
+                animacion1.SetBool("riegoFalso", false);
             }
             else
             {
@@ -99,6 +108,7 @@ public class ContadorHumedad : MonoBehaviour
                 tiempo -= Random.Range(20, 25);
                 humedad1.text = " " + tiempo.ToString("f0");
                 avisoHumedad.text = "El aspersor 1 esta \n" + "regando el parque";
+                animacion1.SetBool("riegoVerdadero", true);
             }
             else
             {
@@ -117,6 +127,7 @@ public class ContadorHumedad : MonoBehaviour
             {
                 tiempo2 += Random.Range(15, 20);
                 humedad2.text = " " + tiempo2.ToString("f0");
+                animacion2.SetBool("riegoFalso", false);
             }
             else
             {
@@ -135,6 +146,7 @@ public class ContadorHumedad : MonoBehaviour
                 tiempo2 -= Random.Range(20, 25);
                 humedad2.text = " " + tiempo2.ToString("f0");
                 avisoHumedad2.text = "El aspersor 2 esta \n" + "regando el parque";
+                animacion2.SetBool("riegoVerdadero", true);
             }
             else
             {
