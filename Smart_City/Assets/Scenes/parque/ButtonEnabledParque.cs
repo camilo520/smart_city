@@ -11,6 +11,8 @@ public class ButtonEnabledParque : MonoBehaviour
     public GameObject texto2;
     public GameObject aspersor1;
     public GameObject aspersor2;
+    public GameObject gotas1;
+    public GameObject gotas2;
 
     // Start is called before the first frame update
     void Start()
@@ -22,17 +24,30 @@ public class ButtonEnabledParque : MonoBehaviour
         texto2.SetActive(false);
         aspersor1.SetActive(false);
         aspersor2.SetActive(false);
+        gotas1.SetActive(false);
+        gotas2.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (ContadorHumedad.gotas1 == true)
+        {
+            gotas1.SetActive(true);
+        }
+        if (ContadorHumedad.gotas2 == true)
+        {
+            gotas2.SetActive(true);
+        }
+
         if (DropSlotParque.encasilla == true && DropSlotParque2.encasilla == true)
         {
 
             validar.interactable = true;
             validar2.interactable = true;
             StartCoroutine(sisas());
+            
         }
         else
         {
@@ -43,6 +58,8 @@ public class ButtonEnabledParque : MonoBehaviour
             texto2.SetActive(false);
             aspersor1.SetActive(false);
             aspersor2.SetActive(false);
+            gotas1.SetActive(false);
+            gotas2.SetActive(false);
         }
     }
 
@@ -58,4 +75,7 @@ public class ButtonEnabledParque : MonoBehaviour
         }
         
     }
+
+   
+
 }

@@ -16,6 +16,8 @@ public class ContadorHumedad : MonoBehaviour
     public static float tiempo2;
     public static bool verdadero1;
     public static bool verdadero2;
+    public static bool gotas1;
+    public static bool gotas2;
     private bool sepaso;
     [SerializeField] private Animator animacion1;
     [SerializeField] private Animator animacion2;
@@ -35,6 +37,8 @@ public class ContadorHumedad : MonoBehaviour
         verdadero1 = true;
         verdadero2 = true;
         sepaso = false;
+        gotas1 = false;
+        gotas2 = false;
         panelCorrecto.SetActive(false);
         panelIncorrecto.SetActive(false);
 
@@ -90,6 +94,7 @@ public class ContadorHumedad : MonoBehaviour
                 tiempo += Random.Range(15, 20);
                 humedad1.text = " " + tiempo.ToString("f0");
                 animacion1.SetBool("riegoFalso", false);
+                gotas1 = false;
             }
             else
             {
@@ -109,6 +114,7 @@ public class ContadorHumedad : MonoBehaviour
                 humedad1.text = " " + tiempo.ToString("f0");
                 avisoHumedad.text = "El aspersor 1 esta \n" + "regando el parque";
                 animacion1.SetBool("riegoVerdadero", true);
+                gotas1 = true;
             }
             else
             {
@@ -128,6 +134,7 @@ public class ContadorHumedad : MonoBehaviour
                 tiempo2 += Random.Range(15, 20);
                 humedad2.text = " " + tiempo2.ToString("f0");
                 animacion2.SetBool("riegoFalso", false);
+                gotas2 = false;
             }
             else
             {
@@ -147,6 +154,7 @@ public class ContadorHumedad : MonoBehaviour
                 humedad2.text = " " + tiempo2.ToString("f0");
                 avisoHumedad2.text = "El aspersor 2 esta \n" + "regando el parque";
                 animacion2.SetBool("riegoVerdadero", true);
+                gotas2 = true;
             }
             else
             {
