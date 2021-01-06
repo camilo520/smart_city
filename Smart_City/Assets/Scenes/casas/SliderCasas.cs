@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SliderCasas1 : MonoBehaviour
+public class SliderCasas : MonoBehaviour
 {
-    public static int porc=0;
+    public static int porc = 0;
     Text porcentaje;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class SliderCasas1 : MonoBehaviour
 
     public void actualizacionTexto(float value)
     {
-        porcentaje.text = Mathf.RoundToInt(value) + "";
+        porcentaje.text = Mathf.RoundToInt(value) + "%";
         int otro = 0;
         if (Int32.TryParse(porcentaje.text, out otro))
         {
@@ -30,6 +30,4 @@ public class SliderCasas1 : MonoBehaviour
         }
 
     }
-
 }
-

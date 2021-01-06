@@ -6,11 +6,15 @@ using UnityEngine.UI;
 public class ButtonEnableCasas : MonoBehaviour
 {
     public Button continuar;
+    public GameObject slider;
+    public GameObject porcentaje;
 
     // Start is called before the first frame update
     void Start()
     {
         continuar.interactable = false;
+        slider.SetActive(false);
+        porcentaje.SetActive(false);
     }
 
     // Update is called once per frame
@@ -19,11 +23,14 @@ public class ButtonEnableCasas : MonoBehaviour
         if(DropSlotCasas1.encasilla==true && DropSlotCasas2.encasilla == true && DropSlotCasas3.encasilla == true)
         {
             continuar.interactable = true;
-
+            slider.SetActive(true);
+            porcentaje.SetActive(true);
         }
         else
         {
             continuar.interactable = false;
+            slider.SetActive(false);
+            porcentaje.SetActive(false);
         }
     }
 }
