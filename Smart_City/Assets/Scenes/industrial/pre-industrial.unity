@@ -12019,8 +12019,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -27.01}
-  m_SizeDelta: {x: 330.7, y: 251.6}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 408.2, y: 328.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1174654380
 MonoBehaviour:
@@ -12055,13 +12055,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Tienes que ubicar los sensores de calidad de aire en los lugares correspondientes
+  m_Text: 'Segun el caso anteriormente propuesto, tienes que ubicar el sensores de
+    calidad de aire en el lugar correspondiente.
 
 
 
-    El
-    boton continuar se desbloqueara una vez hayas puesto de manera correcta todos
-    los sensores'
+    El boton de alerta se desbloqueara
+    una vez hayas puesto de manera correcta todos los sensores, este boton te servira
+    para lanzar una alerta cuando la contaminacion este muy alta.
+
+
+
+    Segun el
+    tipo de contaminacion que haya tendras que lanzar una alerta cuando el nivel
+    de contaminacion se encuentre superior al debido.'
 --- !u!222 &1174654381
 CanvasRenderer:
   m_ObjectHideFlags: 0

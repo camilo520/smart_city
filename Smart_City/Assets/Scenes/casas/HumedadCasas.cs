@@ -17,15 +17,13 @@ public class HumedadCasas : MonoBehaviour
     void Start()
     {
         Button btn = humedadB.GetComponent<Button>();
-        btn.onClick.AddListener(casoCaluroso);
-        btn.onClick.AddListener(casoNormal);
-        btn.onClick.AddListener(casoLluvioso);
-        caso = Random.Range(1,4);
+        btn.onClick.AddListener(casos);
+
+        caso = 3;
         c1 = false;
         c2 = false;
         c3 = false;
         panelCorrecto.SetActive(false);
-        Greet();
         //StartCoroutine(correctos());
     }
 
@@ -40,6 +38,7 @@ public class HumedadCasas : MonoBehaviour
         if (caso == 1)
         {
             tipoCaso.text = "Dia caluroso";
+
         }else if (caso == 2)
         {
             tipoCaso.text = "Clima templado";
@@ -50,13 +49,9 @@ public class HumedadCasas : MonoBehaviour
         }
     }
 
-    void Greet()
-    {
-        
-    }
 
 
-    private void casoCaluroso()
+    private void casos()
     {
         if (caso == 1 && SliderCasas.porc >= 20 && SliderCasas.porc <= 30)
         {
@@ -65,11 +60,11 @@ public class HumedadCasas : MonoBehaviour
             c1 = true;
             caso = 3;
         }
-
-    }
-
-    private void casoNormal()
-    {
+        if (caso == 1 && c1 == false && SliderCasas.porc < 20 || SliderCasas.porc > 30)
+        {
+            StartCoroutine(incorrectos());
+            Debug.Log("estoy aqui");
+        }
         if (caso == 2 && SliderCasas.porc >= 30 && SliderCasas.porc <= 40)
         {
             Debug.Log("Correcto 2");
@@ -77,21 +72,25 @@ public class HumedadCasas : MonoBehaviour
             c2 = true;
             caso = 1;
         }
-
-    }
-
-    private void casoLluvioso()
-    {
-        if (caso == 3 && SliderCasas.porc > 40 && SliderCasas.porc < 50)
+        if (caso == 2 && c2 ==false && SliderCasas.porc < 30 || SliderCasas.porc > 40)
+        {
+            StartCoroutine(incorrectos());
+        }
+        if (caso == 3 && SliderCasas.porc >= 40 && SliderCasas.porc <= 50)
         {
             Debug.Log("Correcto 3");
             StartCoroutine(correctos());
             c3 = true;
             caso = 2;
-
+        }
+        if (caso == 3 && c3 == false && SliderCasas.porc < 40 || SliderCasas.porc > 50)
+        {
+            StartCoroutine(incorrectos());
         }
 
     }
+
+  
     IEnumerator correctos()
     {
             correcto.color = new Color(0,255,0);

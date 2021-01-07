@@ -28,7 +28,7 @@ public class DropSlotCasas3 : MonoBehaviour, IDropHandler
     // Start is called before the first frame update
     void Start()
     {
-
+        encasilla = false;
     }
 
     // Update is called once per frame
@@ -36,6 +36,7 @@ public class DropSlotCasas3 : MonoBehaviour, IDropHandler
     {
         if (item != null && item.transform.parent != transform)
         {
+            encasilla = false;
             item = null;
             Debug.Log("No la pusiste");
         }

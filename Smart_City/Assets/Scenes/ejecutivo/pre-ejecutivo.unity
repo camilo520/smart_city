@@ -24556,15 +24556,15 @@ RectTransform:
   m_GameObject: {fileID: 2094658882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7140983, y: 0.7024523, z: 0.715}
+  m_LocalScale: {x: 1, y: 1, z: 0.715}
   m_Children: []
   m_Father: {fileID: 288889118}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -31.41}
-  m_SizeDelta: {x: 330.7, y: 251.6}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 365.4, y: 277.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094658884
 MonoBehaviour:
@@ -24599,13 +24599,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Tienes que ubicar los sensores en los lugares correspondientes
+  m_Text: 'Segun el caso anteriormente presentado, tienes que identificar y ubicar
+    los sensor de infrarrojo en el lugar correspondiente, para poder desbloquear
+    los espacios de parqueo.
 
 
 
-    El
-    boton continuar se desbloqueara una vez hayas completado de poner los sensores
-    de manera correcta'
+    El boton comprobar se desbloqueara una vez hayas
+    completado de poner los sensores de manera correcta y servira para comprobar
+    si resolviste de manera correcta el caso que se te propuso.'
 --- !u!222 &2094658885
 CanvasRenderer:
   m_ObjectHideFlags: 0
