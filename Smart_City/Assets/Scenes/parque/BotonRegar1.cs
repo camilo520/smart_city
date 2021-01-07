@@ -17,7 +17,7 @@ public class BotonRegar1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log("Humedad: " + SliderCasas.porc);
     }
 
     public void recoger()

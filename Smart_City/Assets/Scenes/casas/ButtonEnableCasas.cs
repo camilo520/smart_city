@@ -7,6 +7,7 @@ public class ButtonEnableCasas : MonoBehaviour
 {
     public Button continuar;
     public GameObject slider;
+    public GameObject signo;
     public GameObject porcentaje;
 
     // Start is called before the first frame update
@@ -14,6 +15,7 @@ public class ButtonEnableCasas : MonoBehaviour
     {
         continuar.interactable = false;
         slider.SetActive(false);
+        signo.SetActive(false);
         porcentaje.SetActive(false);
     }
 
@@ -24,12 +26,14 @@ public class ButtonEnableCasas : MonoBehaviour
         {
             continuar.interactable = true;
             slider.SetActive(true);
+            signo.SetActive(true);
             porcentaje.SetActive(true);
         }
         else
         {
             continuar.interactable = false;
             slider.SetActive(false);
+            signo.SetActive(false);
             porcentaje.SetActive(false);
         }
     }
