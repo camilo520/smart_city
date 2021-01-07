@@ -9,6 +9,7 @@ public class ButtonEnableCasas : MonoBehaviour
     public GameObject slider;
     public GameObject signo;
     public GameObject porcentaje;
+    public GameObject tipoCaso;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class ButtonEnableCasas : MonoBehaviour
         slider.SetActive(false);
         signo.SetActive(false);
         porcentaje.SetActive(false);
+        tipoCaso.SetActive(false);
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class ButtonEnableCasas : MonoBehaviour
             slider.SetActive(true);
             signo.SetActive(true);
             porcentaje.SetActive(true);
+            tipoCaso.SetActive(true);
         }
         else
         {
@@ -35,6 +38,7 @@ public class ButtonEnableCasas : MonoBehaviour
             slider.SetActive(false);
             signo.SetActive(false);
             porcentaje.SetActive(false);
+            tipoCaso.SetActive(false);
         }
     }
 }
