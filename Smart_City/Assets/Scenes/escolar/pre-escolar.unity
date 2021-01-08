@@ -1875,7 +1875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.67, y: 145.2}
+  m_AnchoredPosition: {x: 5.67, y: 184.53}
   m_SizeDelta: {x: 200.8, y: 36.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &145129098
@@ -5296,7 +5296,7 @@ RectTransform:
   m_GameObject: {fileID: 424115825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.5}
   m_Children:
   - {fileID: 1604359554}
   m_Father: {fileID: 1868967874}
@@ -5304,7 +5304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.96, y: -135.45}
+  m_AnchoredPosition: {x: 12.96, y: -187.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &424115827
@@ -7436,8 +7436,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.67, y: 7.3}
-  m_SizeDelta: {x: 466.3, y: 213.7}
+  m_AnchoredPosition: {x: 5.67, y: -16.8}
+  m_SizeDelta: {x: 511.82, y: 329.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593014122
 MonoBehaviour:
@@ -7461,7 +7461,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -7472,13 +7472,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Tienes que ubicar los sensores de calidad de aire en los lugares correspondientes
-
-
-
-    El
-    boton continuar se desbloqueara una vez hayas puesto de manera correcta todos
-    los sensores'
+  m_Text: "Seg\xFAn el caso anteriormente propuesto, tienes que ubicar los sensores
+    de distancia en los botes de basura correspondientes.\r\n\r\n\r\nSe desbloquear\xE1n
+    los botones de recoger la basura de los botes solo cuando se ubiquen los sensores
+    de manera correcta.\r\n\r\n\r\nUtiliza los botones de recoger la basura solo
+    cuando indiquen que est\xE1n llenos, cuando logres recoger 3 veces la basura
+    de cada bote de manera correcta habr\xE1s completado el sector.\r"
 --- !u!222 &593014123
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12632,20 +12631,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Segun el caso anteriormente propuesto, tienes que ubicar los sensores
-    de distancia en los botes de basura correspondientes.
-
-
-
-    Se desbloquearan
+  m_Text: "Seg\xFAn el caso anteriormente propuesto, tienes que ubicar los sensores
+    de distancia en los botes de basura correspondientes.\r\n\r\n\r\nSe desbloquear\xE1n
     los botones de recoger la basura de los botes solo cuando se ubiquen los sensores
-    de manera correcta.
-
-
-
-    Utiliza los botones de recoger la basura solo cuando
-    indiquen que estan llenos, cuando logres recoger 3 veces la basura de cada bote
-    de manera correcta habras completado el sector.'
+    de manera correcta.\r\n\r\n\r\nUtiliza los botones de recoger la basura solo
+    cuando indiquen que est\xE1n llenos, cuando logres recoger 3 veces la basura
+    de cada bote de manera correcta habr\xE1s completado el sector.\r"
 --- !u!222 &1058998499
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21684,7 +21675,7 @@ RectTransform:
   m_GameObject: {fileID: 1868967873}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.48999998, y: 0.6999999, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.8, z: 1}
   m_Children:
   - {fileID: 145129097}
   - {fileID: 593014121}
@@ -21694,8 +21685,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 41.03502}
-  m_SizeDelta: {x: 0, y: -105.52997}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 140, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868967875
 MonoBehaviour:
