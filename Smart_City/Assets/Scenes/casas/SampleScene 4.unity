@@ -2027,7 +2027,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -220, y: -120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &152507746
@@ -8278,7 +8278,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 133.33}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 264.47, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &734841107
 MonoBehaviour:
@@ -8313,7 +8313,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sensor Dht11
+  m_Text: 'Sensor de Humedad DHT22 '
 --- !u!222 &734841108
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9199,8 +9199,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 54.68}
-  m_SizeDelta: {x: 372.4, y: 111.8}
+  m_AnchoredPosition: {x: 0, y: 43.5}
+  m_SizeDelta: {x: 415, y: 126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &811128880
 MonoBehaviour:
@@ -9224,21 +9224,27 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 125
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Este m\xF3dulo especialmente dise\xF1ado para Arduino te permitir\xE1
-    detectar la temperatura y humedad del ambeiente.\nCaracteristicas:\n-5V DC\n-Rango
-    de valores 20-95% en humedad y 0 a 50\xB0 temp\n-Salida digital\n-Dimensiones:
-    3.6x1.4x1.4cm"
+  m_Text: "El DHT22 Sensor digital de temperatura y humedad. Utiliza un sensor capacitivo
+    de humedad y un termistor para medir el aire circundante, y muestra los datos
+    mediante una se\xF1al digital en el pin de datos. Es bastante simple de usar,
+    pero requiere sincronizaci\xF3n cuidadosa para tomar datos. El \xFAnico inconveniente
+    de este sensor es que s\xF3lo se puede obtener nuevos datos una vez cada 2 segundos.\r\n\nCaracter\xEDsticas:\r\n\nAlimentaci\xF3n:
+    3.3Vdc \u2264 Vcc \u2264 6Vdc\r\nRango de medici\xF3n de temperatura: -40\xB0C
+    a 80 \xB0C\r\nPrecisi\xF3n de medici\xF3n de temperatura: <\xB10.5 \xB0C\r\nResoluci\xF3n
+    Temperatura: 0.1\xB0C\r\nRango de medici\xF3n de humedad: De 0 a 100% RH\r\nPrecisi\xF3n
+    de medici\xF3n de humedad: 2% RH\r\nResoluci\xF3n Humedad: 0.1%RH\r\nTiempo de
+    sensado: 2s\r\n"
 --- !u!222 &811128881
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9363,7 +9369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -220, y: -120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &829983991
@@ -16334,7 +16340,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -220, y: -120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1551800236
@@ -18182,7 +18188,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -15}
+  m_AnchoredPosition: {x: 0, y: -15}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1734247085
@@ -19678,7 +19684,7 @@ RectTransform:
   m_GameObject: {fileID: 1857236454}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 6, z: 0.69499993}
+  m_LocalScale: {x: 1.5, y: 4, z: 0.69499993}
   m_Children: []
   m_Father: {fileID: 1629190159}
   m_RootOrder: 6
@@ -19763,7 +19769,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2ae8c0eb21305954da4fc3fd4c6b9a77, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a674875f20204341ac29add40a57da0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22574,7 +22580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -220, y: -120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2120941790
