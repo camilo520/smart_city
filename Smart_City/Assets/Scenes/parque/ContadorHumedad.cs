@@ -116,11 +116,16 @@ public class ContadorHumedad : MonoBehaviour
                 animacion1.SetBool("riegoVerdadero", true);
                 gotas1 = true;
             }
-            else
+            yield return new WaitForSeconds(2);
+            
+            if(DropSlotParque.encasilla == true && DropSlotParque2.encasilla == true && verdadero1 == false)
             {
+                animacion1.SetBool("riegoVerdadero", true);
+                gotas1 = true;
 
             }
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(0.1f);
+
         }
 
     }
@@ -156,11 +161,16 @@ public class ContadorHumedad : MonoBehaviour
                 animacion2.SetBool("riegoVerdadero", true);
                 gotas2 = true;
             }
-            else
-            {
-
-            }
             yield return new WaitForSeconds(2);
+
+            if (DropSlotParque.encasilla == true && DropSlotParque2.encasilla == true && verdadero2 == false)
+            {
+                animacion2.SetBool("riegoVerdadero", true);
+                gotas2 = true;
+            }
+
+            yield return new WaitForSeconds(0.1f);
+
         }
 
     }

@@ -71,7 +71,7 @@ public class ButtonEnabledParque : MonoBehaviour
             texto2.SetActive(true);
             aspersor1.SetActive(true);
             aspersor2.SetActive(true);
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(1f);
         }
         
     }
