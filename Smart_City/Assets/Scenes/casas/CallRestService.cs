@@ -32,13 +32,13 @@ public class CallRestService : MonoBehaviour
 	{
 		while (true)
 		{
-			por = SliderCasas1.porc;
-			por2 = SliderCasas2.porc;
+			por = SliderCasas.porc;
+			//por2 = SliderCasas.porc;
 			///<summary>
 			/// Post using UnityWebRequest class
 			/// </summary>
 			/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
-			var jsonString = "{\"temperatura\":" + por.ToString() +",\"humedad\":"+ por2.ToString()+"}";
+			var jsonString = "{\"temperatura\":" + por.ToString() +"}";
 			byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
 
 			UnityWebRequest unityWebRequest = new UnityWebRequest(WEB_URL, "POST");
