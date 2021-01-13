@@ -23,6 +23,7 @@ public class HumedadCasas : MonoBehaviour
         c1 = false;
         c2 = false;
         c3 = false;
+        CallRestService.call = false;
         panelCorrecto.SetActive(false);
         //StartCoroutine(correctos());
     }
@@ -33,6 +34,7 @@ public class HumedadCasas : MonoBehaviour
         if(c1==true && c2 == true && c3 == true)
         {
             panelCorrecto.SetActive(true);
+ 
         }
 
         if (caso == 1)
