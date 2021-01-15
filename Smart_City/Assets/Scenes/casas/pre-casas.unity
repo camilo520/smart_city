@@ -2065,7 +2065,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 20
+  m_Text: 0
 --- !u!222 &170215087
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14621,7 +14621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f739dbd68a33fd641ad8588e3ccf1d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WEB_URL: http://ec2-54-90-157-222.compute-1.amazonaws.com:3000/datosm
+  WEB_URL: http://ec2-18-206-94-74.compute-1.amazonaws.com:3000/datosm
 --- !u!1001 &1267396737
 PrefabInstance:
   m_ObjectHideFlags: 0
