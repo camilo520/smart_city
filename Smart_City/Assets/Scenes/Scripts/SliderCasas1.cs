@@ -6,12 +6,13 @@ using UnityEngine.UI;
 
 public class SliderCasas1 : MonoBehaviour
 {
-    public static int porc=0;
+    public static int porc;
     Text porcentaje;
     // Start is called before the first frame update
     void Start()
     {
         porcentaje = GetComponent<Text>();
+        porc = 80;
     }
 
     // Update is called once per frame
