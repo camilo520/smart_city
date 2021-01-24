@@ -11561,6 +11561,7 @@ MonoBehaviour:
   avisoHumedad2: {fileID: 482124333}
   panelIncorrecto: {fileID: 680705871}
   panelCorrecto: {fileID: 1454162824}
+  audiosrc: {fileID: 2088787053}
   animacion1: {fileID: 1154320083}
   animacion2: {fileID: 1698539254}
 --- !u!114 &946665019
@@ -13032,7 +13033,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dfb7d27c8012e154c8530edf3e544670, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 73de374de6011c548b8c169ccd21a2ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -6165,6 +6165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b5a6a3da16fbad4f815e041fc72b9e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  humo: {fileID: 467618849}
 --- !u!114 &467618852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13737,6 +13738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79342ae7c447e054caeec083cb5a04cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  humo: {fileID: 1353672258}
 --- !u!114 &1353672261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21360,6 +21362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d37bedf2d48e0447a1e4c0a345f9f67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  humo: {fileID: 2068198780}
 --- !u!1001 &2079513654
 PrefabInstance:
   m_ObjectHideFlags: 0

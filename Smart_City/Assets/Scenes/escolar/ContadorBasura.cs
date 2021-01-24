@@ -17,6 +17,8 @@ public class ContadorBasura : MonoBehaviour
     public static float tiempo3 = 0f;
     public GameObject panel2;
     private bool desbordado;
+    public static AudioClip clipIncorrecto;
+    public AudioSource audiosrc;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +37,9 @@ public class ContadorBasura : MonoBehaviour
         StartCoroutine(contaminacion2());
         StartCoroutine(contaminacion3());
         panel2.SetActive(false);
-        
+        clipIncorrecto = Resources.Load<AudioClip>("sound_failder");
+        audiosrc.GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -118,6 +122,7 @@ public class ContadorBasura : MonoBehaviour
         {
             desbordado = true;
             panel2.SetActive(true);
+            audiosrc.PlayOneShot(clipIncorrecto);
         }
 
     }

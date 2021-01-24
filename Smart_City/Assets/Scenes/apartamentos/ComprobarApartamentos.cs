@@ -8,11 +8,17 @@ public class ComprobarApartamentos : MonoBehaviour
 {
     public GameObject panel;
     public GameObject panel2;
+    public static AudioClip clipCorrecto;
+    public static AudioClip clipIncorrecto;
+    public AudioSource audiosrc;
     // Start is called before the first frame update
     void Start()
     {
         panel.SetActive(false);
         panel2.SetActive(false);
+        clipCorrecto = Resources.Load<AudioClip>("succes_sound2");
+        clipIncorrecto = Resources.Load<AudioClip>("sound_failder");
+        audiosrc.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +34,7 @@ public class ComprobarApartamentos : MonoBehaviour
             Debug.Log("Sisas");
             panel.SetActive(true);
             panel2.SetActive(false);
+            audiosrc.PlayOneShot(clipCorrecto);
         }
 
         else
@@ -35,6 +42,7 @@ public class ComprobarApartamentos : MonoBehaviour
             Debug.Log("Nonas");
             panel.SetActive(false);
             panel2.SetActive(true);
+            audiosrc.PlayOneShot(clipIncorrecto);
         }
     }
     }

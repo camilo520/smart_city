@@ -8,7 +8,7 @@ using UnityEngine.EventSystems;
 public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
 {
 
-    public static GameObject humo;
+    public GameObject humo;
     Vector3 posicioninicial;
     Transform startParent;
     Transform dragParent;
@@ -67,7 +67,7 @@ public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBegin
         humo = gameObject;
         Int32.TryParse(humo.transform.position.y.ToString(), out posy);
 
-        if (posy >= 540)
+        if (posy >= 300)
         {
             humo1 = true;
         }

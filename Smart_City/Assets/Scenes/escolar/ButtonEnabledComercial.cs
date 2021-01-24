@@ -18,6 +18,8 @@ public class ButtonEnabledComercial : MonoBehaviour
     public Button validar2;
     public Button validar3;
     public GameObject panel;
+    public static AudioClip clipCorrecto;
+    public AudioSource audiosrc;
 
 
     // Start is called before the first frame update
@@ -35,7 +37,8 @@ public class ButtonEnabledComercial : MonoBehaviour
         slider1.SetActive(false);
         slider2.SetActive(false);
         slider3.SetActive(false);
-
+        clipCorrecto = Resources.Load<AudioClip>("succes_sound2");
+        audiosrc.GetComponent<AudioSource>();
 
     }
 
@@ -77,6 +80,7 @@ public class ButtonEnabledComercial : MonoBehaviour
         if (BotonRecoger.b == true && BotonRecoger2.b == true && BotonRecoger3.b == true)
         {
             panel.SetActive(true);
+            audiosrc.PlayOneShot(clipCorrecto);
         }
 
         Debug.Log("casilla 1: " + DropSlotComercial1.encasilla + " casilla 2: " + DropSlotComercial2.encasilla + " casilla 3: " + DropSlotComercial3.encasilla);
