@@ -11702,6 +11702,7 @@ MonoBehaviour:
   panelCorrecto: {fileID: 1454162824}
   animacion1: {fileID: 1154320083}
   animacion2: {fileID: 1698539254}
+  audiosrc: {fileID: 2088787053}
 --- !u!114 &946665019
 MonoBehaviour:
   m_ObjectHideFlags: 0

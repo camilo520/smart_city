@@ -16,7 +16,7 @@ public class CallRestService : MonoBehaviour
 	void Start()
 	{
 		call = false;
-		StartCoroutine(postUnityWebRequest());
+		//StartCoroutine(postUnityWebRequest());
 		//StartCoroutine(getUnityWebRequest());
 	
 	}

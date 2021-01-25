@@ -44,12 +44,14 @@ public class BotonComprobar : MonoBehaviour
             panel.SetActive(true);
             panel2.SetActive(false);
             audiosrc.PlayOneShot(clipCorrecto);
+            MenuPrincipal.finEjecutivo = true;
         }
         else
         {
             panel.SetActive(false);
             panel2.SetActive(true);
             audiosrc.PlayOneShot(clipIncorrecto);
+            MenuPrincipal.finEjecutivo = false;
         }
         if (CasosParqueadero.caso4 == true && BotonEspacio1.disponible == false && BotonEspacio2.disponible == true
             && BotonEspacio3.disponible == false && BotonEspacio4.disponible == true && BotonEspacio5.disponible == false)
@@ -57,6 +59,7 @@ public class BotonComprobar : MonoBehaviour
             panel.SetActive(true);
             panel2.SetActive(false);
             audiosrc.PlayOneShot(clipCorrecto);
+            MenuPrincipal.finEjecutivo = true;
         }
         if (CasosParqueadero.caso3 == true && BotonEspacio1.disponible == true && BotonEspacio2.disponible == true
             && BotonEspacio3.disponible == false && BotonEspacio4.disponible == false && BotonEspacio5.disponible == false)
@@ -64,6 +67,7 @@ public class BotonComprobar : MonoBehaviour
             panel.SetActive(true);
             panel2.SetActive(false);
             audiosrc.PlayOneShot(clipCorrecto);
+            MenuPrincipal.finEjecutivo = true;
         }
         if (CasosParqueadero.caso2 == true && BotonEspacio1.disponible == false && BotonEspacio2.disponible == true
             && BotonEspacio3.disponible == true && BotonEspacio4.disponible == true && BotonEspacio5.disponible == false)
@@ -71,6 +75,7 @@ public class BotonComprobar : MonoBehaviour
             panel.SetActive(true);
             panel2.SetActive(false);
             audiosrc.PlayOneShot(clipCorrecto);
+            MenuPrincipal.finEjecutivo = true;
         }
         if (CasosParqueadero.caso1 == true && BotonEspacio1.disponible == true && BotonEspacio2.disponible == false
             && BotonEspacio3.disponible == false && BotonEspacio4.disponible == false && BotonEspacio5.disponible == true)
@@ -78,6 +83,7 @@ public class BotonComprobar : MonoBehaviour
             panel.SetActive(true);
             panel2.SetActive(false);
             audiosrc.PlayOneShot(clipCorrecto);
+            MenuPrincipal.finEjecutivo = true;
         }
     }
 }

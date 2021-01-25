@@ -17,7 +17,6 @@ public class ButtonEnableApartamentos : MonoBehaviour
         texto1.SetActive(false);
         texto2.SetActive(false);
         validar.interactable = false;
-
     }
 
     // Update is called once per frame

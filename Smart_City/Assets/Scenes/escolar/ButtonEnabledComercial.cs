@@ -18,6 +18,7 @@ public class ButtonEnabledComercial : MonoBehaviour
     public Button validar2;
     public Button validar3;
     public GameObject panel;
+    private bool playAudio = false;
     public static AudioClip clipCorrecto;
     public AudioSource audiosrc;
 
@@ -31,6 +32,7 @@ public class ButtonEnabledComercial : MonoBehaviour
         text.SetActive(false);
         text2.SetActive(false);
         text3.SetActive(false);
+        playAudio = false;
         validar.interactable = false;
         validar2.interactable = false;
         validar3.interactable = false;
@@ -80,7 +82,13 @@ public class ButtonEnabledComercial : MonoBehaviour
         if (BotonRecoger.b == true && BotonRecoger2.b == true && BotonRecoger3.b == true)
         {
             panel.SetActive(true);
-            audiosrc.PlayOneShot(clipCorrecto);
+            MenuPrincipal.finComercial = true;
+            if(playAudio == false)
+            {
+                audiosrc.PlayOneShot(clipCorrecto);
+                playAudio = true;
+            }
+            
         }
 
         Debug.Log("casilla 1: " + DropSlotComercial1.encasilla + " casilla 2: " + DropSlotComercial2.encasilla + " casilla 3: " + DropSlotComercial3.encasilla);

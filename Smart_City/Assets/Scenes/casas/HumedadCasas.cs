@@ -12,6 +12,13 @@ public class HumedadCasas : MonoBehaviour
     public GameObject panelCorrecto;
     public Text tipoCaso;
     public Text correcto;
+    public static AudioClip clipCorrecto;
+    public static AudioClip clipIncorrecto;
+    public AudioSource audiosrc;
+    private bool playAudio = false;
+    private bool playAudio2 = false;
+    private bool playAudio3 = false;
+    private bool playAudio4 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +32,11 @@ public class HumedadCasas : MonoBehaviour
         c3 = false;
         CallRestService.call = false;
         panelCorrecto.SetActive(false);
+        MenuPrincipal.finCasa = false;
+
+        clipCorrecto = Resources.Load<AudioClip>("succes_sound2");
+        clipIncorrecto = Resources.Load<AudioClip>("sound_failder");
+        audiosrc.GetComponent<AudioSource>();
         //StartCoroutine(correctos());
     }
 
@@ -34,7 +46,12 @@ public class HumedadCasas : MonoBehaviour
         if(c1==true && c2 == true && c3 == true)
         {
             panelCorrecto.SetActive(true);
- 
+            MenuPrincipal.finCasa = true;
+            if (playAudio == false)
+            {
+                audiosrc.PlayOneShot(clipCorrecto);
+                playAudio = true;
+            }
         }
 
         if (caso == 1)
@@ -65,7 +82,11 @@ public class HumedadCasas : MonoBehaviour
         if (caso == 1 && c1 == false && SliderCasas.porc < 20 || SliderCasas.porc > 30)
         {
             StartCoroutine(incorrectos());
-            Debug.Log("estoy aqui");
+            if (playAudio2 == false)
+            {
+                audiosrc.PlayOneShot(clipIncorrecto);
+                playAudio2 = true;
+            }
         }
         if (caso == 2 && SliderCasas.porc >= 30 && SliderCasas.porc <= 40)
         {
@@ -77,6 +98,11 @@ public class HumedadCasas : MonoBehaviour
         if (caso == 2 && c2 ==false && SliderCasas.porc < 30 || SliderCasas.porc > 40)
         {
             StartCoroutine(incorrectos());
+            if (playAudio3 == false)
+            {
+                audiosrc.PlayOneShot(clipIncorrecto);
+                playAudio3 = true;
+            }
         }
         if (caso == 3 && SliderCasas.porc >= 40 && SliderCasas.porc <= 50)
         {
@@ -88,6 +114,11 @@ public class HumedadCasas : MonoBehaviour
         if (caso == 3 && c3 == false && SliderCasas.porc < 40 || SliderCasas.porc > 50)
         {
             StartCoroutine(incorrectos());
+            if (playAudio4 == false)
+            {
+                audiosrc.PlayOneShot(clipIncorrecto);
+                playAudio4 = true;
+            }
         }
 
     }

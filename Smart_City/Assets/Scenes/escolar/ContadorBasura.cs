@@ -12,6 +12,7 @@ public class ContadorBasura : MonoBehaviour
     public Text estado;
     public Text estado2;
     public Text estado3;
+    private bool playAudio=false;
     public static float tiempo = 0f;
     public static float tiempo2 = 0f;
     public static float tiempo3 = 0f;
@@ -27,6 +28,7 @@ public class ContadorBasura : MonoBehaviour
         tiempo2 = 0f;
         tiempo3 = 0f;
         desbordado = false;
+        playAudio = false;
         //contador.text = " " + tiempo + " Kg";
         //contador2.text = " " + tiempo2 + " Kg";
         //contador3.text = " " + tiempo3 + " Kg";
@@ -118,11 +120,18 @@ public class ContadorBasura : MonoBehaviour
             
         }
 
-        if (tiempo >= 40 || tiempo2 >= 40 || tiempo3 >= 40)
+        if (tiempo >= 40 || tiempo2 >= 40 || tiempo3 >= 40 )
         {
             desbordado = true;
             panel2.SetActive(true);
-            audiosrc.PlayOneShot(clipIncorrecto);
+            MenuPrincipal.finComercial = false;
+            if (playAudio==false)
+            {
+                audiosrc.PlayOneShot(clipIncorrecto);
+                playAudio = true;
+            }
+            
+            
         }
 
     }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DragParent
   - DragParent1
+  - MusicAP
   layers:
   - Default
   - TransparentFX

@@ -21,6 +21,10 @@ public class ContadorHumedad : MonoBehaviour
     private bool sepaso;
     [SerializeField] private Animator animacion1;
     [SerializeField] private Animator animacion2;
+    public static AudioClip clipCorrecto;
+    public static AudioClip clipIncorrecto;
+    public AudioSource audiosrc;
+    private bool playAudio=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,9 +43,12 @@ public class ContadorHumedad : MonoBehaviour
         sepaso = false;
         gotas1 = false;
         gotas2 = false;
+        playAudio = false;
         panelCorrecto.SetActive(false);
         panelIncorrecto.SetActive(false);
-
+        clipCorrecto = Resources.Load<AudioClip>("succes_sound2");
+        clipIncorrecto = Resources.Load<AudioClip>("sound_failder");
+        audiosrc.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -55,6 +62,12 @@ public class ContadorHumedad : MonoBehaviour
             animacion1.SetBool("riegoVerdadero", false);
             animacion2.SetBool("riegoVerdadero", false);
             panelCorrecto.SetActive(true);
+            MenuPrincipal.finParque = true;
+            if (playAudio==false)
+            {
+                audiosrc.PlayOneShot(clipCorrecto);
+                playAudio = true;
+            }
         }
         else if (tiempo > 1023 || tiempo2 > 1023)
         {
@@ -62,6 +75,12 @@ public class ContadorHumedad : MonoBehaviour
             animacion1.SetBool("riegoVerdadero", false);
             animacion2.SetBool("riegoVerdadero", false);
             panelIncorrecto.SetActive(true);
+            MenuPrincipal.finParque = false;
+            if (playAudio == false)
+            {
+                audiosrc.PlayOneShot(clipIncorrecto);
+                playAudio = true;
+            }
         }
         
 

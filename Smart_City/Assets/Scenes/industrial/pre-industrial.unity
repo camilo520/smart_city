@@ -1177,6 +1177,7 @@ MonoBehaviour:
   nube3: {fileID: 1353672258}
   panelCorrecto: {fileID: 614939316}
   panelIncorrecto: {fileID: 1465639022}
+  audiosrc: {fileID: 963780179}
 --- !u!1001 &155192681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16141,7 +16142,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Volver
+  m_Text: Volver a intentarlo
 --- !u!222 &1539562353
 CanvasRenderer:
   m_ObjectHideFlags: 0

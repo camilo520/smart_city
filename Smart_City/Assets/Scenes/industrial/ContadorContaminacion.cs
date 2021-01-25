@@ -12,11 +12,15 @@ public class ContadorContaminacion : MonoBehaviour
     public GameObject nube1;
     public GameObject nube2;
     public GameObject nube3;
+    private bool playAudio=false;
     public GameObject panelCorrecto;
     public GameObject panelIncorrecto;
     public static float contaminacion;
     public static bool sepaso;
     private bool correcto;
+    public static AudioClip clipCorrecto;
+    public static AudioClip clipIncorrecto;
+    public AudioSource audiosrc;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +31,7 @@ public class ContadorContaminacion : MonoBehaviour
         avisoContaminacion1.text = "";
         contaminacion = 50f;
         sepaso = false;
+        playAudio = false;
         nube1.SetActive(false);
         nube2.SetActive(false);
         nube3.SetActive(false);
@@ -37,6 +42,9 @@ public class ContadorContaminacion : MonoBehaviour
         posicionHumo2.humo2 = false;
         posicionHumo3.humo3 = false;
         BotonContaminacion.alerta = false;
+        clipCorrecto = Resources.Load<AudioClip>("succes_sound2");
+        clipIncorrecto = Resources.Load<AudioClip>("sound_failder");
+        audiosrc.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -67,21 +75,45 @@ public class ContadorContaminacion : MonoBehaviour
         {
             panelIncorrecto.SetActive(true);
             correcto = true;
+            MenuPrincipal.finIndustrial = false;
+            if (playAudio == false)
+            {
+                audiosrc.PlayOneShot(clipIncorrecto);
+                playAudio = true;
+            }
         }
         if(contaminacion >= 900f && CasosIndustrial.caso2 == true)
         {
             panelIncorrecto.SetActive(true);
+            MenuPrincipal.finIndustrial = false;
             correcto = true;
+            if (playAudio == false)
+            {
+                audiosrc.PlayOneShot(clipIncorrecto);
+                playAudio = true;
+            }
         }
         if (contaminacion >= 1350f && CasosIndustrial.caso1 == true)
         {
             panelIncorrecto.SetActive(true);
+            MenuPrincipal.finIndustrial = false;
             correcto = true;
+            if (playAudio == false)
+            {
+                audiosrc.PlayOneShot(clipIncorrecto);
+                playAudio = true;
+            }
         }
         if (contaminacion < 50f)
         {
             panelCorrecto.SetActive(true);
             correcto = true;
+            MenuPrincipal.finIndustrial = true;
+            if (playAudio == false)
+            {
+                audiosrc.PlayOneShot(clipCorrecto);
+                playAudio = true;
+            }
         }
         Debug.Log("¿es correcto?: " + correcto);
     }

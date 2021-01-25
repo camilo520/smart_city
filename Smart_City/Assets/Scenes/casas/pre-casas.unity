@@ -14760,6 +14760,7 @@ MonoBehaviour:
   panelCorrecto: {fileID: 1163652080}
   tipoCaso: {fileID: 608544710}
   correcto: {fileID: 1176130086}
+  audiosrc: {fileID: 30902427}
 --- !u!114 &1267087023
 MonoBehaviour:
   m_ObjectHideFlags: 0

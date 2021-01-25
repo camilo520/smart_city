@@ -34,6 +34,7 @@ public class ComprobarApartamentos : MonoBehaviour
             Debug.Log("Sisas");
             panel.SetActive(true);
             panel2.SetActive(false);
+            MenuPrincipal.finApartamento = true;
             audiosrc.PlayOneShot(clipCorrecto);
         }
 
@@ -42,6 +43,7 @@ public class ComprobarApartamentos : MonoBehaviour
             Debug.Log("Nonas");
             panel.SetActive(false);
             panel2.SetActive(true);
+            MenuPrincipal.finApartamento = false;
             audiosrc.PlayOneShot(clipIncorrecto);
         }
     }
