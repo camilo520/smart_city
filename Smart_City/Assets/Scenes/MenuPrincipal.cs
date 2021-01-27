@@ -24,6 +24,14 @@ public class MenuPrincipal : MonoBehaviour
     public GameObject BEjecutivo;
     public GameObject BParque;
     public GameObject BIndustrial;
+
+    public GameObject LApartamentos;
+    public GameObject LCasas;
+    public GameObject LComercial;
+    public GameObject LEjecutivo;
+    public GameObject LParque;
+    public GameObject LIndustrial;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,36 +45,42 @@ public class MenuPrincipal : MonoBehaviour
         {
             zonaApartamentos.SetActive(false);
             BApartamentos.SetActive(true);
+            LApartamentos.SetActive(true);
         }
 
         if (finCasa == true)
         {
             zonaCasas.SetActive(false);
             BCasas.SetActive(true);
+            LCasas.SetActive(true);
         }
 
         if (finComercial == true)
         {
             zonaComercial.SetActive(false);
             BComercial.SetActive(true);
+            LComercial.SetActive(true);
         }
 
         if (finEjecutivo == true)
         {
             zonaEjecutivo.SetActive(false);
             BEjecutivo.SetActive(true);
+            LEjecutivo.SetActive(true);
         }
 
         if (finParque == true)
         {
             zonaParque.SetActive(false);
             BParque.SetActive(true);
+            LParque.SetActive(true);
         }
 
         if (finIndustrial == true)
         {
             zonaIndustrial.SetActive(false);
             BIndustrial.SetActive(true);
+            LIndustrial.SetActive(true);
         }
 
     }

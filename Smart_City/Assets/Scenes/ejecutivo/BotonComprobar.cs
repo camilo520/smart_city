@@ -12,6 +12,7 @@ public class BotonComprobar : MonoBehaviour
     public static AudioClip clipCorrecto;
     public static AudioClip clipIncorrecto;
     public AudioSource audiosrc;
+    private bool seraverdad;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class BotonComprobar : MonoBehaviour
         clipCorrecto = Resources.Load<AudioClip>("succes_sound2");
         clipIncorrecto = Resources.Load<AudioClip>("sound_failder");
         audiosrc.GetComponent<AudioSource>();
+        seraverdad = false;
     }
 
     // Update is called once per frame
@@ -45,8 +47,9 @@ public class BotonComprobar : MonoBehaviour
             panel2.SetActive(false);
             audiosrc.PlayOneShot(clipCorrecto);
             MenuPrincipal.finEjecutivo = true;
+            seraverdad = true;
         }
-        else
+        if(seraverdad==false)
         {
             panel.SetActive(false);
             panel2.SetActive(true);
@@ -60,6 +63,7 @@ public class BotonComprobar : MonoBehaviour
             panel2.SetActive(false);
             audiosrc.PlayOneShot(clipCorrecto);
             MenuPrincipal.finEjecutivo = true;
+            seraverdad = true;
         }
         if (CasosParqueadero.caso3 == true && BotonEspacio1.disponible == true && BotonEspacio2.disponible == true
             && BotonEspacio3.disponible == false && BotonEspacio4.disponible == false && BotonEspacio5.disponible == false)
@@ -68,6 +72,7 @@ public class BotonComprobar : MonoBehaviour
             panel2.SetActive(false);
             audiosrc.PlayOneShot(clipCorrecto);
             MenuPrincipal.finEjecutivo = true;
+            seraverdad = true;
         }
         if (CasosParqueadero.caso2 == true && BotonEspacio1.disponible == false && BotonEspacio2.disponible == true
             && BotonEspacio3.disponible == true && BotonEspacio4.disponible == true && BotonEspacio5.disponible == false)
@@ -76,6 +81,7 @@ public class BotonComprobar : MonoBehaviour
             panel2.SetActive(false);
             audiosrc.PlayOneShot(clipCorrecto);
             MenuPrincipal.finEjecutivo = true;
+            seraverdad = true;
         }
         if (CasosParqueadero.caso1 == true && BotonEspacio1.disponible == true && BotonEspacio2.disponible == false
             && BotonEspacio3.disponible == false && BotonEspacio4.disponible == false && BotonEspacio5.disponible == true)
@@ -84,6 +90,7 @@ public class BotonComprobar : MonoBehaviour
             panel2.SetActive(false);
             audiosrc.PlayOneShot(clipCorrecto);
             MenuPrincipal.finEjecutivo = true;
+            seraverdad = true;
         }
     }
 }

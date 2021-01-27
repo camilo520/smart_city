@@ -28,7 +28,7 @@ public class ContadorPersonas : MonoBehaviour
     {
 
         contador.text = " " + personas.ToString("f0") + " Persona(s)";
-        Debug.Log(personas);
+
 
         if (personas >= 5 && personas <= 7)
         {

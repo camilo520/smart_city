@@ -13,7 +13,6 @@ public class HumedadCasas : MonoBehaviour
     public Text tipoCaso;
     public Text correcto;
     public static AudioClip clipCorrecto;
-    public static AudioClip clipIncorrecto;
     public AudioSource audiosrc;
     private bool playAudio = false;
     private bool playAudio2 = false;
@@ -35,7 +34,6 @@ public class HumedadCasas : MonoBehaviour
         MenuPrincipal.finCasa = false;
 
         clipCorrecto = Resources.Load<AudioClip>("succes_sound2");
-        clipIncorrecto = Resources.Load<AudioClip>("sound_failder");
         audiosrc.GetComponent<AudioSource>();
         //StartCoroutine(correctos());
     }
@@ -84,7 +82,6 @@ public class HumedadCasas : MonoBehaviour
             StartCoroutine(incorrectos());
             if (playAudio2 == false)
             {
-                audiosrc.PlayOneShot(clipIncorrecto);
                 playAudio2 = true;
             }
         }
@@ -100,7 +97,6 @@ public class HumedadCasas : MonoBehaviour
             StartCoroutine(incorrectos());
             if (playAudio3 == false)
             {
-                audiosrc.PlayOneShot(clipIncorrecto);
                 playAudio3 = true;
             }
         }
@@ -116,7 +112,6 @@ public class HumedadCasas : MonoBehaviour
             StartCoroutine(incorrectos());
             if (playAudio4 == false)
             {
-                audiosrc.PlayOneShot(clipIncorrecto);
                 playAudio4 = true;
             }
         }
