@@ -1539,10 +1539,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'No estas en el rango correcto de dB que debe detectar el sensor de ruido
-    para que se cumpla la norma de tranquilidad y ruido moderado.
-
-'
+  m_Text: "No est\xE1s en el rango correcto de dB que debe detectar el sensor de
+    ruido para que se cumpla la norma de tranquilidad y ruido moderado.\n"
 --- !u!222 &159907537
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10479,7 +10477,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu mapa
+  m_Text: "Men\xFA principal"
 --- !u!222 &1007871818
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14602,8 +14600,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Estas en el rango correcto de dB que deberia detectar el sensor para que
-    se cumpla la norma de tranquilidad y ruido moderado.
+  m_Text: "Estas en el rango correcto de dB que deber\xEDa detectar el sensor para
+    que se cumpla la norma de tranquilidad y ruido moderado."
 --- !u!222 &1510020167
 CanvasRenderer:
   m_ObjectHideFlags: 0

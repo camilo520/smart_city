@@ -14296,7 +14296,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu principal
+  m_Text: "Men\xFA principal"
 --- !u!222 &1540563559
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18073,8 +18073,8 @@ MonoBehaviour:
     de manera autom\xE1tica el momento en el que se debe regar el c\xE9sped y plantas
     del parque principal de la ciudad, estos sensores detectan el nivel de humedad
     del suelo y dependiendo de este se activaran o no los aspersores del parque.
-    \n\nUn suelo ligeramente humedo dar\xEDa valores t\xEDpicos de 600-700. Un suelo
-    seco tendr\xE1 valores de 800-1023."
+    \r\n\r\nUn suelo ligeramente h\xFAmedo dar\xEDa valores t\xEDpicos de 600-700.
+    Un suelo seco tendr\xE1 valores de 800-1023.\r\n"
 --- !u!222 &1922965092
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -15155,9 +15155,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lee el contexto del caso y las descripciones de los sensores.\n\nCuando
-    termines haz clic en el bot\xF3n Continuar para avanzar a la parte practica de
-    la simulacion."
+  m_Text: "Lee el contexto del caso y las descripciones de los sensores.\r\n\r\nCuando
+    termines haz clic en el bot\xF3n Continuar para avanzar a la parte pr\xE1ctica
+    de la simulaci\xF3n.\r"
 --- !u!222 &1425860275
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17065,7 +17065,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu principal
+  m_Text: "Men\xFA principal"
 --- !u!222 &1585616157
 CanvasRenderer:
   m_ObjectHideFlags: 0

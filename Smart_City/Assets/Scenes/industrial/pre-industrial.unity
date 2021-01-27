@@ -1919,7 +1919,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lo hiciste de manera incorrecta. Intentalo de nuevo por favor
+  m_Text: "Lo hiciste de manera incorrecta.\r\nInt\xE9ntalo de nuevo por favor.\r"
 --- !u!222 &183001745
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11140,7 +11140,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lo resolviste de maner correcta
+  m_Text: Lo resolviste de manera correcta.
 --- !u!222 &1091577903
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15653,7 +15653,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ver Tabla Contaminacion
+  m_Text: "Ver tabla contaminaci\xF3n"
 --- !u!222 &1511684549
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17522,7 +17522,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu principal
+  m_Text: "Men\xFA principal "
 --- !u!222 &1691935303
 CanvasRenderer:
   m_ObjectHideFlags: 0

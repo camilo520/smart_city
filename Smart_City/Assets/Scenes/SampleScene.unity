@@ -2695,9 +2695,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Selecciona alguna de las zonas de la ciudad Cleverville y accederas a un
-    caso especifico el cual deberas desarrollar con exito para completar todas las
-    zonas de la ciudad
+  m_Text: "Selecciona alguna de las zonas de la ciudad Cleverville y acceder\xE1s
+    a un caso espec\xEDfico el cual deber\xE1s desarrollar con \xE9xito para completar
+    todas las zonas de la ciudad."
 --- !u!222 &215730286
 CanvasRenderer:
   m_ObjectHideFlags: 0

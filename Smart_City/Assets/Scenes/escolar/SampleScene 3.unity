@@ -17287,7 +17287,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu principal
+  m_Text: "Men\xFA principal"
 --- !u!222 &1580044623
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19072,9 +19072,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lee el contexto del caso y las descripciones de los sensores.\n\nCuando
-    termines haz clic en el bot\xF3n Continuar para avanzar a la parte practica de
-    la simulacion."
+  m_Text: "Lee el contexto del caso y las descripciones de los sensores.\r\n\r\nCuando
+    termines haz clic en el bot\xF3n Continuar para avanzar a la parte pr\xE1ctica
+    de la simulaci\xF3n.\r"
 --- !u!222 &1775913458
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21136,7 +21136,7 @@ MonoBehaviour:
     est\xE1n en el sector. Para ayudar a este problema el ayuntamiento de Cleverville
     ha dispuesto de sensores de llenado para ponerlos en los botes de basura y a
     si medir el nivel de basura que hay en el bote correspondiente. Cada bote de
-    basura tiene una capacidad maxima de 40 kg de basura.\n"
+    basura tiene una capacidad m\xE1xima de 40 kg de basura.\n"
 --- !u!222 &1949181246
 CanvasRenderer:
   m_ObjectHideFlags: 0

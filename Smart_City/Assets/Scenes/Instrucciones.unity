@@ -9764,21 +9764,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'El siguiente simulador tiene como proposito educar a estudiantes en las
-    herramientas que pueden utilizar, casos a los que se pueden afrontar y cuales
-    son los diferentes sensores y contextos que pueden haber en una Smart City.
-
-
-    Con
-    este simulador se busca crear una union de conceptos teoricos y practicos sobre
-    las ciudades inteligentes, aportando informacion basica de sensores, casos posibles
-    y una visualizacion grafica de los datos que se estan manejando.
-
-
-    La forma
-    de interactuar con el simulador es mediante la interfaz grafica 2D, no hay ninguna
-    intefacion con el mundo 3D que se muestra de fondo, por lo tanto no es posible
-    girar la camara o moverme a traves del mundo 3D.'
+  m_Text: "El siguiente simulador tiene como prop\xF3sito educar a estudiantes en
+    las herramientas que pueden utilizar, casos a los que se pueden afrontar y cu\xE1les
+    son los diferentes sensores y contextos que pueden haber en una Smart City.\r\n\r\nCon
+    este simulador se busca crear una uni\xF3n de conceptos te\xF3ricos y pr\xE1cticos
+    sobre las ciudades inteligentes, aportando informaci\xF3n b\xE1sica de sensores,
+    casos posibles y una visualizaci\xF3n grafica de los datos que se est\xE1n manejando.\r\n\r\nLa
+    forma de interactuar con el simulador es mediante la interfaz gr\xE1fica 2D,
+    no hay ninguna interacci\xF3n con el mundo 3D que se muestra de fondo, por lo
+    tanto, no es posible girar la c\xE1mara o moverme a trav\xE9s del mundo 3D.\r\n"
 --- !u!222 &1143531686
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -352,7 +352,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu Mapa
+  m_Text: "Men\xFA principal"
 --- !u!222 &25656525
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1657,13 +1657,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Tienes que ubicar los sensores de humedad en los lugares correspondientes
-
-
-
-    El
-    boton continuar se desbloqueara una vez hayas puesto de manera correcta todos
-    los sensores'
+  m_Text: "Tienes que ubicar los sensores de humedad en los lugares correspondientes.\r\n\r\n\r\nEl
+    bot\xF3n continuar se desbloquear\xE1 una vez hayas puesto de manera correcta
+    todos los sensores.\r"
 --- !u!222 &149977790
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4159,8 +4155,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Estas en el rango correcto de porcentaje de humedad que deberia detectar
-    el sensor
+  m_Text: "Estas en el rango correcto de porcentaje de humedad que deber\xEDa detectar
+    el sensor."
 --- !u!222 &317512508
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15051,10 +15047,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'No estas en el rango correcto de porcentaje de humedad que debe detectar
-    el sensor.
-
-'
+  m_Text: "No est\xE1s en el rango correcto de porcentaje de humedad que debe detectar
+    el sensor.\n"
 --- !u!222 &1278397536
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18232,13 +18226,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Tienes que ubicar los sensores de humedad en los lugares correspondientes
-
-
-
-    El
-    boton continuar se desbloqueara una vez hayas puesto de manera correcta todos
-    los sensores'
+  m_Text: "Tienes que ubicar los sensores de humedad en los lugares correspondientes.\r\n\r\n\r\nEl
+    bot\xF3n continuar se desbloquear\xE1 una vez hayas puesto de manera correcta
+    todos los sensores.\r"
 --- !u!222 &1578358861
 CanvasRenderer:
   m_ObjectHideFlags: 0

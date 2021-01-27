@@ -6367,7 +6367,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lo completaste de manera correcta. Felicidades
+  m_Text: "Lo completaste de manera correcta. \nFelicidades"
 --- !u!222 &482964966
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12291,7 +12291,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu Principal
+  m_Text: "Men\xFA principal"
 --- !u!222 &997449996
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16390,7 +16390,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: No lograste desarrollarel caso de manera correcta. Vuelve a intentarlo
+  m_Text: "No lograste desarrollar el caso de manera correcta. \r\nVuelve a intentarlo.\r"
 --- !u!222 &1372180839
 CanvasRenderer:
   m_ObjectHideFlags: 0
