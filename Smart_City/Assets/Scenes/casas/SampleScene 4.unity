@@ -850,7 +850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &95797938
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4531,7 +4531,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 391.90854, y: -71.10025}
+  m_AnchoredPosition: {x: 391.90854, y: -72.4}
   m_SizeDelta: {x: 691.7, y: 43.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &377338595
@@ -4567,15 +4567,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "En Cleverville existen normativas que regulan el ruido en diferentes sectores
-    de la ciudad, una de estas normativas es la norma 0627 DE 2006 en donde se establecen
-    los est\xE1ndares m\xE1ximos permisibles de niveles de emisi\xF3n de ruido expresados
-    en decibeles dB.  \nLa norma expresa lo siguiente:            \nAl ayuntamiento
-    de Cleverville han llegado muchas quejas por parte de los residentes del sector
-    de Skyline Apartments, los cuales notifican que se presenta mucho ruido en esta
-    zona residencial. \r\nPor esta raz\xF3n el ayuntamiento desea implementar un
-    sistema de monitoreo del ruido haciendo uso de sensores en esta zona.  Los sensores
-    que ha adquirido el ayuntamiento son los siguientes:\r\n"
+  m_Text: "Una de las propuestas para mejorar experiencia de vida de los habitantes
+    de Cleverville es instalar sensores de humedad y temperatura en el sector de
+    las casas que tiene la ciudad para que detecten la temperatura del exterior,
+    y dependiendo de esta se envi\xE9 una alerta a las personas que viven all\xED
+    para que ajusten autom\xE1ticamente la temperatura ideal que deber\xEDan tener
+    en sus casas. \r\n\nLos rangos de la temperatura ideal en el interior de las
+    casas dependiendo de la temperatura exterior se expresa de la siguiente forma:
+    un d\xEDa caluroso o de dia oscila en un rango de 20-21\xBAC y durante un d\xEDa
+    lluvioso o de noche un rango de los 15-17\xBAC.\r\n"
 --- !u!222 &377338596
 CanvasRenderer:
   m_ObjectHideFlags: 0
