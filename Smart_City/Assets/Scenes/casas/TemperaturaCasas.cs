@@ -9,6 +9,10 @@ public class TemperaturaCasas : MonoBehaviour
     public Text avisoCaso;
     public GameObject panelCorrecto;
     public GameObject panelIncorrecto;
+    public GameObject dia;
+    public GameObject noche;
+    public GameObject lamparasDia;
+    public GameObject lamparasNoche;
     public static bool light=false;
     private bool caso2;
     private bool caso1;
@@ -22,6 +26,10 @@ public class TemperaturaCasas : MonoBehaviour
     {
         panelCorrecto.SetActive(false);
         panelIncorrecto.SetActive(false);
+        dia.SetActive(false);
+        lamparasDia.SetActive(false);
+        lamparasNoche.SetActive(false);
+        noche.SetActive(false);
         caso2 = false;
         caso1 = false;
         intelligence = Random.Range(1,3);
@@ -76,11 +84,19 @@ public class TemperaturaCasas : MonoBehaviour
                 caso2 = true;
                 light = false;
                 avisoCaso.text = "Temperatura ideal durante el dia";
+                dia.SetActive(true);
+                lamparasDia.SetActive(true);
+                noche.SetActive(false);
+                lamparasNoche.SetActive(false);
                 break;
             case 1:
                 Debug.Log("caso 1");
                 caso1 = true;
                 light = true;
+                noche.SetActive(true);
+                lamparasNoche.SetActive(true);
+                dia.SetActive(false);
+                lamparasDia.SetActive(false);
                 avisoCaso.text = "Temperatura ideal durante la noche";
                 break;
             default:
