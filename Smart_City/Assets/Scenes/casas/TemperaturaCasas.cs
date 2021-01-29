@@ -9,11 +9,13 @@ public class TemperaturaCasas : MonoBehaviour
     public Text avisoCaso;
     public GameObject panelCorrecto;
     public GameObject panelIncorrecto;
+    public static bool light=false;
     private bool caso2;
     private bool caso1;
     public static AudioClip clipCorrecto;
     public static AudioClip clipIncorrecto;
     public AudioSource audiosrc;
+    //public Material mat;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,7 @@ public class TemperaturaCasas : MonoBehaviour
         clipCorrecto = Resources.Load<AudioClip>("succes_sound2");
         clipIncorrecto = Resources.Load<AudioClip>("sound_failder");
         audiosrc.GetComponent<AudioSource>();
+        //RenderSettings.skybox = mat;
     }
 
     // Update is called once per frame
@@ -71,11 +74,13 @@ public class TemperaturaCasas : MonoBehaviour
             case 2:
                 Debug.Log("caso 2");
                 caso2 = true;
+                light = false;
                 avisoCaso.text = "Temperatura ideal durante el dia";
                 break;
             case 1:
                 Debug.Log("caso 1");
                 caso1 = true;
+                light = true;
                 avisoCaso.text = "Temperatura ideal durante la noche";
                 break;
             default:
