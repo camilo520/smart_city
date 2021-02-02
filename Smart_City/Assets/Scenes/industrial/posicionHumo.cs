@@ -23,10 +23,11 @@ public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBegin
 
     }
 
+
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(humo.transform.position.y);
+        Debug.Log("Posicion humo1: " + humo.transform.position.y);
         
         contaminado();
         
@@ -67,7 +68,7 @@ public class posicionHumo : MonoBehaviour, IDragHandler, IEndDragHandler, IBegin
         humo = gameObject;
         Int32.TryParse(humo.transform.position.y.ToString(), out posy);
 
-        if (posy >= 300)
+        if (posy >= 550)
         {
             humo1 = true;
         }
