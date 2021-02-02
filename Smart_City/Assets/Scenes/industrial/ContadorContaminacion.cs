@@ -41,6 +41,7 @@ public class ContadorContaminacion : MonoBehaviour
         posicionHumo.humo1 = false;
         posicionHumo2.humo2 = false;
         posicionHumo3.humo3 = false;
+        DropSlotIndustrial.encasilla = false;
         BotonContaminacion.alerta = false;
         clipCorrecto = Resources.Load<AudioClip>("succes_sound2");
         clipIncorrecto = Resources.Load<AudioClip>("sound_failder");

@@ -49,13 +49,7 @@ public class BotonComprobar : MonoBehaviour
             MenuPrincipal.finEjecutivo = true;
             seraverdad = true;
         }
-        if(seraverdad==false)
-        {
-            panel.SetActive(false);
-            panel2.SetActive(true);
-            audiosrc.PlayOneShot(clipIncorrecto);
-            MenuPrincipal.finEjecutivo = false;
-        }
+        
         if (CasosParqueadero.caso4 == true && BotonEspacio1.disponible == false && BotonEspacio2.disponible == true
             && BotonEspacio3.disponible == false && BotonEspacio4.disponible == true && BotonEspacio5.disponible == false)
         {
@@ -91,6 +85,14 @@ public class BotonComprobar : MonoBehaviour
             audiosrc.PlayOneShot(clipCorrecto);
             MenuPrincipal.finEjecutivo = true;
             seraverdad = true;
+        }
+
+        else if (seraverdad == false)
+        {
+            panel.SetActive(false);
+            panel2.SetActive(true);
+            audiosrc.PlayOneShot(clipIncorrecto);
+            MenuPrincipal.finEjecutivo = false;
         }
     }
 }
