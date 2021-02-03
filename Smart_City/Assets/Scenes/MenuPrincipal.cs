@@ -36,7 +36,8 @@ public class MenuPrincipal : MonoBehaviour
     void Start()
     {
         //GameObject.FindGameObjectWithTag("MusicAP").GetComponent<MusicaApartamentos>().StopMusic();
-    }
+
+}
 
     // Update is called once per frame
     void Update()
