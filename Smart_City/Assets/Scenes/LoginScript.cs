@@ -27,6 +27,16 @@ public class LoginScript : MonoBehaviour
         {
             SceneManager.LoadScene("SampleScene");
         }
+        else if(login.text.Equals("juanpis2") && pass.text.Equals("54321"))
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
+
+        else if (login.text.Equals("juanpis3") && pass.text.Equals("360"))
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
+
         else
         {
             StartCoroutine(avisoS());
