@@ -23,6 +23,7 @@ public class ContadorHumedad : MonoBehaviour
     [SerializeField] private Animator animacion2;
     public static AudioClip clipCorrecto;
     public static AudioClip clipIncorrecto;
+    public static AudioClip aspersores;
     public AudioSource audiosrc;
     private bool playAudio=false;
     // Start is called before the first frame update
@@ -48,12 +49,18 @@ public class ContadorHumedad : MonoBehaviour
         panelIncorrecto.SetActive(false);
         clipCorrecto = Resources.Load<AudioClip>("succes_sound2");
         clipIncorrecto = Resources.Load<AudioClip>("sound_failder");
+        aspersores = Resources.Load<AudioClip>("aspersor_sound");
         audiosrc.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if(gotas1==true || gotas2 == true)
+        {
+            audiosrc.PlayOneShot(aspersores);
+        }
 
         Debug.Log("es asi: " + sepaso);
         if(tiempo <=499f && tiempo2 <= 499f)
