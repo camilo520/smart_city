@@ -7,6 +7,8 @@ using UnityEngine.EventSystems;
 public class DropSlotCasas3 : MonoBehaviour, IDropHandler
 {
     public GameObject item;
+    public GameObject slot1;
+    public GameObject slot2;
     public static bool encasilla;
 
     public void OnDrop(PointerEventData eventData)
@@ -17,11 +19,15 @@ public class DropSlotCasas3 : MonoBehaviour, IDropHandler
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
             Debug.Log("Soy el tercero");
+            slot1.SetActive(false);
+            slot2.SetActive(true);
             encasilla = true;
         }
         else
         {
             encasilla = false;
+            slot1.SetActive(true);
+            slot2.SetActive(false);
         }
     }
 
@@ -29,6 +35,8 @@ public class DropSlotCasas3 : MonoBehaviour, IDropHandler
     void Start()
     {
         encasilla = false;
+        slot1.SetActive(true);
+        slot2.SetActive(false);
     }
 
     // Update is called once per frame
@@ -38,6 +46,8 @@ public class DropSlotCasas3 : MonoBehaviour, IDropHandler
         {
             encasilla = false;
             item = null;
+            slot1.SetActive(true);
+            slot2.SetActive(false);
             Debug.Log("No la pusiste");
         }
     }

@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 public class DropSlotApartamentos1 : MonoBehaviour, IDropHandler
 {
     public GameObject item;
+    public GameObject slot;
+    public GameObject slot2;
     public static bool encasilla;
 
     public void OnDrop(PointerEventData eventData)
@@ -16,11 +18,15 @@ public class DropSlotApartamentos1 : MonoBehaviour, IDropHandler
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
             Debug.Log("Soy el primero");
-            encasilla = true;
+            encasilla = true; 
+            slot.SetActive(true);
+            slot2.SetActive(false);
         }
         else
         {
             encasilla = false;
+            slot.SetActive(false);
+            slot2.SetActive(true);
         }
     }
 
@@ -28,6 +34,8 @@ public class DropSlotApartamentos1 : MonoBehaviour, IDropHandler
     void Start()
     {
         encasilla = false;
+        slot.SetActive(false);
+        slot2.SetActive(true);
     }
 
     // Update is called once per frame
@@ -37,6 +45,8 @@ public class DropSlotApartamentos1 : MonoBehaviour, IDropHandler
         {
             item = null;
             encasilla = false;
+            slot.SetActive(false);
+            slot2.SetActive(true);
             Debug.Log("No la pusiste");
         }
     }

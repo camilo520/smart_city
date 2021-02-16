@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 public class DropSlotComercial1 : MonoBehaviour, IDropHandler
 {
     public GameObject item;
+    public GameObject slot1;
+    public GameObject slot2;
     //public GameObject textoContador;
     public static bool encasilla;
 
@@ -17,12 +19,16 @@ public class DropSlotComercial1 : MonoBehaviour, IDropHandler
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
             Debug.Log("Soy el primero");
+            slot1.SetActive(false);
+            slot2.SetActive(true);
             encasilla = true;
             //textoContador.SetActive(true);
         }
         else
         {
             encasilla = false;
+            slot1.SetActive(true);
+            slot2.SetActive(false);
         }
     }
 
@@ -30,6 +36,8 @@ public class DropSlotComercial1 : MonoBehaviour, IDropHandler
     void Start()
     {
         encasilla = false;
+        slot1.SetActive(true);
+        slot2.SetActive(false);
     }
 
     // Update is called once per frame
@@ -39,6 +47,8 @@ public class DropSlotComercial1 : MonoBehaviour, IDropHandler
         {
             item = null; 
             encasilla = false;
+            slot1.SetActive(true);
+            slot2.SetActive(false);
             Debug.Log("No la pusiste");
         }
 
