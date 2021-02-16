@@ -13,6 +13,7 @@ public class ButtonEnabledParque : MonoBehaviour
     public GameObject aspersor2;
     public GameObject gotas1;
     public GameObject gotas2;
+    public GameObject textIN;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class ButtonEnabledParque : MonoBehaviour
         aspersor2.SetActive(false);
         gotas1.SetActive(false);
         gotas2.SetActive(false);
+        textIN.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,6 +48,7 @@ public class ButtonEnabledParque : MonoBehaviour
 
             validar.interactable = true;
             validar2.interactable = true;
+            textIN.SetActive(true);
             StartCoroutine(sisas());
             
         }
@@ -60,6 +63,7 @@ public class ButtonEnabledParque : MonoBehaviour
             aspersor2.SetActive(false);
             gotas1.SetActive(false);
             gotas2.SetActive(false);
+            textIN.SetActive(false);
         }
     }
 

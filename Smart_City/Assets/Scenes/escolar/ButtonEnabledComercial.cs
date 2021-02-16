@@ -18,6 +18,7 @@ public class ButtonEnabledComercial : MonoBehaviour
     public Button validar2;
     public Button validar3;
     public GameObject panel;
+    public GameObject textoIN;
     private bool playAudio = false;
     public static AudioClip clipCorrecto;
     public AudioSource audiosrc;
@@ -39,6 +40,7 @@ public class ButtonEnabledComercial : MonoBehaviour
         slider1.SetActive(false);
         slider2.SetActive(false);
         slider3.SetActive(false);
+        textoIN.SetActive(false);
         clipCorrecto = Resources.Load<AudioClip>("succes_sound2");
         audiosrc.GetComponent<AudioSource>();
 
@@ -61,6 +63,7 @@ public class ButtonEnabledComercial : MonoBehaviour
             slider1.SetActive(true);
             slider2.SetActive(true);
             slider3.SetActive(true);
+            textoIN.SetActive(true);
 
         }
         else
@@ -77,6 +80,7 @@ public class ButtonEnabledComercial : MonoBehaviour
             slider1.SetActive(false);
             slider2.SetActive(false);
             slider3.SetActive(false);
+            textoIN.SetActive(false);
         }
 
         if (BotonRecoger.b == true && BotonRecoger2.b == true && BotonRecoger3.b == true)

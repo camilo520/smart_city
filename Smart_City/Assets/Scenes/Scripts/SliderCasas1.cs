@@ -21,11 +21,11 @@ public class SliderCasas1 : MonoBehaviour
     {
         if (porc >= 66)
         {
-            audio.volume = 0.6f;
+            audio.volume = 1.0f;
         }
         else
         {
-            audio.volume = 0.3f;
+            audio.volume = 0.6f;
         }
     }
 

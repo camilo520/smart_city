@@ -165,7 +165,7 @@ public class ContadorContaminacion : MonoBehaviour
             else if(DropSlotIndustrial.encasilla == true && BotonContaminacion.alerta == true && posicionHumo.humo1 == false && posicionHumo2.humo2 == false && posicionHumo3.humo3 == false)
             {
                 avisoContaminacion1.color = new Color(255, 255, 255);
-                avisoContaminacion1.text = "Elimina los restos de contaminacion";
+                avisoContaminacion1.text = "Elimina los restos de contaminacion hacia arriba";
             }
             yield return new WaitForSeconds(1);
         }

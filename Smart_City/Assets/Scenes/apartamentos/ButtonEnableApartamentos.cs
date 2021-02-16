@@ -8,6 +8,7 @@ public class ButtonEnableApartamentos : MonoBehaviour
     public GameObject slider;
     public GameObject texto1;
     public GameObject texto2;
+    public GameObject textoIN;
     public Button validar;
 
     // Start is called before the first frame update
@@ -16,6 +17,7 @@ public class ButtonEnableApartamentos : MonoBehaviour
         slider.SetActive(false);
         texto1.SetActive(false);
         texto2.SetActive(false);
+        textoIN.SetActive(false);
         validar.interactable = false;
     }
 
@@ -27,6 +29,7 @@ public class ButtonEnableApartamentos : MonoBehaviour
             slider.SetActive(true);
             texto1.SetActive(true);
             texto2.SetActive(true);
+            textoIN.SetActive(true);
             validar.interactable = true;
         }
         else
@@ -34,6 +37,7 @@ public class ButtonEnableApartamentos : MonoBehaviour
             slider.SetActive(false);
             texto1.SetActive(false);
             texto2.SetActive(false);
+            textoIN.SetActive(false);
             validar.interactable = false;
         }
     }

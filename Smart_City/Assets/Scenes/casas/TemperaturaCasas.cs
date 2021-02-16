@@ -87,7 +87,7 @@ public class TemperaturaCasas : MonoBehaviour
                 Debug.Log("caso 2");
                 caso2 = true;
                 light = false;
-                avisoCaso.text = "Temperatura ideal durante el dia";
+                avisoCaso.text = "Ajusta los sensores con la temperatura ideal durante el dia";
                 dia.SetActive(true);
                 lamparasDia.SetActive(true);
                 noche.SetActive(false);
@@ -101,7 +101,7 @@ public class TemperaturaCasas : MonoBehaviour
                 lamparasNoche.SetActive(true);
                 dia.SetActive(false);
                 lamparasDia.SetActive(false);
-                avisoCaso.text = "Temperatura ideal durante la noche";
+                avisoCaso.text = "Ajusta los sensores con la temperatura ideal durante la noche";
                 break;
             default:
                 avisoCaso.text = ("Incorrect intelligence level.");
