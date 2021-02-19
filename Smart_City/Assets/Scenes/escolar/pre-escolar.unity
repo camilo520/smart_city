@@ -21496,6 +21496,8 @@ MonoBehaviour:
   validar: {fileID: 555205350}
   validar2: {fileID: 1745894506}
   validar3: {fileID: 1592558516}
+  dos: {fileID: 916463689}
+  tres: {fileID: 1167919989}
   panel: {fileID: 1897671394}
   textoIN: {fileID: 1838812771}
   audiosrc: {fileID: 704907451}

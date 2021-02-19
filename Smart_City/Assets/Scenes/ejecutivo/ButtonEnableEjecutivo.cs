@@ -6,10 +6,14 @@ using UnityEngine.UI;
 public class ButtonEnableEjecutivo : MonoBehaviour
 {
     public Button continuar;
+    public Button dos;
+    public Button tres;
     // Start is called before the first frame update
     void Start()
     {
         continuar.interactable = false;
+        dos.interactable = true;
+        tres.interactable = true;
     }
 
     // Update is called once per frame
@@ -23,6 +27,13 @@ public class ButtonEnableEjecutivo : MonoBehaviour
         else
         {
             continuar.interactable = false;
+        }
+
+        if (MenuPrincipal.finEjecutivo == true)
+        {
+            continuar.interactable = false;
+            dos.interactable = false;
+            tres.interactable = false;
         }
     }
 }

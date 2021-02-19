@@ -7,6 +7,8 @@ public class ButtonEnabledParque : MonoBehaviour
 {
     public Button validar;
     public Button validar2;
+    public Button dos;
+    public Button tres;
     public GameObject texto;
     public GameObject texto2;
     public GameObject aspersor1;
@@ -21,6 +23,8 @@ public class ButtonEnabledParque : MonoBehaviour
 
         validar.interactable = false;
         validar2.interactable = false;
+        dos.interactable = true;
+        tres.interactable = true;
         texto.SetActive(false);
         texto2.SetActive(false);
         aspersor1.SetActive(false);
@@ -65,6 +69,15 @@ public class ButtonEnabledParque : MonoBehaviour
             gotas2.SetActive(false);
             textIN.SetActive(false);
         }
+
+        if (MenuPrincipal.finParque == true)
+        {
+            validar.interactable = false;
+            validar2.interactable = false;
+            dos.interactable = false;
+            tres.interactable = false;
+        }
+
     }
 
     IEnumerator sisas()

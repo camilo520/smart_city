@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ButtonEnableCasas : MonoBehaviour
 {
     public Button continuar;
+    public Button dos;
+    public Button tres;
     //public GameObject slider;
     //public GameObject signo;
     //public GameObject porcentaje;
@@ -17,6 +19,8 @@ public class ButtonEnableCasas : MonoBehaviour
     void Start()
     {
         continuar.interactable = false;
+        dos.interactable = true;
+        tres.interactable = true;
         Botones.SetActive(false);
         //slider.SetActive(false);
         //signo.SetActive(false);
@@ -49,6 +53,13 @@ public class ButtonEnableCasas : MonoBehaviour
             cazona = false;
         }
 
+        if (MenuPrincipal.finCasa == true)
+        {
+            continuar.interactable = false;
+            dos.interactable = false;
+            tres.interactable = false;
+        }
 
     }
+
 }

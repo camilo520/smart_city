@@ -17,6 +17,8 @@ public class ButtonEnabledComercial : MonoBehaviour
     public Button validar;
     public Button validar2;
     public Button validar3;
+    public Button dos;
+    public Button tres;
     public GameObject panel;
     public GameObject textoIN;
     private bool playAudio = false;
@@ -37,6 +39,8 @@ public class ButtonEnabledComercial : MonoBehaviour
         validar.interactable = false;
         validar2.interactable = false;
         validar3.interactable = false;
+        dos.interactable = true;
+        tres.interactable = true;
         slider1.SetActive(false);
         slider2.SetActive(false);
         slider3.SetActive(false);
@@ -96,6 +100,15 @@ public class ButtonEnabledComercial : MonoBehaviour
         }
 
         Debug.Log("casilla 1: " + DropSlotComercial1.encasilla + " casilla 2: " + DropSlotComercial2.encasilla + " casilla 3: " + DropSlotComercial3.encasilla);
-        
+
+
+        if (MenuPrincipal.finComercial == true)
+        {
+            dos.interactable = false;
+            tres.interactable = false;
+            validar.interactable = false;
+            validar2.interactable = false;
+            validar3.interactable = false;
+        }
     }
 }

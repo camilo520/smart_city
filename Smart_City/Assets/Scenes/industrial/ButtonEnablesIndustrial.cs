@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class ButtonEnablesIndustrial : MonoBehaviour
 {
     public Button validar;
+    public Button dos;
+    public Button tres;
+    public Button cuatro;
     public GameObject textoAviso;
 
     // Start is called before the first frame update
@@ -13,6 +16,9 @@ public class ButtonEnablesIndustrial : MonoBehaviour
     {
 
         validar.interactable = false;
+        dos.interactable = true;
+        tres.interactable = true;
+        cuatro.interactable = true;
         textoAviso.SetActive(false);
     }
 
@@ -30,6 +36,14 @@ public class ButtonEnablesIndustrial : MonoBehaviour
 
             validar.interactable = false;
             textoAviso.SetActive(false);
+        }
+
+        if (MenuPrincipal.finIndustrial == true)
+        {
+            validar.interactable = false;
+            dos.interactable = false;
+            tres.interactable = false;
+            cuatro.interactable = false;
         }
     }
 }

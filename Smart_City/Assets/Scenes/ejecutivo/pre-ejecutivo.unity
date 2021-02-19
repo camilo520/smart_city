@@ -12596,6 +12596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continuar: {fileID: 954571732}
+  dos: {fileID: 176819211}
+  tres: {fileID: 1016614329}
 --- !u!1 &985345949
 GameObject:
   m_ObjectHideFlags: 0

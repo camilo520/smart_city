@@ -12141,6 +12141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   validar: {fileID: 1311460703}
   validar2: {fileID: 21011406}
+  dos: {fileID: 2031598167}
+  tres: {fileID: 1011718562}
   texto: {fileID: 1160761137}
   texto2: {fileID: 482124331}
   aspersor1: {fileID: 129104415}

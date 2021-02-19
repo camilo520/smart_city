@@ -10,6 +10,9 @@ public class ButtonEnableApartamentos : MonoBehaviour
     public GameObject texto2;
     public GameObject textoIN;
     public Button validar;
+    public Button dos;
+    public Button tres;
+    public Button cuatro;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +22,9 @@ public class ButtonEnableApartamentos : MonoBehaviour
         texto2.SetActive(false);
         textoIN.SetActive(false);
         validar.interactable = false;
+        dos.interactable = true;
+        tres.interactable = true;
+        cuatro.interactable = true;
     }
 
     // Update is called once per frame
@@ -39,6 +45,14 @@ public class ButtonEnableApartamentos : MonoBehaviour
             texto2.SetActive(false);
             textoIN.SetActive(false);
             validar.interactable = false;
+        }
+
+        if (MenuPrincipal.finApartamento == true)
+        {
+            validar.interactable = false;
+            dos.interactable = false;
+            tres.interactable = false;
+            cuatro.interactable = false;
         }
     }
 }

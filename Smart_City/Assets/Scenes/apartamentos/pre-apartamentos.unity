@@ -6749,6 +6749,9 @@ MonoBehaviour:
   texto2: {fileID: 2048700386}
   textoIN: {fileID: 1545373944}
   validar: {fileID: 879881826}
+  dos: {fileID: 708901170}
+  tres: {fileID: 1451881783}
+  cuatro: {fileID: 331517877}
 --- !u!114 &639525869
 MonoBehaviour:
   m_ObjectHideFlags: 0

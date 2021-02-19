@@ -2774,8 +2774,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Estandares maximos permisibles de niveles de emision de ruido en dB\n\n         
-    Dia                                                             Noche"
+  m_Text: "Est\xE1ndares m\xE1ximos permisibles de niveles de emisi\xF3n de ruido
+    en dB\n\n          Dia                                                            
+    Noche"
 --- !u!222 &202179922
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8455,15 +8456,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Residencial suburbana
-
-
-    Rural habitada destinada a la explotacion
-    agropecuaria
-
-
-
-    Parques naturales y reservas naturales'
+  m_Text: "Residencial suburbana\r\n\r\nRural habitada destinada a la explotaci\xF3n
+    agropecuaria\r\n\r\n\r\nParques naturales y reservas naturales\r\n"
 --- !u!222 &734506550
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15827,7 +15821,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hospitales, guarderias, bibliotecas.
+  m_Text: "Hospitales, guarder\xEDas, bibliotecas."
 --- !u!222 &1369736560
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17788,14 +17782,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Zonas residenciales y hoteleria.
-
-
-    Universidades, colegios y escuelas.
-
-
-    Parques
-    en zonas urbanas'
+  m_Text: "Zonas residenciales y hoteler\xEDa.\r\n\r\nUniversidades, colegios y escuelas.\r\n\r\nParques
+    en zonas urbanas\r\n"
 --- !u!222 &1541770062
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21207,18 +21195,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Zonas portuarias, parques industriales y zonas francas.
-
-
-    Centros
-    comerciales, almacenes, locales, talleres de mecanica, gimnasios, bares y discotecas.
-
-
-
-    Zonas
-    de oficina.
-
-    Zonas con uso institucional.'
+  m_Text: "Zonas portuarias, parques industriales y zonas francas.\r\n\r\nCentros
+    comerciales, almacenes, locales, talleres de mec\xE1nica, gimnasios, bares y
+    discotecas.\r\n\r\n\r\nZonas de oficina.\r\nZonas con uso institucional.\r\n"
 --- !u!222 &1881003913
 CanvasRenderer:
   m_ObjectHideFlags: 0

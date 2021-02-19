@@ -24326,6 +24326,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continuar: {fileID: 1908450790}
+  dos: {fileID: 1492803509}
+  tres: {fileID: 1149554676}
   tipoCaso: {fileID: 608544708}
   Botones: {fileID: 2090024486}
 --- !u!4 &1908592161 stripped

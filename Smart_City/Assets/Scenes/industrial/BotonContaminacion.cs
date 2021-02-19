@@ -23,7 +23,7 @@ public class BotonContaminacion : MonoBehaviour
     public void recoger()
     {
 
-        if (ContadorContaminacion.contaminacion >= 168f && ContadorContaminacion.contaminacion <= 207f && CasosIndustrial.caso3==true)
+        if (ContadorContaminacion.contaminacion >= 168f && ContadorContaminacion.contaminacion <= 299f && CasosIndustrial.caso3==true)
         {
             alerta = true;
             Debug.Log("caso3");
