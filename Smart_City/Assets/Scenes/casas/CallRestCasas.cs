@@ -7,10 +7,15 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-public class CallRestService : MonoBehaviour
+public class CallRestCasas : MonoBehaviour
 {
 	public string WEB_URL = "";
-	private int por;
+	private int casa1;
+	private int casa2;
+	private int casa3;
+	private int dia;
+	private int noche;
+	private int sisa;
 	public static bool call;
 	// Use this for initialization
 	void Start()
@@ -18,33 +23,62 @@ public class CallRestService : MonoBehaviour
 		call = false;
 		StartCoroutine(postUnityWebRequest());
 		//StartCoroutine(getUnityWebRequest());
-	
+
 	}
 
-	void Update() {
+	void Update()
+	{
 
 		Debug.Log("La casa " + call);
+        if (TemperaturaCasas.caso1 == true && TemperaturaCasas.caso2 == false)
+        {
+			noche = 1;
+			dia = 0;
+        }
+		if(TemperaturaCasas.caso2== true && TemperaturaCasas.caso1 == false)
+        {
+			dia = 1;
+			noche = 0;
+        }
+        else
+        {
+			dia = 0;
+			noche = 0;
+        }
+
+        if (TemperaturaCasas.capo == false)
+        {
+			sisa = 1;
+        }
+		else if (TemperaturaCasas.capo == true)
+        {
+			sisa = 0;
+        }
+
 	}
-	
-
-
 
 	IEnumerator postUnityWebRequest()
 	{
-		
-		while (call==false)
+
+		while (call == false)
 		{
 
-			if (DropSlotApartamentos1.encasilla == true)
+			if (DropSlotCasas1.encasilla == true && DropSlotCasas2.encasilla==true && DropSlotCasas3.encasilla==true)
 			{
 				Debug.Log("ENTRE AL POST");
-				por = SliderCasas1.porc;
+				casa1 = BotonesSYS.temp1;
+				casa2 = BotonesSYS2.temp2;
+				casa3 = BotonesSYS3.temp3;
 				//por2 = SliderCasas.porc;
 				///<summary>
 				/// Post using UnityWebRequest class
 				/// </summary>
 				/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
-				var jsonString = "{\"nodo\":1, \"ruido\":" + por.ToString() +"}";
+				var jsonString = "{\"nodo\":2, \"casa1\":" + casa1.ToString() + 
+					", \"casa2\":" + casa2.ToString() + ", \"casa3\":" + casa3.ToString() + " " +
+					", \"diacasa\":" + dia.ToString() + ", \"nochecasa\":" + noche.ToString() + 
+					", \"capo\":" + sisa.ToString() + " }";
+
 				byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
 
 				UnityWebRequest unityWebRequest = new UnityWebRequest(WEB_URL, "POST");
@@ -82,7 +116,4 @@ public class CallRestService : MonoBehaviour
 			Debug.Log(www.downloadHandler.text);
 		}
 	}
-
-
-
 }

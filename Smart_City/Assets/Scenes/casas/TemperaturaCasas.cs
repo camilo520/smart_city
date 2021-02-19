@@ -14,9 +14,9 @@ public class TemperaturaCasas : MonoBehaviour
     public GameObject lamparasDia;
     public GameObject lamparasNoche;
     public static bool light=false;
-    private bool caso2;
-    private bool caso1;
-    private bool capo;
+    public static bool caso2;
+    public static bool caso1;
+    public static bool capo;
     public static AudioClip clipCorrecto;
     public static AudioClip clipIncorrecto;
     public AudioSource audiosrc;
