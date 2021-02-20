@@ -57,10 +57,7 @@ public class ContadorHumedad : MonoBehaviour
     void Update()
     {
 
-        if(gotas1==true || gotas2 == true)
-        {
-            audiosrc.PlayOneShot(aspersores);
-        }
+
 
         Debug.Log("es asi: " + sepaso);
         if(tiempo <=499f && tiempo2 <= 499f)
@@ -141,6 +138,7 @@ public class ContadorHumedad : MonoBehaviour
                 avisoHumedad.text = "El aspersor 1 esta \n" + "regando el parque";
                 animacion1.SetBool("riegoVerdadero", true);
                 gotas1 = true;
+                audiosrc.PlayOneShot(aspersores);
             }
             yield return new WaitForSeconds(2);
             
@@ -186,6 +184,7 @@ public class ContadorHumedad : MonoBehaviour
                 avisoHumedad2.text = "El aspersor 2 esta \n" + "regando el parque";
                 animacion2.SetBool("riegoVerdadero", true);
                 gotas2 = true;
+                audiosrc.PlayOneShot(aspersores);
             }
             yield return new WaitForSeconds(2);
 
