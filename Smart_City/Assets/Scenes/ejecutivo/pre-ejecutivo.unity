@@ -5662,6 +5662,7 @@ GameObject:
   - component: {fileID: 419897594}
   - component: {fileID: 419897595}
   - component: {fileID: 419897596}
+  - component: {fileID: 419897597}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -5740,6 +5741,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   avisoCaso: {fileID: 1484303033}
+--- !u!114 &419897597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419897591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5090ceff061a38d4ca82730f50d1d211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WEB_URL: http://ec2-54-82-119-120.compute-1.amazonaws.com:3000/datosm
 --- !u!1 &423530067
 GameObject:
   m_ObjectHideFlags: 0

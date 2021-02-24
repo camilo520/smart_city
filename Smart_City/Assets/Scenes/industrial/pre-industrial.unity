@@ -1614,6 +1614,7 @@ GameObject:
   - component: {fileID: 153695070}
   - component: {fileID: 153695071}
   - component: {fileID: 153695072}
+  - component: {fileID: 153695073}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -1701,6 +1702,19 @@ MonoBehaviour:
   panelCorrecto: {fileID: 614939316}
   panelIncorrecto: {fileID: 1465639022}
   audiosrc: {fileID: 963780179}
+--- !u!114 &153695073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153695067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb42bb3733e290c429305394576dcc6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WEB_URL: http://ec2-54-82-119-120.compute-1.amazonaws.com:3000/datosm
 --- !u!1001 &155192681
 PrefabInstance:
   m_ObjectHideFlags: 0
