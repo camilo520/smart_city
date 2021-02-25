@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 public class CallRestIndustrial : MonoBehaviour
 {
 	public string WEB_URL = "";
-	private string tipoContaminante;
+	private int tipoContaminante;
 	private string valorContaminacion;
 	public static bool call;
 	// Use this for initialization
 	void Start()
 	{
+		tipoContaminante = 0;
 		call = false;
 		StartCoroutine(postUnityWebRequest());
 		//StartCoroutine(getUnityWebRequest());
@@ -25,18 +26,17 @@ public class CallRestIndustrial : MonoBehaviour
 	{
         if (CasosIndustrial.caso1 == true)
         {
-			tipoContaminante = "NO2";
+			tipoContaminante = 1;
         }
-        else if (CasosIndustrial.caso2 == true)
+        if (CasosIndustrial.caso2 == true)
         {
-			tipoContaminante = "SO2";
+			tipoContaminante = 2;
 		}
-        else if (CasosIndustrial.caso3 == true)
+        if (CasosIndustrial.caso3 == true)
         {
-			tipoContaminante = "O3";
+			tipoContaminante = 3;
 		}
 
-		Debug.Log("Tipo " + tipoContaminante);
 
 	}
 
@@ -54,7 +54,7 @@ public class CallRestIndustrial : MonoBehaviour
 				/// Post using UnityWebRequest class
 				/// </summary>
 				/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
-				var jsonString = "{\"nodo\":5, \"tipoc\":" + CasosIndustrial.tipo +
+				var jsonString = "{\"nodo\":5, \"tipoc\":" + tipoContaminante +
 					", \"contaminacion\":" + ContadorContaminacion.contaminacion.ToString() +  " }";
 
 				byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());

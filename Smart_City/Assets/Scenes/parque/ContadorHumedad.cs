@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ContadorHumedad : MonoBehaviour
 {
+    public static int reg1;
+    public static int reg2;
 
     public Text humedad1;
     public Text humedad2;
@@ -51,6 +53,8 @@ public class ContadorHumedad : MonoBehaviour
         clipIncorrecto = Resources.Load<AudioClip>("sound_failder");
         aspersores = Resources.Load<AudioClip>("aspersor_sound");
         audiosrc.GetComponent<AudioSource>();
+        reg1 = 0;
+        reg2 = 0;
     }
 
     // Update is called once per frame
@@ -136,6 +140,7 @@ public class ContadorHumedad : MonoBehaviour
                 tiempo -= Random.Range(20, 25);
                 humedad1.text = " " + tiempo.ToString("f0");
                 avisoHumedad.text = "El aspersor 1 esta \n" + "regando el parque";
+                reg1 = 1;
                 animacion1.SetBool("riegoVerdadero", true);
                 gotas1 = true;
                 audiosrc.PlayOneShot(aspersores);
@@ -184,6 +189,7 @@ public class ContadorHumedad : MonoBehaviour
                 avisoHumedad2.text = "El aspersor 2 esta \n" + "regando el parque";
                 animacion2.SetBool("riegoVerdadero", true);
                 gotas2 = true;
+                reg2 = 1;
                 audiosrc.PlayOneShot(aspersores);
             }
             yield return new WaitForSeconds(2);

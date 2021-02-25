@@ -3404,7 +3404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &257667197
 Transform:
   m_ObjectHideFlags: 0
@@ -12056,6 +12056,7 @@ GameObject:
   - component: {fileID: 946665018}
   - component: {fileID: 946665020}
   - component: {fileID: 946665021}
+  - component: {fileID: 946665022}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -12176,6 +12177,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   recogio: {fileID: 21011406}
+--- !u!114 &946665022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946665014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c046a5ed4fa9aab4886ac1f0064a3704, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WEB_URL: http://ec2-34-201-148-225.compute-1.amazonaws.com:3000/datosm
 --- !u!1 &948152577
 GameObject:
   m_ObjectHideFlags: 0
