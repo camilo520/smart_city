@@ -44,7 +44,7 @@ public class CallRestComercial : MonoBehaviour
 				/// Post using UnityWebRequest class
 				/// </summary>
 				/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
-				var jsonString = "{\"nodo\":4, \"bote1\":" + ContadorBasura.tiempo +
+				var jsonString = "{\"nodo\":" + LoginScript.id.ToString() + ", \"bote1\":" + ContadorBasura.tiempo +
 					", \"bote2\":" + ContadorBasura.tiempo2 + ", \"bote3\":" + ContadorBasura.tiempo3 + " " + " }";
 
 				byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());

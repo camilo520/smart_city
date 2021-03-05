@@ -6,14 +6,11 @@ using System.Text;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-public class CallRestEjecutivo : MonoBehaviour
+
+public class CallRestNodos : MonoBehaviour
 {
 	public string WEB_URL = "";
-	private int espacio1;
-	private int espacio2;
-	private int espacio3;
-	private int espacio4;
-	private int espacio5;
+	private int por;
 	public static bool call;
 	// Use this for initialization
 	void Start()
@@ -27,54 +24,11 @@ public class CallRestEjecutivo : MonoBehaviour
 	void Update()
 	{
 
-		Debug.Log("ID: " + LoginScript.id);
-
-		if (BotonEspacio1.disponible == true)
-		{
-			espacio1 = 1;
-		}
-		else if (BotonEspacio1.disponible == false)
-		{
-			espacio1 = 0;
-		}
-
-		if (BotonEspacio2.disponible == true)
-		{
-			espacio2 = 1;
-		}
-		else if (BotonEspacio2.disponible == false)
-		{
-			espacio2 = 0;
-		}
-
-		if (BotonEspacio3.disponible == true)
-		{
-			espacio3 = 1;
-		}
-		else if (BotonEspacio3.disponible == false)
-		{
-			espacio3 = 0;
-		}
-
-		if (BotonEspacio4.disponible == true)
-		{
-			espacio4 = 1;
-		}
-		else if (BotonEspacio4.disponible == false)
-		{
-			espacio4 = 0;
-		}
-
-		if (BotonEspacio5.disponible == true)
-		{
-			espacio5 = 1;
-		}
-		else if (BotonEspacio5.disponible == false)
-		{
-			espacio5 = 0;
-		}
-
+		Debug.Log("La casa " + call);
 	}
+
+
+
 
 	IEnumerator postUnityWebRequest()
 	{
@@ -82,18 +36,16 @@ public class CallRestEjecutivo : MonoBehaviour
 		while (call == false)
 		{
 
-			if (DropSlotEjecutivo1.encasilla == true && DropSlotEjecutivo2.encasilla == true && DropSlotEjecutivo3.encasilla == true && DropSlotEjecutivo4.encasilla == true && DropSlotEjecutivo5.encasilla == true)
+			if (DropSlotApartamentos1.encasilla == true)
 			{
 				Debug.Log("ENTRE AL POST");
+				por = SliderCasas1.porc;
 				//por2 = SliderCasas.porc;
 				///<summary>
 				/// Post using UnityWebRequest class
 				/// </summary>
 				/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
-				var jsonString = "{\"nodo\":" + LoginScript.id.ToString() + ", \"p1\":" + espacio1.ToString() +
-					", \"p2\":" + espacio2.ToString() + ", \"p3\":" + espacio3.ToString() + " " +
-					", \"p4\":" + espacio4.ToString() + ", \"p5\":" + espacio5.ToString() + " }";
-
+				var jsonString = "{\"nodo\":1, \"ruido\":" + por.ToString() + "}";
 				byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
 
 				UnityWebRequest unityWebRequest = new UnityWebRequest(WEB_URL, "POST");
@@ -131,4 +83,5 @@ public class CallRestEjecutivo : MonoBehaviour
 			Debug.Log(www.downloadHandler.text);
 		}
 	}
+
 }

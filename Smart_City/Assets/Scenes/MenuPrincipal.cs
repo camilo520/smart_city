@@ -35,6 +35,9 @@ public class MenuPrincipal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Debug.Log("ID: " + LoginScript.id);
+
         if (finApartamento == true)
         {
             zonaApartamentos.SetActive(false);

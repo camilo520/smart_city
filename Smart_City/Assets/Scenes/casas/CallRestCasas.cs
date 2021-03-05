@@ -74,7 +74,7 @@ public class CallRestCasas : MonoBehaviour
 				/// Post using UnityWebRequest class
 				/// </summary>
 				/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
-				var jsonString = "{\"nodo\":2, \"casa1\":" + casa1.ToString() + 
+				var jsonString = "{\"nodo\":" + LoginScript.id.ToString() + ", \"casa1\":" + casa1.ToString() + 
 					", \"casa2\":" + casa2.ToString() + ", \"casa3\":" + casa3.ToString() + " " +
 					", \"diacasa\":" + dia.ToString() + ", \"nochecasa\":" + noche.ToString() + 
 					", \"capo\":" + sisa.ToString() + " }";
