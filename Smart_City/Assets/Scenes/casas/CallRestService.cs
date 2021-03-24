@@ -44,7 +44,7 @@ public class CallRestService : MonoBehaviour
 				/// Post using UnityWebRequest class
 				/// </summary>
 				/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
-				var jsonString = "{\"nodo\":" + LoginScript.id.ToString() + ", \"ruido\":" + por.ToString() +"}";
+				var jsonString = "{\"nodo\":" + LoginScript.userID.ToString() + ", \"ruido\":" + por.ToString() +"}";
 				byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
 
 				UnityWebRequest unityWebRequest = new UnityWebRequest(WEB_URL, "POST");

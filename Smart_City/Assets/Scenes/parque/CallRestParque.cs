@@ -40,7 +40,7 @@ public class CallRestParque : MonoBehaviour
 				/// Post using UnityWebRequest class
 				/// </summary>
 				/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
-				var jsonString = "{\"nodo\":" + LoginScript.id.ToString() + ", \"suelo1\":" + ContadorHumedad.tiempo.ToString() +
+				var jsonString = "{\"nodo\":" + LoginScript.userID.ToString() + ", \"suelo1\":" + ContadorHumedad.tiempo.ToString() +
 									", \"suelo2\":" + ContadorHumedad.tiempo2.ToString() 
 									+ ", \"reg1\":" + ContadorHumedad.reg1.ToString() +
 									", \"reg2\":" + ContadorHumedad.reg2.ToString() + " }";

@@ -36,7 +36,7 @@ public class MenuPrincipal : MonoBehaviour
     void Update()
     {
 
-        Debug.Log("ID: " + LoginScript.id);
+        Debug.Log("ID: " + LoginScript.userID);
 
         if (finApartamento == true)
         {

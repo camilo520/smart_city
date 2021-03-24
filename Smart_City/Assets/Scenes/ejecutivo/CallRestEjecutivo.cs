@@ -27,7 +27,7 @@ public class CallRestEjecutivo : MonoBehaviour
 	void Update()
 	{
 
-		Debug.Log("ID: " + LoginScript.id);
+		Debug.Log("ID: " + LoginScript.userID);
 
 		if (BotonEspacio1.disponible == true)
 		{
@@ -90,7 +90,7 @@ public class CallRestEjecutivo : MonoBehaviour
 				/// Post using UnityWebRequest class
 				/// </summary>
 				/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
-				var jsonString = "{\"nodo\":" + LoginScript.id.ToString() + ", \"p1\":" + espacio1.ToString() +
+				var jsonString = "{\"nodo\":" + LoginScript.userID.ToString() + ", \"p1\":" + espacio1.ToString() +
 					", \"p2\":" + espacio2.ToString() + ", \"p3\":" + espacio3.ToString() + " " +
 					", \"p4\":" + espacio4.ToString() + ", \"p5\":" + espacio5.ToString() + " }";
 

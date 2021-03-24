@@ -8,73 +8,36 @@ using UnityEngine.UI;
 
 public class LoginScript : MonoBehaviour
 {
-    public InputField login;
-    public InputField pass;
+    public InputField ID;
     public Text aviso;
     public List<Usuarios> lista;
+    public static string userID;
 
-    public string usuario1;
-    public string contraseña1;
-    public string usuario2;
-    public string contraseña2;
-    public string usuario3;
-    public string contraseña3;
-    public string usuario4;
-    public string contraseña4;
-
-    public static int id = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        usuario1 = "usuario1";
-        usuario2 = "usuario2";
-        usuario3 = "usuario3";
-        usuario4 = "usuario4";
-        contraseña1 = "11111";
-        contraseña2 = "22222";
-        contraseña3 = "33333";
-        contraseña4 = "44444";
-        id = 0;
-
-        aviso.text = "";
- 
+        userID = "";
         lista = new List<Usuarios>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("ID: " + LoginScript.id);
-        foreach (var a in lista)
-        {
-            Debug.Log("Usuario: " + a.User + " Contraseña: " + a.Pass);
-        }
+        Debug.Log("ID: " + LoginScript.userID);
     }
 
     public void botonLog()
     {
-        if(login.text.ToString().Equals(usuario1.ToString()) && pass.text.ToString().Equals(contraseña1.ToString()))
+        
+        if (ID.text.ToString().Equals(""))
         {
-            id = 1;
-            SceneManager.LoadScene("SampleScene");
+            StartCoroutine(camposVacios());
         }
-
-        if (login.text.ToString().Equals(usuario2.ToString()) && pass.text.ToString().Equals(contraseña2.ToString()))
+        else
         {
-            id = 2;
-            SceneManager.LoadScene("SampleScene");
-        }
-
-        if (login.text.ToString().Equals(usuario3.ToString()) && pass.text.ToString().Equals(contraseña3.ToString()))
-        {
-            id = 3;
-            SceneManager.LoadScene("SampleScene");
-        }
-
-        if (login.text.ToString().Equals(usuario4.ToString()) && pass.text.ToString().Equals(contraseña4.ToString()))
-        {
-            id = 4;
+            userID = ID.text.ToString();
+            Debug.Log("ID: " + LoginScript.userID);
             SceneManager.LoadScene("SampleScene");
         }
         /*
@@ -135,7 +98,7 @@ public class LoginScript : MonoBehaviour
 
     IEnumerator camposVacios()
     {
-        aviso.text = "Llena todos los campos";
+        aviso.text = "Llena el campo de ID";
 
         yield return new WaitForSeconds(2);
 
