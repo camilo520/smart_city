@@ -2428,7 +2428,6 @@ GameObject:
   - component: {fileID: 176819213}
   - component: {fileID: 176819212}
   - component: {fileID: 176819211}
-  - component: {fileID: 176819214}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -2561,20 +2560,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176819209}
   m_CullTransparentMesh: 0
---- !u!114 &176819214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176819209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!1 &189099308
 GameObject:
   m_ObjectHideFlags: 0
@@ -12449,7 +12434,6 @@ GameObject:
   - component: {fileID: 954571734}
   - component: {fileID: 954571733}
   - component: {fileID: 954571732}
-  - component: {fileID: 954571735}
   - component: {fileID: 954571736}
   m_Layer: 5
   m_Name: Button
@@ -12583,20 +12567,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954571730}
   m_CullTransparentMesh: 0
---- !u!114 &954571735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954571730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &954571736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12963,7 +12933,6 @@ GameObject:
   - component: {fileID: 1016614331}
   - component: {fileID: 1016614330}
   - component: {fileID: 1016614329}
-  - component: {fileID: 1016614328}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -12991,20 +12960,6 @@ RectTransform:
   m_AnchoredPosition: {x: -81.74, y: -193.85481}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1016614328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1016614326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &1016614329
 MonoBehaviour:
   m_ObjectHideFlags: 0

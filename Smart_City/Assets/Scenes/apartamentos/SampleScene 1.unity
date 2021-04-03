@@ -7334,7 +7334,6 @@ GameObject:
   - component: {fileID: 632552612}
   - component: {fileID: 632552611}
   - component: {fileID: 632552610}
-  - component: {fileID: 632552613}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -7467,20 +7466,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632552608}
   m_CullTransparentMesh: 0
---- !u!114 &632552613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632552608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!1001 &635475796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13436,7 +13421,6 @@ GameObject:
   - component: {fileID: 1145771740}
   - component: {fileID: 1145771739}
   - component: {fileID: 1145771738}
-  - component: {fileID: 1145771737}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -13464,20 +13448,6 @@ RectTransform:
   m_AnchoredPosition: {x: -102.3, y: -193}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1145771737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145771735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &1145771738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13740,7 +13710,6 @@ GameObject:
   - component: {fileID: 1184514443}
   - component: {fileID: 1184514442}
   - component: {fileID: 1184514441}
-  - component: {fileID: 1184514444}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -13873,20 +13842,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184514439}
   m_CullTransparentMesh: 0
---- !u!114 &1184514444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1184514439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!1001 &1189105893
 PrefabInstance:
   m_ObjectHideFlags: 0

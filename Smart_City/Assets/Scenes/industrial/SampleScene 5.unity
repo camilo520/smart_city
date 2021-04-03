@@ -4977,7 +4977,6 @@ GameObject:
   - component: {fileID: 484330496}
   - component: {fileID: 484330495}
   - component: {fileID: 484330494}
-  - component: {fileID: 484330493}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -5005,20 +5004,6 @@ RectTransform:
   m_AnchoredPosition: {x: -102.3, y: -193}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &484330493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484330491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &484330494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10269,7 +10254,6 @@ GameObject:
   - component: {fileID: 867849940}
   - component: {fileID: 867849939}
   - component: {fileID: 867849938}
-  - component: {fileID: 867849937}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -10297,20 +10281,6 @@ RectTransform:
   m_AnchoredPosition: {x: -266.3, y: -193}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &867849937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867849935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &867849938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16691,7 +16661,6 @@ GameObject:
   - component: {fileID: 1434734116}
   - component: {fileID: 1434734115}
   - component: {fileID: 1434734114}
-  - component: {fileID: 1434734113}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -16719,20 +16688,6 @@ RectTransform:
   m_AnchoredPosition: {x: -430.2, y: -193}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1434734113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434734111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &1434734114
 MonoBehaviour:
   m_ObjectHideFlags: 0

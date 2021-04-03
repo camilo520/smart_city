@@ -10485,7 +10485,6 @@ GameObject:
   - component: {fileID: 785627316}
   - component: {fileID: 785627315}
   - component: {fileID: 785627314}
-  - component: {fileID: 785627313}
   m_Layer: 5
   m_Name: boton salir
   m_TagString: Untagged
@@ -10513,20 +10512,6 @@ RectTransform:
   m_AnchoredPosition: {x: -74.1, y: -200}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &785627313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 785627311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &785627314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12573,7 +12558,6 @@ GameObject:
   - component: {fileID: 1010611881}
   - component: {fileID: 1010611880}
   - component: {fileID: 1010611879}
-  - component: {fileID: 1010611878}
   m_Layer: 5
   m_Name: boton instrucciones
   m_TagString: Untagged
@@ -12601,20 +12585,6 @@ RectTransform:
   m_AnchoredPosition: {x: -198.4, y: -200}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1010611878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010611876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &1010611879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21782,7 +21752,6 @@ GameObject:
   - component: {fileID: 1762084011}
   - component: {fileID: 1762084010}
   - component: {fileID: 1762084009}
-  - component: {fileID: 1762084008}
   m_Layer: 5
   m_Name: boton continuar
   m_TagString: Untagged
@@ -21810,20 +21779,6 @@ RectTransform:
   m_AnchoredPosition: {x: -322.9, y: -200}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1762084008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762084005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &1762084009
 MonoBehaviour:
   m_ObjectHideFlags: 0

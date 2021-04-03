@@ -6780,7 +6780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f739dbd68a33fd641ad8588e3ccf1d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WEB_URL: http://ec2-54-82-123-214.compute-1.amazonaws.com:3000/aptos
+  WEB_URL: http://ec2-18-212-90-27.compute-1.amazonaws.com:3000/aptos
 --- !u!1001 &650319847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7543,7 +7543,6 @@ GameObject:
   - component: {fileID: 708901172}
   - component: {fileID: 708901171}
   - component: {fileID: 708901170}
-  - component: {fileID: 708901173}
   m_Layer: 5
   m_Name: Boton instrucciones
   m_TagString: Untagged
@@ -7676,20 +7675,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708901168}
   m_CullTransparentMesh: 0
---- !u!114 &708901173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708901168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!1 &717889440
 GameObject:
   m_ObjectHideFlags: 0
@@ -9604,7 +9589,6 @@ GameObject:
   - component: {fileID: 879881828}
   - component: {fileID: 879881827}
   - component: {fileID: 879881826}
-  - component: {fileID: 879881829}
   m_Layer: 5
   m_Name: Boton continuar
   m_TagString: Untagged
@@ -9737,20 +9721,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879881824}
   m_CullTransparentMesh: 0
---- !u!114 &879881829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879881824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!1001 &884124785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15591,7 +15561,6 @@ GameObject:
   - component: {fileID: 1451881785}
   - component: {fileID: 1451881784}
   - component: {fileID: 1451881783}
-  - component: {fileID: 1451881782}
   m_Layer: 5
   m_Name: Boton salir
   m_TagString: Untagged
@@ -15619,20 +15588,6 @@ RectTransform:
   m_AnchoredPosition: {x: -70.6, y: -198}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1451881782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451881780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &1451881783
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -380,7 +380,6 @@ GameObject:
   - component: {fileID: 21011408}
   - component: {fileID: 21011407}
   - component: {fileID: 21011406}
-  - component: {fileID: 21011405}
   m_Layer: 5
   m_Name: boton aspersor2
   m_TagString: Untagged
@@ -408,20 +407,6 @@ RectTransform:
   m_AnchoredPosition: {x: -195.3, y: -200.6456}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &21011405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21011403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &21011406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12832,7 +12817,6 @@ GameObject:
   - component: {fileID: 1011718564}
   - component: {fileID: 1011718563}
   - component: {fileID: 1011718562}
-  - component: {fileID: 1011718561}
   m_Layer: 5
   m_Name: boton salir
   m_TagString: Untagged
@@ -12860,20 +12844,6 @@ RectTransform:
   m_AnchoredPosition: {x: 53.9, y: -200.6456}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1011718561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1011718559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &1011718562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16440,7 +16410,6 @@ GameObject:
   - component: {fileID: 1311460705}
   - component: {fileID: 1311460704}
   - component: {fileID: 1311460703}
-  - component: {fileID: 1311460702}
   m_Layer: 5
   m_Name: boton aspersor1
   m_TagString: Untagged
@@ -16468,20 +16437,6 @@ RectTransform:
   m_AnchoredPosition: {x: -322.2, y: -200.6456}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1311460702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1311460700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &1311460703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23216,7 +23171,6 @@ GameObject:
   - component: {fileID: 2031598169}
   - component: {fileID: 2031598168}
   - component: {fileID: 2031598167}
-  - component: {fileID: 2031598166}
   m_Layer: 5
   m_Name: boton instrucciones
   m_TagString: Untagged
@@ -23244,20 +23198,6 @@ RectTransform:
   m_AnchoredPosition: {x: -70.6, y: -200.6456}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2031598166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031598164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a9be89dbdc0cb45a564b964c9db6cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hand: {fileID: 2800000, guid: e3020c75bd2c2784aaa05552a351b216, type: 3}
-  anim: {fileID: 0}
 --- !u!114 &2031598167
 MonoBehaviour:
   m_ObjectHideFlags: 0
