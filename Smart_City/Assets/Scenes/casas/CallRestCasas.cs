@@ -29,7 +29,6 @@ public class CallRestCasas : MonoBehaviour
 	void Update()
 	{
 
-		Debug.Log(LoginScript.userID.ToString());
 		if (TemperaturaCasas.caso1 == true && TemperaturaCasas.caso2 == false)
         {
 			noche = 1;

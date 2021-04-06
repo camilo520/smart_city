@@ -36,7 +36,7 @@ public class SliderCasas1 : MonoBehaviour
         if (Int32.TryParse(porcentaje.text, out otro))
         {
             porc = otro;
-            Debug.Log("Humedad: " + porc);
+            Debug.Log("Ruido: " + porc);
         }
 
     }

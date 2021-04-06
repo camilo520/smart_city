@@ -2873,7 +2873,7 @@ RectTransform:
   m_Children:
   - {fileID: 1029515021}
   m_Father: {fileID: 910500661}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7644,9 +7644,10 @@ RectTransform:
   m_GameObject: {fileID: 910500660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.01, y: 1.01, z: 1}
   m_Children:
   - {fileID: 1143531684}
+  - {fileID: 1927172479}
   - {fileID: 299612597}
   m_Father: {fileID: 889986284}
   m_RootOrder: 0
@@ -9714,7 +9715,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 9.9}
-  m_SizeDelta: {x: 521.5, y: 396.6}
+  m_SizeDelta: {x: 530.78, y: 396.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1143531685
 MonoBehaviour:
@@ -9738,7 +9739,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -9757,7 +9758,12 @@ MonoBehaviour:
     casos posibles y una visualizaci\xF3n grafica de los datos que se est\xE1n manejando.\r\n\r\nLa
     forma de interactuar con el simulador es mediante la interfaz gr\xE1fica 2D,
     no hay ninguna interacci\xF3n con el mundo 3D que se muestra de fondo, por lo
-    tanto, no es posible girar la c\xE1mara o moverme a trav\xE9s del mundo 3D.\r\n"
+    tanto, no es posible girar la c\xE1mara o moverme a trav\xE9s del mundo 3D.\r\n\nAl
+    darle al bot\xF3n de iniciar comenzara el simulador pidiendo que ingreses el
+    ID que el docente te dio, luego de esto podr\xE1s ver un mapa de la ciudad en
+    la cual escoger\xE1s el sector que quieras resolver, cuando resuelvas un sector
+    se te direccionara al mapa de la ciudad y podr\xE1s entrar a otro sector diferente,
+    as\xED hasta que logres completar todos y puedas dar por terminado el simulador.\n"
 --- !u!222 &1143531686
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16866,6 +16872,92 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d4631c3769ad84a41aabd8e691c04960, type: 3}
   m_PrefabInstance: {fileID: 1905792366}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1927172478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1927172479}
+  - component: {fileID: 1927172481}
+  - component: {fileID: 1927172480}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1927172479
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927172478}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 910500661}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -236.82}
+  m_SizeDelta: {x: 521.5, y: 396.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1927172480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927172478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Importante: \r\n-Una vez iniciado el simulador, no tienes que volver al
+    men\xFA principal, de lo contrario se borrara tu progreso.\r\n\n-Al completar
+    un sector, este ya no se mostrar\xE1 y no se podr\xE1 seleccionar otra vez.\r\n\n-Para
+    completar los casos de los sectores es importante que veas la p\xE1gina del dashboard,
+    as\xED veras los cambios en las variables detectadas por los sensores.\r\n\n-El
+    dashboard ser\xE1 exclusivamente para ver los datos que recolectan los sensores,
+    por medio de este simulador podr\xE1s realizar las acciones correspondientes
+    para completar los casos dados.\r"
+--- !u!222 &1927172481
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927172478}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1927222016
 PrefabInstance:
   m_ObjectHideFlags: 0

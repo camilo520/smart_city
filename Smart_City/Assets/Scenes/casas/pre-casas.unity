@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1813,8 +1813,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.67, y: -13.3}
-  m_SizeDelta: {x: 466.3, y: 213.7}
+  m_AnchoredPosition: {x: 5.67, y: -104.9}
+  m_SizeDelta: {x: 510.9, y: 482}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &149977789
 MonoBehaviour:
@@ -1838,7 +1838,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1849,9 +1849,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tienes que ubicar los sensores de humedad en los lugares correspondientes.\r\n\r\n\r\nEl
-    bot\xF3n continuar se desbloquear\xE1 una vez hayas puesto de manera correcta
-    todos los sensores.\r"
+  m_Text: "Seg\xFAn el caso anteriormente propuesto, ubica los sensores de temperatura
+    y humead en los lugares correspondientes.\r\n\r\n\nAl ubicar los sensores de
+    manera correcta, se habilitar\xE1n dos botones por cada casa, con los cuales
+    podr\xE1s subir o bajar la temperatura.\r\n\n\nFija el valor de temperatura ideal
+    que deber\xEDa tener cada caso seg\xFAn el contexto dado.\r\n"
 --- !u!222 &149977790
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1962,7 +1964,7 @@ RectTransform:
   m_GameObject: {fileID: 156417296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1.5}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.5}
   m_Children:
   - {fileID: 2030766432}
   m_Father: {fileID: 815175887}
@@ -1970,7 +1972,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.96, y: -152.45}
+  m_AnchoredPosition: {x: 12.96, y: -193.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &156417298
@@ -6238,7 +6240,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 172.2, y: 2}
+  m_AnchoredPosition: {x: 179.4, y: -25}
   m_SizeDelta: {x: 50, y: 25.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &480390357
@@ -8432,7 +8434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -73.54, y: 51.1}
+  m_AnchoredPosition: {x: -81.9, y: 20}
   m_SizeDelta: {x: 50, y: 25.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &686026455
@@ -10296,7 +10298,7 @@ RectTransform:
   m_GameObject: {fileID: 815175886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49, y: 0.7, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.8, z: 1}
   m_Children:
   - {fileID: 1490732923}
   - {fileID: 149977788}
@@ -10306,8 +10308,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: 0, y: -80}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 140, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &815175888
 MonoBehaviour:
@@ -10322,7 +10324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
+  m_Color: {r: 0.39279994, g: 0.8584906, b: 0.84937054, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12419,7 +12421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13322,7 +13324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 211, y: 110.3}
+  m_AnchoredPosition: {x: 211, y: 80}
   m_SizeDelta: {x: 50, y: 25.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1048790345
@@ -13454,7 +13456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -147, y: 51.1}
+  m_AnchoredPosition: {x: -147, y: 20}
   m_SizeDelta: {x: 50, y: 25.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1051704387
@@ -16191,7 +16193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 143.2, y: 110.3}
+  m_AnchoredPosition: {x: 147.8, y: 80}
   m_SizeDelta: {x: 50, y: 25.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1218720821
@@ -16946,8 +16948,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   humedadB: {fileID: 1908450790}
   panelCorrecto: {fileID: 1163652080}
-  tipoCaso: {fileID: 608544710}
-  correcto: {fileID: 1176130086}
+  tipoCaso: {fileID: 0}
+  correcto: {fileID: 0}
   audiosrc: {fileID: 30902427}
 --- !u!114 &1267087023
 MonoBehaviour:
@@ -18444,7 +18446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19301,7 +19303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.67, y: 144.5}
+  m_AnchoredPosition: {x: 5.67, y: 183.45}
   m_SizeDelta: {x: 200.8, y: 36.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1490732924
@@ -19841,7 +19843,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 242.9, y: 2}
+  m_AnchoredPosition: {x: 242.9, y: -25}
   m_SizeDelta: {x: 50, y: 25.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1529321616
@@ -20545,7 +20547,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 330.7, y: 251.6}
+  m_SizeDelta: {x: 416.4, y: 326.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1578358860
 MonoBehaviour:
@@ -20580,9 +20582,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tienes que ubicar los sensores de humedad en los lugares correspondientes.\r\n\r\n\r\nEl
-    bot\xF3n continuar se desbloquear\xE1 una vez hayas puesto de manera correcta
-    todos los sensores.\r"
+  m_Text: "Seg\xFAn el caso anteriormente propuesto, ubica los sensores de temperatura
+    y humead en los lugares correspondientes.\r\n\n\r\nAl ubicar los sensores de
+    manera correcta, se habilitar\xE1n dos botones por cada casa, con los cuales
+    podr\xE1s subir o bajar la temperatura.\r\n\r\n\nFija el valor de temperatura
+    ideal que deber\xEDa tener cada caso seg\xFAn el contexto dado.\r\n"
 --- !u!222 &1578358861
 CanvasRenderer:
   m_ObjectHideFlags: 0
