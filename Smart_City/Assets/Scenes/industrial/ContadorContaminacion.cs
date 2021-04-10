@@ -127,20 +127,20 @@ public class ContadorContaminacion : MonoBehaviour
             {
                 contaminacion += Random.Range(25, 40);
                 numeroContaminacion.text = " " + contaminacion.ToString("f0") + " ppm";
-                avisoContaminacion1.text = "La contaminacion esta subiendo";
-                avisoContaminacion1.color = new Color(255, 232, 0);
+                //avisoContaminacion1.text = "La contaminacion esta subiendo";
+                //avisoContaminacion1.color = new Color(255, 232, 0);
                 if (contaminacion >= 168f  && CasosIndustrial.caso3==true)
                 { 
-                    avisoContaminacion1.color = new Color(255, 0, 0);
-                    avisoContaminacion1.text = "Lanza la alerta de contaminacion";
+                    //avisoContaminacion1.color = new Color(255, 0, 0);
+                    //avisoContaminacion1.text = "Lanza la alerta de contaminacion";
                 }else if (contaminacion >= 487f &&  CasosIndustrial.caso2 == true)
                 {
-                    avisoContaminacion1.color = new Color(255, 0, 0);
-                    avisoContaminacion1.text = "Lanza la alerta de contaminacion";
+                    //avisoContaminacion1.color = new Color(255, 0, 0);
+                    //avisoContaminacion1.text = "Lanza la alerta de contaminacion";
                 }else if (contaminacion >= 678f && CasosIndustrial.caso1 == true)
                 {
-                    avisoContaminacion1.color = new Color(255, 0, 0);
-                    avisoContaminacion1.text = "Lanza la alerta de contaminacion";
+                    //avisoContaminacion1.color = new Color(255, 0, 0);
+                    //avisoContaminacion1.text = "Lanza la alerta de contaminacion";
                 }
             }
             else
