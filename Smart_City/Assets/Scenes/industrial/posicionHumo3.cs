@@ -62,7 +62,7 @@ public class posicionHumo3 : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         humo = gameObject;
         Int32.TryParse(humo.transform.position.y.ToString(), out posy);
         humo3 = false;
-        if (posy >= 400)
+        if (posy >= 425)
         {
             humo3 = true;
         }
