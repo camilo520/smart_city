@@ -10,7 +10,6 @@ public class PosicionBotones : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public GameObject ejecutivo;
     public GameObject comercial;
     public GameObject industrial;
-    public GameObject educativo;
     public GameObject parque;
 
     private void Start()
@@ -20,7 +19,6 @@ public class PosicionBotones : MonoBehaviour, IPointerEnterHandler, IPointerExit
         ejecutivo.SetActive(false);
         comercial.SetActive(false);
         industrial.SetActive(false);
-        educativo.SetActive(false);
         parque.SetActive(false);
     }
     public void OnPointerEnter(PointerEventData pointerEventData)
@@ -51,11 +49,6 @@ public class PosicionBotones : MonoBehaviour, IPointerEnterHandler, IPointerExit
             industrial.SetActive(true);
         }
 
-        if (name.Equals("mixta1"))
-        {
-            educativo.SetActive(true);
-        }
-
         if (name.Equals("parque1"))
         {
             parque.SetActive(true);
@@ -73,7 +66,6 @@ public class PosicionBotones : MonoBehaviour, IPointerEnterHandler, IPointerExit
             ejecutivo.SetActive(false);
             comercial.SetActive(false);
             industrial.SetActive(false);
-            educativo.SetActive(false);
             parque.SetActive(false);
         }
     }
