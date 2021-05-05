@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 public class CallRestCasas : MonoBehaviour
 {
-	public string WEB_URL = "";
+	private string WEB_URL = "http://34.235.22.152:3000/casas";
 	private int casa1;
 	private int casa2;
 	private int casa3;
@@ -28,7 +28,7 @@ public class CallRestCasas : MonoBehaviour
 
 	void Update()
 	{
-
+		Debug.Log(WEB_URL);
 		if (TemperaturaCasas.caso1 == true && TemperaturaCasas.caso2 == false)
         {
 			noche = 1;

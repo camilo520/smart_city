@@ -27,9 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/industrial/SampleScene 5.unity
     guid: a53b6ae51511a2e42b9252c54786a6d5
   - enabled: 1
-    path: Assets/Scenes/mixto/SampleScene 6.unity
-    guid: df038b26f7dc3634f96244c9eeed9ecd
-  - enabled: 1
     path: Assets/Scenes/parque/SampleScene 7.unity
     guid: 7d1a07bc37722e5449debd90550eca1f
   - enabled: 1
@@ -50,9 +47,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/industrial/pre-industrial.unity
     guid: 880c73d280c43424dae48dec69ae8388
-  - enabled: 1
-    path: Assets/Scenes/mixto/pre-comercial.unity
-    guid: 7d476927d6403564f9b73fbc33b94564
   - enabled: 1
     path: Assets/Scenes/parque/pre-parque.unity
     guid: d8b8017cabc4b2d4589da1f00cfed81a

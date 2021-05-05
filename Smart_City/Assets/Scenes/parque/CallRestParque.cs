@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 public class CallRestParque : MonoBehaviour
 {
-	public string WEB_URL = "";
+	private string WEB_URL = "http://34.235.22.152:3000/parques";
 	public static bool call;
 	void Start()
 	{
@@ -21,8 +21,8 @@ public class CallRestParque : MonoBehaviour
 
 	void Update()
 	{
+		Debug.Log(WEB_URL);
 
-		
 
 	}
 

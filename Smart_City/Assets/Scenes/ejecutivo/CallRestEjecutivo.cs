@@ -8,7 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 public class CallRestEjecutivo : MonoBehaviour
 {
-	public string WEB_URL = "";
+	private string WEB_URL = "http://34.235.22.152:3000/parqueaderos";
 	private int espacio1;
 	private int espacio2;
 	private int espacio3;
@@ -26,7 +26,7 @@ public class CallRestEjecutivo : MonoBehaviour
 
 	void Update()
 	{
-
+		Debug.Log(WEB_URL);
 		Debug.Log("ID: " + LoginScript.userID);
 
 		if (BotonEspacio1.disponible == true)

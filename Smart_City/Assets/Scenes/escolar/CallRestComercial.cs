@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 public class CallRestComercial : MonoBehaviour
 {
-	public string WEB_URL = "";
+	private string WEB_URL = "http://34.235.22.152:3000/comerciales";
 	private string bote1;
 	private string bote2;
 	private string bote3;
@@ -25,8 +25,8 @@ public class CallRestComercial : MonoBehaviour
 
 	void Update()
 	{
+		Debug.Log(WEB_URL);
 
-		
 
 	}
 

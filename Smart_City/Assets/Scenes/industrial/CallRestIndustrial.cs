@@ -8,7 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 public class CallRestIndustrial : MonoBehaviour
 {
-	public string WEB_URL = "";
+	private string WEB_URL = "http://34.235.22.152:3000/industriales";
 	private int tipoContaminante;
 	private string valorContaminacion;
 	public static bool call;
@@ -24,7 +24,9 @@ public class CallRestIndustrial : MonoBehaviour
 
 	void Update()
 	{
-        if (CasosIndustrial.caso1 == true)
+		Debug.Log(WEB_URL);
+
+		if (CasosIndustrial.caso1 == true)
         {
 			tipoContaminante = 1;
         }
