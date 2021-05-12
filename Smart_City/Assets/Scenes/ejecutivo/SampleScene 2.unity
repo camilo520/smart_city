@@ -11496,9 +11496,9 @@ MonoBehaviour:
     hay una buena gesti\xF3n sobre los espacios libres y ocupados que tiene el estacionamiento.
     \n\nPara solucionar este problema se instalaron sensores en cada espacio que
     tiene el estacionamiento para as\xED tener un mejor control de qu\xE9 espacio
-    est\xE1 libre y cual no, esta informaci\xF3n ira a los conductores mediante una
-    aplicaci\xF3n para que ellos sepan si hay alg\xFAn espacio libre y en qu\xE9
-    lugar del estacionamiento se encuentra, d\xE1ndole las indicaciones correspondientes. "
+    est\xE1 libre y cual no, esta informaci\xF3n ir\xE1 a los conductores mediante
+    una aplicaci\xF3n para que ellos sepan si hay alg\xFAn espacio libre y en qu\xE9
+    lugar del estacionamiento se encuentra."
 --- !u!222 &999313886
 CanvasRenderer:
   m_ObjectHideFlags: 0

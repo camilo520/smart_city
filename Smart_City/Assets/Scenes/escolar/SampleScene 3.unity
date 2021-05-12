@@ -21239,9 +21239,9 @@ MonoBehaviour:
   m_Text: "En el sector comercial de la ciudad de Cleverville se han reportado grandes
     cantidades de basura que se han estado amontonando debido a los negocios que
     est\xE1n en el sector. Para ayudar a este problema el ayuntamiento de Cleverville
-    ha dispuesto de sensores de llenado para ponerlos en los botes de basura y a
-    si medir el nivel de basura que hay en el bote correspondiente. Cada bote de
-    basura tiene una capacidad m\xE1xima de 40 kg de basura.\n"
+    ha dispuesto de sensores de llenado para ponerlos en los botes de basura y as\xED
+    medir el nivel de basura que hay en el bote correspondiente. Cada bote de basura
+    tiene una capacidad m\xE1xima de 40 kg de basura.\n"
 --- !u!222 &1949181246
 CanvasRenderer:
   m_ObjectHideFlags: 0

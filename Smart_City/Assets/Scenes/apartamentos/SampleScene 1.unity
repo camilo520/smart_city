@@ -15274,12 +15274,11 @@ MonoBehaviour:
   m_Text: "En Cleverville existen normativas que regulan el ruido en diferentes sectores
     de la ciudad, una de estas normativas es la norma 0627 DE 2006 en donde se establecen
     los est\xE1ndares m\xE1ximos permisibles de niveles de emisi\xF3n de ruido expresados
-    en decibeles dB.  \nLa norma expresa lo siguiente:            \nAl ayuntamiento
+    en decibeles dB. \nLa norma expresa lo siguiente:            \nAl ayuntamiento
     de Cleverville han llegado muchas quejas por parte de los residentes del sector
     de Skyline Apartments, los cuales notifican que se presenta mucho ruido en esta
-    zona residencial. \r\nPor esta raz\xF3n el ayuntamiento desea implementar un
-    sistema de monitoreo del ruido haciendo uso de sensores en esta zona.  Los sensores
-    que ha adquirido el ayuntamiento son los siguientes:\r\n"
+    zona residencial. Por esta raz\xF3n el ayuntamiento desea implementar un sistema
+    de monitoreo del ruido haciendo uso de sensores en esta zona. \r\n\n"
 --- !u!222 &1323974034
 CanvasRenderer:
   m_ObjectHideFlags: 0
