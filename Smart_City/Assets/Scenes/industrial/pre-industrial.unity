@@ -1714,7 +1714,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb42bb3733e290c429305394576dcc6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WEB_URL: http://ec2-54-82-123-214.compute-1.amazonaws.com:3000/industriales
 --- !u!1001 &155192681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6654,7 +6653,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.5000114, y: -96.8}
+  m_AnchoredPosition: {x: -4.5000114, y: -96.65}
   m_SizeDelta: {x: 804.7, y: 58.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &424530133
@@ -11249,7 +11248,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.5000114, y: -155.49}
+  m_AnchoredPosition: {x: -4.5000114, y: -154.2}
   m_SizeDelta: {x: 804.7, y: 58.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &906610048
@@ -14965,7 +14964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.5000114, y: -214.09}
+  m_AnchoredPosition: {x: -4.5000114, y: -211.2}
   m_SizeDelta: {x: 804.7, y: 58.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203165260

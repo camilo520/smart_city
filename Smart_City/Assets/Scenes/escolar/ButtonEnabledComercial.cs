@@ -68,6 +68,7 @@ public class ButtonEnabledComercial : MonoBehaviour
             slider2.SetActive(true);
             slider3.SetActive(true);
             textoIN.SetActive(true);
+            tres.interactable = false;
 
         }
         else
@@ -85,6 +86,7 @@ public class ButtonEnabledComercial : MonoBehaviour
             slider2.SetActive(false);
             slider3.SetActive(false);
             textoIN.SetActive(false);
+            tres.interactable = true;
         }
 
         if (BotonRecoger.b == true && BotonRecoger2.b == true && BotonRecoger3.b == true)

@@ -41,6 +41,7 @@ public class ButtonEnableCasas : MonoBehaviour
             Botones.SetActive(true);
             tipoCaso.SetActive(true);
             cazona = true;
+            tres.interactable = false;
         }
         else
         {
@@ -51,6 +52,7 @@ public class ButtonEnableCasas : MonoBehaviour
             tipoCaso.SetActive(false);
             Botones.SetActive(false);
             cazona = false;
+            tres.interactable = true;
         }
 
         if (MenuPrincipal.finCasa == true)

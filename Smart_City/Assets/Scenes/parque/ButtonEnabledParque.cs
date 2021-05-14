@@ -54,6 +54,7 @@ public class ButtonEnabledParque : MonoBehaviour
             validar2.interactable = true;
             textIN.SetActive(true);
             StartCoroutine(sisas());
+            tres.interactable = false;
             
         }
         else
@@ -68,6 +69,7 @@ public class ButtonEnabledParque : MonoBehaviour
             gotas1.SetActive(false);
             gotas2.SetActive(false);
             textIN.SetActive(false);
+            tres.interactable = true;
         }
 
         if (MenuPrincipal.finParque == true)

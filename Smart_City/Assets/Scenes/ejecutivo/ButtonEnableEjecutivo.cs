@@ -23,10 +23,12 @@ public class ButtonEnableEjecutivo : MonoBehaviour
             DropSlotEjecutivo4.encasilla == true && DropSlotEjecutivo5.encasilla == true)
         {
             continuar.interactable = true;
+            tres.interactable = false;
         }
         else
         {
             continuar.interactable = false;
+            tres.interactable = true;
         }
 
         if (MenuPrincipal.finEjecutivo == true)

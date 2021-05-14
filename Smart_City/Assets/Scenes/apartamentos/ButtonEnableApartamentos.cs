@@ -36,6 +36,7 @@ public class ButtonEnableApartamentos : MonoBehaviour
             texto1.SetActive(true);
             texto2.SetActive(true);
             textoIN.SetActive(true);
+            tres.interactable = false;
             validar.interactable = true;
         }
         else
@@ -44,6 +45,7 @@ public class ButtonEnableApartamentos : MonoBehaviour
             texto1.SetActive(false);
             texto2.SetActive(false);
             textoIN.SetActive(false);
+            tres.interactable = true;
             validar.interactable = false;
         }
 

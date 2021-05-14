@@ -30,12 +30,14 @@ public class ButtonEnablesIndustrial : MonoBehaviour
 
             validar.interactable = true;
             textoAviso.SetActive(true);
+            tres.interactable = false;
         }
         else
         {
 
             validar.interactable = false;
             textoAviso.SetActive(false);
+            tres.interactable = true;
         }
 
         if (MenuPrincipal.finIndustrial == true)

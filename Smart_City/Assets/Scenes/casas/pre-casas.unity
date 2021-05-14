@@ -17142,7 +17142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc42046ad5d2c7b4a99f0eb97c5029f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WEB_URL: http://ec2-54-82-123-214.compute-1.amazonaws.com:3000/casas
 --- !u!114 &1267087024
 MonoBehaviour:
   m_ObjectHideFlags: 0

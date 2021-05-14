@@ -13334,7 +13334,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 383.1, y: 344.42}
+  m_SizeDelta: {x: 383.1, y: 356.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1058998498
 MonoBehaviour:
@@ -21706,7 +21706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46c66e1db92a71048ac5dca49888724e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WEB_URL: http://ec2-34-229-179-229.compute-1.amazonaws.com:3000/comerciales
 --- !u!1001 &1770459110
 PrefabInstance:
   m_ObjectHideFlags: 0
