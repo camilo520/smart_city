@@ -7670,7 +7670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16943,13 +16943,14 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Importante: \r\n-Una vez iniciado el simulador, no tienes que volver al
-    men\xFA principal, de lo contrario se borrara tu progreso.\r\n\n-Al completar
-    un sector, este ya no se mostrar\xE1 y no se podr\xE1 seleccionar otra vez.\r\n\n-Para
+    men\xFA principal, de lo contrario se borrara tu progreso, a menos de que te
+    hayas equivocado de ID, en esa situaci\xF3n podr\xE1s volver.\r\n\r\n-Al completar
+    un sector, este ya no se mostrar\xE1 y no se podr\xE1 seleccionar otra vez.\r\n\r\n-Para
     completar los casos de los sectores es importante que veas la p\xE1gina del dashboard,
-    as\xED veras los cambios en las variables detectadas por los sensores.\r\n\n-El
+    as\xED podr\xE1s observar los cambios en las variables detectadas por los sensores.\r\n\r\n-El
     dashboard ser\xE1 exclusivamente para ver los datos que recolectan los sensores,
     por medio de este simulador podr\xE1s realizar las acciones correspondientes
-    para completar los casos dados.\r"
+    para completar los casos dados. \r"
 --- !u!222 &1927172481
 CanvasRenderer:
   m_ObjectHideFlags: 0
