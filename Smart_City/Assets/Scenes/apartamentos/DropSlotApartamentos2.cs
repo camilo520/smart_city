@@ -15,7 +15,6 @@ public class DropSlotApartamentos2 : MonoBehaviour, IDropHandler
             item = DragHandlerApartamentos.itemDragginng;
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
-            Debug.Log("Soy el primero");
             encasilla = true;
         }
         else
@@ -24,19 +23,12 @@ public class DropSlotApartamentos2 : MonoBehaviour, IDropHandler
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (item != null && item.transform.parent != transform)
         {
             item = null;
-            Debug.Log("No la pusiste");
         }
     }
 }

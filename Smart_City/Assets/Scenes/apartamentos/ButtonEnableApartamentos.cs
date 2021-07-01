@@ -14,7 +14,7 @@ public class ButtonEnableApartamentos : MonoBehaviour
     public Button tres;
     public Button cuatro;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         slider.SetActive(false);
@@ -27,7 +27,7 @@ public class ButtonEnableApartamentos : MonoBehaviour
         cuatro.interactable = true;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (DropSlotApartamentos1.encasilla == true)

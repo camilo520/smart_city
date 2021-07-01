@@ -8,18 +8,6 @@ public class ventanaEmergente : MonoBehaviour
     public GameObject panel2;
     public GameObject panel3;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void openPanel()
     {
         if(panel != null)

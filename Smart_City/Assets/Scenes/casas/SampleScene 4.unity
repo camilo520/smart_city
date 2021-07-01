@@ -4525,13 +4525,13 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Una de las propuestas para mejorar experiencia de vida de los habitantes
     de Cleverville es instalar sensores de humedad y temperatura en el sector de
-    las casas que tiene la ciudad para que detecten la temperatura del exterior,
-    y dependiendo de \xE9sta se env\xEDe una alerta a las personas que viven all\xED
-    para que ajusten autom\xE1ticamente la temperatura ideal que deber\xEDan tener
-    en sus casas. \r\n\r\nLos rangos de la temperatura ideal en el interior de las
-    casas dependiendo de la temperatura exterior se expresa de la siguiente forma:
-    un d\xEDa caluroso o de d\xEDa oscila en un rango de 20-21\xBAC y durante un
-    d\xEDa lluvioso o de noche un rango de los 15-17\xBAC.\r\n"
+    las casas para que detecten la temperatura del exterior, y dependiendo de \xE9sta
+    se env\xEDe una alerta a las personas que viven all\xED para que ajusten autom\xE1ticamente
+    la temperatura ideal que deber\xEDan tener en sus casas. \r\n\r\nLos rangos de
+    la temperatura ideal en el interior de las casas dependiendo de la temperatura
+    exterior se expresa de la siguiente forma: un d\xEDa caluroso o de d\xEDa oscila
+    en un rango de 20-21\xBAC y durante un d\xEDa lluvioso o de noche un rango de
+    los 15-17\xBAC.\r\n"
 --- !u!222 &377338596
 CanvasRenderer:
   m_ObjectHideFlags: 0

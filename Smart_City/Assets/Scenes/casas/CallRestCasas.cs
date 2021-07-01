@@ -68,11 +68,7 @@ public class CallRestCasas : MonoBehaviour
 				casa1 = BotonesSYS.temp1;
 				casa2 = BotonesSYS2.temp2;
 				casa3 = BotonesSYS3.temp3;
-				//por2 = SliderCasas.porc;
-				///<summary>
-				/// Post using UnityWebRequest class
-				/// </summary>
-				/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
+
 				var jsonString = "{\"nodo\":" + LoginScript.userID.ToString() + ", \"casa1\":" + casa1.ToString() + 
 					", \"casa2\":" + casa2.ToString() + ", \"casa3\":" + casa3.ToString() + " " +
 					", \"diacasa\":" + dia.ToString() + ", \"nochecasa\":" + noche.ToString() + 
@@ -92,7 +88,6 @@ public class CallRestCasas : MonoBehaviour
 				{
 					yield return unityWebRequest.SendWebRequest();
 					Debug.Log("Form upload complete! Status Code: " + unityWebRequest.responseCode + (int)Time.time);
-					//yield return new WaitForSeconds(1);
 				}
 			}
 			yield return new WaitForSeconds(3);

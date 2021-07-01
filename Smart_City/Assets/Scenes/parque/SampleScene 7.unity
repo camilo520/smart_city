@@ -18179,7 +18179,7 @@ MonoBehaviour:
   m_Text: "El ayuntamiento de Cleverville ha dispuesto de varios sensores para determinar
     de manera autom\xE1tica el momento en el que se debe regar el c\xE9sped y plantas
     del parque principal de la ciudad, estos sensores detectan el nivel de humedad
-    del suelo y dependiendo de este se activar\xE1n o no los aspersores del parque.
+    del suelo y dependiendo de este, se activar\xE1n o no los aspersores del parque.
     \r\n\r\nUn suelo ligeramente h\xFAmedo dar\xEDa valores t\xEDpicos de 600-700.
     Un suelo seco tendr\xE1 valores de 800-1023.\r\n"
 --- !u!222 &1922965092

@@ -39,15 +39,9 @@ public class DragHandlerAparatamentosCorrecto : MonoBehaviour, IDragHandler, IEn
         }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         dragParent = GameObject.FindGameObjectWithTag("DragParent1").transform;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
