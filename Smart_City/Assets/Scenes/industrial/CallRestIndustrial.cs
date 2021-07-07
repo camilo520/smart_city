@@ -57,7 +57,8 @@ public class CallRestIndustrial : MonoBehaviour
 				/// </summary>
 				/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
 				var jsonString = "{\"nodo\":" + LoginScript.userID.ToString() + ", \"tipoc\":" + tipoContaminante +
-					", \"contaminacion\":" + ContadorContaminacion.contaminacion.ToString() +  " }";
+					", \"contaminacion\":" + ContadorContaminacion.contaminacion.ToString() +
+					", \"bajandoC\":" + ContadorContaminacion.bajandoC + " }";
 
 				byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
 

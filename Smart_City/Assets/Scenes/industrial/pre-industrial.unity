@@ -8787,8 +8787,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -266.35, y: 118.4}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -95.4, y: 130.7}
+  m_SizeDelta: {x: 537.7, y: 85.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &648412924
 MonoBehaviour:
@@ -8812,7 +8812,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 22
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -8823,7 +8823,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "Revisa el dashboard para obtener informaci\xF3n actual de la contaminaci\xF3n
+    en el sector"
 --- !u!222 &648412925
 CanvasRenderer:
   m_ObjectHideFlags: 0

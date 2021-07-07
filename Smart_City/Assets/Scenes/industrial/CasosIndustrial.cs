@@ -35,20 +35,20 @@ public class CasosIndustrial : MonoBehaviour
             case 3:
                 Debug.Log("caso 3");
                 caso3 = true;
-                avisoCaso.text = "Contaminacion de O3";
+                //avisoCaso.text = "Contaminacion de O3";
                 break;
             case 2:
                 Debug.Log("caso 2");
                 caso2 = true;
-                avisoCaso.text = "Contaminacion de SO2";
+                //avisoCaso.text = "Contaminacion de SO2";
                 break;
             case 1:
                 Debug.Log("caso 1");
                 caso1 = true;
-                avisoCaso.text = "Contaminacion de NO2";
+                //avisoCaso.text = "Contaminacion de NO2";
                 break;
             default:
-                avisoCaso.text = ("Incorrect intelligence level.");
+                //avisoCaso.text = ("Incorrect intelligence level.");
                 break;
         }
     }

@@ -21,6 +21,7 @@ public class ContadorContaminacion : MonoBehaviour
     public static AudioClip clipCorrecto;
     public static AudioClip clipIncorrecto;
     public AudioSource audiosrc;
+    public static int bajandoC;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class ContadorContaminacion : MonoBehaviour
         avisoContaminacion1.gameObject.GetComponent<Text>();
         avisoContaminacion1.text = "";
         contaminacion = 50f;
+        bajandoC = 0;
         sepaso = false;
         playAudio = false;
         nube1.SetActive(false);
@@ -125,8 +127,8 @@ public class ContadorContaminacion : MonoBehaviour
             if (DropSlotIndustrial.encasilla == true)
             {
                 contaminacion += Random.Range(25, 45);
-                numeroContaminacion.text = " " + contaminacion.ToString("f0") + " ppm";
-                
+                //numeroContaminacion.text = " " + contaminacion.ToString("f0") + " ppm";
+                numeroContaminacion.text = "Revisa el dashboard para obtener información actual de la contaminación en el sector";
             }
             else
             {
@@ -142,15 +144,19 @@ public class ContadorContaminacion : MonoBehaviour
         {
             if (DropSlotIndustrial.encasilla == true && BotonContaminacion.alerta == true && posicionHumo.humo1 == true && posicionHumo2.humo2 == true && posicionHumo3.humo3 == true)
             {
+                bajandoC = 1;
                 contaminacion -= Random.Range(25, 40);
-                numeroContaminacion.text = " " + contaminacion.ToString("f0") + " ppm";
+                //numeroContaminacion.text = " " + contaminacion.ToString("f0") + " ppm";
                 avisoContaminacion1.color = new Color(0, 255, 0);
-                avisoContaminacion1.text = "La contaminacion esta bajando";
+                avisoContaminacion1.text = "La contaminación esta bajando";
+                numeroContaminacion.text = "";
             }
             else if(DropSlotIndustrial.encasilla == true && BotonContaminacion.alerta == true && posicionHumo.humo1 == false && posicionHumo2.humo2 == false && posicionHumo3.humo3 == false)
             {
+                
                 avisoContaminacion1.color = new Color(255, 255, 255);
-                avisoContaminacion1.text = "Elimina los restos de contaminacion hacia arriba";
+                avisoContaminacion1.text = "Elimina los restos de contaminación hacia arriba";
+                numeroContaminacion.text = "";
             }
             yield return new WaitForSeconds(1);
         }
