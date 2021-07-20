@@ -92,7 +92,8 @@ public class CallRestEjecutivo : MonoBehaviour
 				/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
 				var jsonString = "{\"nodo\":" + LoginScript.userID.ToString() + ", \"p1\":" + espacio1.ToString() +
 					", \"p2\":" + espacio2.ToString() + ", \"p3\":" + espacio3.ToString() + " " +
-					", \"p4\":" + espacio4.ToString() + ", \"p5\":" + espacio5.ToString() + " }";
+					", \"p4\":" + espacio4.ToString() + ", \"p5\":" + espacio5.ToString() + " " +
+					", \"tipoCaso\":" + CasosParqueadero.tipoCaso + " }";
 
 				byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
 
