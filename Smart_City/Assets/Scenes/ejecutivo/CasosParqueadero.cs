@@ -41,31 +41,31 @@ public class CasosParqueadero : MonoBehaviour
                 Debug.Log("caso 5");
                 caso5 = true;
                 tipoCaso = 5;
-                avisoCaso.text= "Espacios ocupados: 1, 2 y 4 \n" + "Espacios disponibles: 3 y 5";
+                avisoCaso.text= "Revisa El dashboard para conocer los espacios ocupados y disponibles";
                 break;
             case 4:
                 tipoCaso = 4;
                 Debug.Log("caso 4");
                 caso4=true;
-                avisoCaso.text = "Espacios ocupados: 1, 3 y 5 \n" + "Espacios disponibles: 2 y 4";
+                avisoCaso.text = "Revisa El dashboard para conocer los espacios ocupados y disponibles";
                 break;
             case 3:
                 tipoCaso = 3;
                 Debug.Log("caso 3");
                 caso3 = true;
-                avisoCaso.text = "Espacios ocupados: 3, 4 y 5 \n" + "Espacios disponibles: 1 y 2";
+                avisoCaso.text = "Revisa El dashboard para conocer los espacios ocupados y disponibles";
                 break;
             case 2:
                 tipoCaso = 2;
                 Debug.Log("caso 2");
                 caso2 = true;
-                avisoCaso.text = "Espacios ocupados: 1, y 5 \n" + "Espacios disponibles: 2, 3 y 4";
+                avisoCaso.text = "Revisa El dashboard para conocer los espacios ocupados y disponibles";
                 break;
             case 1:
                 tipoCaso = 1;
                 Debug.Log("caso 1");
                 caso1 = true;
-                avisoCaso.text = "Espacios ocupados: 2, 3 y 4 \n" + "Espacios disponibles: 1 y 5";
+                avisoCaso.text = "Revisa El dashboard para conocer los espacios ocupados y disponibles";
                 break;
             default:
                 tipoCaso = 0;
