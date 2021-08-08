@@ -10,23 +10,14 @@ using System.Threading.Tasks;
 public class CallRestService : MonoBehaviour
 {
 	private string WEB_URL = "http://34.235.22.152:3000/aptos";
-	private int por;
+	private int porcentaje;
 	public static bool call;
-	// Use this for initialization
 	void Start()
 	{
 		call = false;
 		StartCoroutine(postUnityWebRequest());
-		//StartCoroutine(getUnityWebRequest());
 	
 	}
-
-	void Update() {
-		Debug.Log(WEB_URL);
-		Debug.Log("La casa " + call);
-	}
-	
-
 
 
 	IEnumerator postUnityWebRequest()
@@ -38,13 +29,8 @@ public class CallRestService : MonoBehaviour
 			if (DropSlotApartamentos1.encasilla == true)
 			{
 				Debug.Log("ENTRE AL POST");
-				por = SliderCasas1.porc;
-				//por2 = SliderCasas.porc;
-				///<summary>
-				/// Post using UnityWebRequest class
-				/// </summary>
-				/// var jsonString = "{\"Id\":3,\"Name\":\"Roy\"}";
-				var jsonString = "{\"nodo\":" + LoginScript.userID.ToString() + ", \"ruido\":" + por.ToString() +"}";
+				porcentaje = SliderCasas1.porc;
+				var jsonString = "{\"nodo\":" + LoginScript.userID.ToString() + ", \"ruido\":" + porcentaje.ToString() +"}";
 				byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
 
 				UnityWebRequest unityWebRequest = new UnityWebRequest(WEB_URL, "POST");

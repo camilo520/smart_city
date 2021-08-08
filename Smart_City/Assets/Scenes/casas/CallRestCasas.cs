@@ -15,7 +15,7 @@ public class CallRestCasas : MonoBehaviour
 	private int casa3;
 	private int dia;
 	private int noche;
-	private int sisa;
+	private int DoN;
 	public static bool call;
 	// Use this for initialization
 	void Start()
@@ -45,13 +45,13 @@ public class CallRestCasas : MonoBehaviour
 			noche = 0;
         }
 
-        if (TemperaturaCasas.capo == false)
+        if (TemperaturaCasas.comprobante == false)
         {
-			sisa = 1;
+			DoN = 1;
         }
-		else if (TemperaturaCasas.capo == true)
+		else if (TemperaturaCasas.comprobante == true)
         {
-			sisa = 0;
+			DoN = 0;
         }
 
 	}
@@ -72,7 +72,7 @@ public class CallRestCasas : MonoBehaviour
 				var jsonString = "{\"nodo\":" + LoginScript.userID.ToString() + ", \"casa1\":" + casa1.ToString() + 
 					", \"casa2\":" + casa2.ToString() + ", \"casa3\":" + casa3.ToString() + " " +
 					", \"diacasa\":" + dia.ToString() + ", \"nochecasa\":" + noche.ToString() + 
-					", \"capo\":" + sisa.ToString() + " }";
+					", \"capo\":" + DoN.ToString() + " }";
 
 				byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
 

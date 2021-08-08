@@ -17,13 +17,6 @@ public class BotonesSYS : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-
     public void sumar1()
     {
         temp1 += 1;

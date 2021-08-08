@@ -16,7 +16,7 @@ public class TemperaturaCasas : MonoBehaviour
     public static bool light=false;
     public static bool caso2;
     public static bool caso1;
-    public static bool capo;
+    public static bool comprobante;
     public static AudioClip clipCorrecto;
     public static AudioClip clipIncorrecto;
     public AudioSource audiosrc;
@@ -33,7 +33,7 @@ public class TemperaturaCasas : MonoBehaviour
         noche.SetActive(false);
         caso2 = false;
         caso1 = false;
-        capo = false;
+        comprobante = false;
         intelligence = Random.Range(1,3);
         Greet();
         clipCorrecto = Resources.Load<AudioClip>("succes_sound2");
@@ -58,7 +58,7 @@ public class TemperaturaCasas : MonoBehaviour
             panelIncorrecto.SetActive(false);
             audiosrc.PlayOneShot(clipCorrecto);
             MenuPrincipal.finCasa = true;
-            capo = true;
+            comprobante = true;
         }
         if (caso1 == true && BotonesSYS.temp1>=15 && BotonesSYS.temp1<=17 &&
             BotonesSYS2.temp2 >= 15 && BotonesSYS2.temp2 <= 17 && BotonesSYS3.temp3 >= 15 && BotonesSYS3.temp3 <= 17)
@@ -67,9 +67,9 @@ public class TemperaturaCasas : MonoBehaviour
             panelIncorrecto.SetActive(false);
             MenuPrincipal.finCasa = true;
             audiosrc.PlayOneShot(clipCorrecto);
-            capo = true;
+            comprobante = true;
         }
-        else if(capo==false)
+        else if(comprobante == false)
         {
             panelIncorrecto.SetActive(true);
             panelCorrecto.SetActive(false);
