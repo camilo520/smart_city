@@ -64,7 +64,6 @@ public class CallRestCasas : MonoBehaviour
 
 			if (DropSlotCasas1.encasilla == true && DropSlotCasas2.encasilla==true && DropSlotCasas3.encasilla==true)
 			{
-				Debug.Log("ENTRE AL POST");
 				casa1 = BotonesSYS.temp1;
 				casa2 = BotonesSYS2.temp2;
 				casa3 = BotonesSYS3.temp3;

@@ -28,7 +28,6 @@ public class CallRestService : MonoBehaviour
 
 			if (DropSlotApartamentos1.encasilla == true)
 			{
-				Debug.Log("ENTRE AL POST");
 				porcentaje = SliderCasas1.porc;
 				var jsonString = "{\"nodo\":" + LoginScript.userID.ToString() + ", \"ruido\":" + porcentaje.ToString() +"}";
 				byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
