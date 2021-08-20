@@ -142,7 +142,7 @@ public class ContadorBasura : MonoBehaviour
         {
                     if (DropSlotComercial1.encasilla == true && DropSlotComercial2.encasilla == true && DropSlotComercial3.encasilla == true)
                     {
-                        tiempo += Random.Range(2, 5);
+                        tiempo += Random.Range(0, 5);
                         contador.text = " " + tiempo.ToString("f0") + " Kg";
 
                     }
@@ -163,7 +163,7 @@ public class ContadorBasura : MonoBehaviour
         {
                 if (DropSlotComercial1.encasilla == true && DropSlotComercial2.encasilla == true && DropSlotComercial3.encasilla == true)
                 {
-                    tiempo2 += Random.Range(2, 5);
+                    tiempo2 += Random.Range(0, 5);
                     contador2.text = " " + tiempo2.ToString("f0") + " Kg";
                 }
                 else
@@ -181,7 +181,7 @@ public class ContadorBasura : MonoBehaviour
             {
             if (DropSlotComercial1.encasilla == true && DropSlotComercial2.encasilla == true && DropSlotComercial3.encasilla == true)
             {
-                tiempo3 += Random.Range(2, 5);
+                tiempo3 += Random.Range(0, 5);
                 contador3.text = " " + tiempo3.ToString("f0") + " Kg";
             }
             else

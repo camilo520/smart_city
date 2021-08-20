@@ -1010,7 +1010,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &89729873
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14014,7 +14014,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1057525125
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14031,8 +14031,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -253.8, y: 153.69}
-  m_SizeDelta: {x: 207, y: 115.9}
+  m_AnchoredPosition: {x: -236.9, y: 115.1}
+  m_SizeDelta: {x: 305.07, y: 187.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1057525126
 MonoBehaviour:
@@ -14067,7 +14067,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Riega el parque cuando el cesped se encuentre seco
+  m_Text: "Riega el parque cuando el cesped se encuentre seco\n\nRevisa el dashboard
+    para ver la informaci\xF3n de los aspersores"
 --- !u!222 &1057525127
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20577,7 +20578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1655334663
 RectTransform:
   m_ObjectHideFlags: 0

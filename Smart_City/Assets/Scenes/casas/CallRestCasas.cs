@@ -34,14 +34,9 @@ public class CallRestCasas : MonoBehaviour
 			noche = 1;
 			dia = 0;
         }
-		if(TemperaturaCasas.caso2== true && TemperaturaCasas.caso1 == false)
+		else if(TemperaturaCasas.caso2== true && TemperaturaCasas.caso1 == false)
         {
 			dia = 1;
-			noche = 0;
-        }
-        else
-        {
-			dia = 0;
 			noche = 0;
         }
 
@@ -53,7 +48,6 @@ public class CallRestCasas : MonoBehaviour
         {
 			DoN = 0;
         }
-
 	}
 
 	IEnumerator postUnityWebRequest()
@@ -70,8 +64,7 @@ public class CallRestCasas : MonoBehaviour
 
 				var jsonString = "{\"nodo\":" + LoginScript.userID.ToString() + ", \"casa1\":" + casa1.ToString() + 
 					", \"casa2\":" + casa2.ToString() + ", \"casa3\":" + casa3.ToString() + " " +
-					", \"diacasa\":" + dia.ToString() + ", \"nochecasa\":" + noche.ToString() + 
-					", \"capo\":" + DoN.ToString() + " }";
+					", \"diacasa\":" + dia + ", \"nochecasa\":" + noche + " }";
 
 				byte[] byteData = System.Text.Encoding.ASCII.GetBytes(jsonString.ToCharArray());
 
@@ -86,6 +79,7 @@ public class CallRestCasas : MonoBehaviour
 				else
 				{
 					yield return unityWebRequest.SendWebRequest();
+					Debug.Log(jsonString);
 					Debug.Log("Form upload complete! Status Code: " + unityWebRequest.responseCode + (int)Time.time);
 				}
 			}
