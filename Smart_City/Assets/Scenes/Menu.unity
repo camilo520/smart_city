@@ -1184,6 +1184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: arbol2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 17d978ecdd9f98e4781e7e1c21f09f6b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17d978ecdd9f98e4781e7e1c21f09f6b, type: 3}
 --- !u!4 &100873035 stripped
@@ -2635,7 +2639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 744162669ffc4324fb7666d8781f577f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.7
+      value: 2.85
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 744162669ffc4324fb7666d8781f577f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7240,6 +7244,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 55c4f40eb521b224dad0be26043010e2, type: 3}
       propertyPath: m_Name
       value: arboles4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 55c4f40eb521b224dad0be26043010e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55c4f40eb521b224dad0be26043010e2, type: 3}
@@ -16045,6 +16053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: arboles3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bcc2ee82c38096947ab832b39d22a893, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcc2ee82c38096947ab832b39d22a893, type: 3}
 --- !u!4 &1730352256 stripped
@@ -16118,6 +16130,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e41ac0b02cd32814eb4049d7cfca765f, type: 3}
       propertyPath: m_Name
       value: birch_tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e41ac0b02cd32814eb4049d7cfca765f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e41ac0b02cd32814eb4049d7cfca765f, type: 3}
@@ -16632,6 +16648,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 55c4f40eb521b224dad0be26043010e2, type: 3}
       propertyPath: m_Name
       value: arboles4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 55c4f40eb521b224dad0be26043010e2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55c4f40eb521b224dad0be26043010e2, type: 3}
